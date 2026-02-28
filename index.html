@@ -1686,7 +1686,7 @@ body::after {
     <div class="ai-oracle a7" id="ai-oracle-section">
       <div class="ai-oracle-header">
         <span class="ai-oracle-title">AI Oracle</span>
-        <span class="ai-oracle-badge">✦ Premium</span>
+        <span class="ai-oracle-badge">✦ Free</span>
       </div>
       <div class="ai-card">
         <div class="ai-textarea-wrap">
@@ -1944,7 +1944,7 @@ body::after {
    https://aistudio.google.com/app/apikey adresinden alın.
    Prodüksiyon ortamında bir sunucu proxy kullanın.
 ═══════════════════════════════════════════════ */
-const GEMINI_API_KEY  = 'YOUR_API_KEY_HERE';
+const GEMINI_API_KEY  = 'AIzaSyBQ4yBJFQ1ysZwqTXjJNX-S3wfe4PN7HvI';
 const GEMINI_MODEL    = 'gemini-pro';
 const GEMINI_BASE     = 'https://generativelanguage.googleapis.com/v1beta/models/';
 const GEMINI_ENDPOINT = GEMINI_BASE + GEMINI_MODEL + ':generateContent?key=' + GEMINI_API_KEY;
@@ -2802,7 +2802,7 @@ function scrollToTop(screenId) {
   if (el) el.scrollTop = 0;
 }
 
-function goSanctuary() {
+function goSanctuary() {if (!checkConnection()) return;
   if (!activeMood) activeMood = MOODS.Huzursuz;
   const m = activeMood;
   const key = Object.keys(MOODS).find(function(k) { return MOODS[k] === m; }) || '';
@@ -3837,7 +3837,7 @@ async function fetchMoodAnalysis(userInput) {
         role : 'user',
         parts: [{
           text: GEMINI_SYSTEM_INSTRUCTION +
-            '\n\nKullanıcının mevcut mood girişi:\n"' + userInput + '"'
+            '\n\nKullanıcının mevcut mood girişi:\n"' + userInput + '"'+ getMoodSummary()
         }]
       }
     ],
@@ -4127,7 +4127,7 @@ function renderAIResult(carrierFreq, beatFreq, description, isFallback, visuals,
 
   if (ambientLayers && ambientLayers.length) {
     ambientLayers.forEach(function(layer) {
-      const icons = { rain:'🌧', brown_noise:'🌊', forest:'🌲', ocean:'🌊', fire:'🔥', wind:'💨', singing_bowls:'🔔' };
+      const icons = { rain:'🌧', brown_noise:'🌊', forest:'🌲', ocean:'🌊', fire:'??', wind:'💨', singing_bowls:'🔔' };
       chips.push(
         '<span class="ai-freq-chip" style="color:rgba(155,142,196,.9);border-color:rgba(155,142,196,.3)">' +
         (icons[layer] || '🎵') + ' ' + layer.replace('_',' ') + '</span>'
@@ -4469,13 +4469,7 @@ function showFallbackNotice(message) {
 }
 let _fallbackNoticeTimer = null;
 
-// Override the existing handleAIGenerate
 function handleAIGenerate() {
-  if (!isPremium) {
-    showPaywall();
-    return;
-  }
-
   const input = (document.getElementById('ai-input').value || '').trim();
   if (!input) {
     const ta = document.getElementById('ai-input');
@@ -4498,6 +4492,8 @@ function handleAIGenerate() {
   fetchMoodAnalysis(input)
     .then(function(result) {
       AppState.updateAI(result);
+      const key = Object.keys(MOODS).find(k => MOODS[k] === activeMood) || '';
+if (key) saveMoodToHistory(key);
       applyAIFrequency({
         carrierFreq      : result.frequency,
         beatFreq         : result.detune,
@@ -4647,6 +4643,62 @@ function loadMoodMemory() {
     document.head.appendChild(link);
   } catch(e) { console.warn('Manifest inject failed:', e); }
 })();
+// --- TEKNİK GÜNCELLEME: İNTERNET VE BELLEK YÖNETİMİ ---
+function checkConnection() {
+    if (!navigator.onLine) {
+        if(typeof showToast === "function") {
+            showToast("İnternet bağlantısı yok. AI özellikleri kısıtlı.");
+        } else {
+            alert("İnternet bağlantısı yok. AI özellikleri kısıtlı.");
+        }
+        return false;
+    }
+    return true;
+}
+
+function saveMoodToHistory(mood) {
+    try {
+        let history = JSON.parse(localStorage.getItem('sanctuary_mood_history') || '[]');
+        history.push({ 
+            date: new Date().toLocaleDateString('tr-TR'), 
+            mood: mood 
+        });
+        if (history.length > 3) history.shift(); // Sadece son 3 kaydı tutar (hafıza optimizasyonu)
+        localStorage.setItem('sanctuary_mood_history', JSON.stringify(history));
+    } catch (e) { console.error("Hafıza yazma hatası:", e); }
+}
+
+function getMoodSummary() {
+    try {
+        let history = JSON.parse(localStorage.getItem('sanctuary_mood_history') || '[]');
+        if (history.length === 0) return "";
+        let summary = history.map(h => h.mood).join(", ");
+        return " (Kullanıcının yakın geçmişteki ruh halleri: " + summary + ")";
+    } catch (e) { return ""; }
+}function acceptDisclaimer() {
+    document.getElementById('legal-disclaimer').style.display = 'none';
+    localStorage.setItem('sanctuary_disclaimer_accepted', 'true');
+}
+
+// Uygulama açıldığında çalıştır
+window.addEventListener('load', function() {
+    setTimeout(() => {
+        if (localStorage.getItem('sanctuary_disclaimer_accepted') !== 'true') {
+            const modal = document.getElementById('legal-disclaimer');
+            if(modal) modal.style.display = 'flex';
+        }
+    }, 1000); // 1 saniye gecikmeli açılır
+});
 </script>
+<div id="legal-disclaimer" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:10000; justify-content:center; align-items:center; padding:20px; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);">
+    <div style="background:#1c1c1e; padding:30px; border-radius:28px; text-align:center; border:1px solid #333; max-width:380px; box-shadow: 0 25px 50px rgba(0,0,0,0.6);">
+        <div style="font-size: 45px; margin-bottom: 20px;">🛡️</div>
+        <h3 style="color:#fff; font-family: -apple-system, sans-serif; margin-bottom: 15px;">Önemli Bilgilendirme</h3>
+        <p style="color:#a1a1a6; font-family: -apple-system, sans-serif; font-size:14px; line-height:1.6; margin-bottom: 30px;">
+            Sanctuary bir zihinsel huzur rehberidir. Tıbbi bir cihaz değildir. Sağlık durumlarınız için lütfen bir doktora danışın.
+        </p>
+        <button onclick="acceptDisclaimer()" style="background:#fff; color:#000; border:none; padding:14px; border-radius:14px; font-weight:700; font-family: -apple-system, sans-serif; width:100%; cursor:pointer; font-size:16px;">Anladım ve Kabul Ediyorum</button>
+    </div>
+</div>
 </body>
-</html
+</html>

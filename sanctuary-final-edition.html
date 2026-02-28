@@ -1,0 +1,4652 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<!-- iOS WebKit: Tam ekran uygulama modu -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sanctuary">
+<!-- Viewport: iOS safe area + zoom engeli -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<!-- SEO & Tema -->
+<meta name="description" content="Sanctuary — Ses frekansları ve nefes rehberiyle zihinsel huzur.">
+<meta name="theme-color" content="#050507">
+<link rel="apple-touch-icon" sizes="192x192" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPCEtLSBCYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTEyIiBmaWxsPSIjMDUwNTA3Ii8+CiAgPCEtLSBPdXRlciByaW5nIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTQwIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjAxLDE2OSwxMTAsMC4yNSkiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPCEtLSBNaWRkbGUgcmluZyAtLT4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDIwMSwxNjksMTEwLDAuMTgpIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8IS0tIElubmVyIGdsb3cgcmluZyAtLT4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjY0IiBmaWxsPSJyZ2JhKDIwMSwxNjksMTEwLDAuMDYpIi8+CiAgPCEtLSBSYWRpYWwgZ3JhZGllbnQgZm9yIGNlbnRlciBnbG93IC0tPgogIDxkZWZzPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJkb3RHcmFkIiBjeD0iNDAlIiBjeT0iMzUlIiByPSI2MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjBkMDkwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M5YTk2ZSIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvd0dyYWQiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9InJnYmEoMjAxLDE2OSwxMTAsMC41KSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9InJnYmEoMjAxLDE2OSwxMTAsMCkiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDwhLS0gT3V0ZXIgZ2xvdyBibG9iIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iNDQiIGZpbGw9InVybCgjZ2xvd0dyYWQpIi8+CiAgPCEtLSBDZW50ZXIgZG90IC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTgiIGZpbGw9InVybCgjZG90R3JhZCkiLz4KICA8IS0tIFRvcCBzcGVjdWxhciBoaWdobGlnaHQgb24gZG90IC0tPgogIDxlbGxpcHNlIGN4PSIyNDkiIGN5PSIyNDkiIHJ4PSI3IiByeT0iNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjM1KSIgdHJhbnNmb3JtPSJyb3RhdGUoLTIwIDI0OSAyNDkpIi8+CiAgPCEtLSBTQU5DVFVBUlkgd29yZG1hcmsgLS0+CiAgPHRleHQgeD0iMjU2IiB5PSI0MDYiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjMwMCIgbGV0dGVyLXNwYWNpbmc9IjEwIiBmaWxsPSJyZ2JhKDIwMSwxNjksMTEwLDAuNzUpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TQU5DVFVBUlk8L3RleHQ+Cjwvc3ZnPgo=">
+
+<title>Sanctuary — Your Inner Space</title>
+<!-- Font Optimizasyonu: preconnect + display=swap render-blocking önler -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Figtree:wght@300;400;500&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Figtree:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Figtree:wght@300;400;500&display=swap" rel="stylesheet">
+</noscript>
+<style>
+/* ═══════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════ */
+:root {
+  /* ── Palette ── */
+  --void:        #050507;
+  --surface:     #111118;
+  --surface-2:   #0d0d14;
+  --border:      rgba(255,255,255,0.06);
+  --border-glow: rgba(255,255,255,0.12);
+  --text-prime:  #f0eee8;
+  --text-dim:    #7a7890;
+  --text-ghost:  #3a3850;
+  --gold:        #c9a96e;
+  --gold-mid:    #a87c42;
+  --gold-dim:    rgba(201,169,110,0.35);
+  --gold-ghost:  rgba(201,169,110,0.10);
+  --teal:        #6ecdc4;
+  --violet:      #9b8ec4;
+
+  /* ── Breathing rhythm ── */
+  --breath-speed: 6s;   /* default; overridden by updateAppTheme() */
+
+  /* ── Glass system ── */
+  --glass-bg:         rgba(17,17,24,0.55);
+  --glass-bg-deep:    rgba(10,10,16,0.72);
+  --glass-border:     rgba(255,255,255,0.07);
+  --glass-border-hi:  rgba(255,255,255,0.13);
+  --glass-blur:       blur(20px);
+  --glass-specular:   0 1px 0 rgba(255,255,255,0.07) inset;
+
+  /* ── Shadow depth scale ── */
+  --shadow-sm:  0 2px 8px  rgba(0,0,0,0.28), 0 1px 2px rgba(0,0,0,0.18);
+  --shadow-md:  0 8px 24px rgba(0,0,0,0.38), 0 2px 6px  rgba(0,0,0,0.22);
+  --shadow-lg:  0 20px 56px rgba(0,0,0,0.52), 0 4px 12px rgba(0,0,0,0.28);
+  --shadow-gold: 0 8px 28px rgba(201,169,110,0.22), 0 2px 6px rgba(201,169,110,0.12);
+
+  /* ── Typography scale ── */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-ui:      'Figtree', sans-serif;
+  --tracking-wide:   0.18em;
+  --tracking-wider:  0.24em;
+  --tracking-widest: 0.38em;
+  --leading-tight:   1.08;
+  --leading-body:    1.68;
+  --leading-loose:   1.82;
+}
+
+/* ═══════════════════════════════════════════
+   RESET
+═══════════════════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box; margin: 0; padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+html, body {
+  height: 100%;
+  background: var(--void);
+  color: var(--text-prime);
+  font-family: 'Figtree', sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+  touch-action: pan-y;
+  /* iOS: Ekranın tamamını kullan */
+  -webkit-text-size-adjust: 100%;
+}
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 9999;
+}
+
+/* ═══════════════════════════════════════════
+   CANVAS
+═══════════════════════════════════════════ */
+#gen-canvas {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 0; display: block;
+}
+#touch-layer {
+  position: fixed; inset: 0;
+  z-index: 20; display: none;
+  pointer-events: none;
+}
+#touch-layer.on { display: block; }
+
+/* ═══════════════════════════════════════════
+   HEADPHONES BANNER
+═══════════════════════════════════════════ */
+#hp-banner {
+  position: fixed;
+  top: 0; left: 0; right: 0; z-index: 500;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: calc(10px + env(safe-area-inset-top)) 16px 10px;
+  background: var(--glass-bg-deep);
+  backdrop-filter: var(--glass-blur) saturate(180%);
+  -webkit-backdrop-filter: var(--glass-blur) saturate(180%);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, var(--shadow-md);
+  font-size: 10.5px; letter-spacing: 0.08em;
+  color: var(--text-dim);
+  transform: translateY(-100%);
+  transition: transform .6s cubic-bezier(.4,0,.2,1);
+}
+#hp-banner.show { transform: translateY(0); }
+#hp-banner .hp-icon { font-size: 14px; flex-shrink: 0; }
+#hp-banner .hp-close {
+  margin-left: auto; cursor: pointer; padding: 2px 6px;
+  color: var(--text-ghost); font-size: 14px;
+  flex-shrink: 0; transition: color .2s;
+}
+#hp-banner .hp-close:hover { color: var(--gold); }
+
+/* ═══════════════════════════════════════════
+   SCREEN SYSTEM
+═══════════════════════════════════════════ */
+.screen {
+  position: fixed; inset: 0;
+  display: flex; align-items: flex-start; justify-content: center;
+  z-index: 10;
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  transition: opacity .7s cubic-bezier(.4,0,.2,1),
+              transform .7s cubic-bezier(.4,0,.2,1);
+}
+.screen.off { opacity:0; transform:translateY(18px); pointer-events:none; }
+.screen.on  { opacity:1; transform:translateY(0); }
+
+.inner {
+  width: 100%; max-width: 460px;
+  /* Safe area: üstte notch, altta home indicator boşluğu */
+  padding: calc(56px + env(safe-area-inset-top)) 24px calc(64px + env(safe-area-inset-bottom));
+  padding-left:  calc(24px + env(safe-area-inset-left));
+  padding-right: calc(24px + env(safe-area-inset-right));
+  display: flex; flex-direction: column; align-items: center;
+  min-height: 100%;
+}
+
+/* ═══════════════════════════════════════════
+   TYPOGRAPHY
+═══════════════════════════════════════════ */
+.display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: var(--leading-tight);
+  letter-spacing: -0.025em;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'onum' 1;
+  text-rendering: optimizeLegibility;
+}
+.display em {
+  font-style: italic;
+  letter-spacing: -0.03em;
+}
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+/* Utility label sizes */
+.label-xs {
+  font-size: 9px; font-weight: 400;
+  letter-spacing: var(--tracking-wide); text-transform: uppercase;
+}
+.label-sm {
+  font-size: 10.5px; font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+/* ═══════════════════════════════════════════
+   ANIMATIONS
+═══════════════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(20px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.a1{animation:fadeUp .75s .05s ease both}
+.a2{animation:fadeUp .75s .17s ease both}
+.a3{animation:fadeUp .75s .29s ease both}
+.a4{animation:fadeUp .75s .41s ease both}
+.a5{animation:fadeUp .75s .53s ease both}
+.a6{animation:fadeUp .75s .65s ease both}
+.a7{animation:fadeUp .75s .77s ease both}
+
+/* ═══════════════════════════════════════════
+   MOOD INPUT SCREEN
+═══════════════════════════════════════════ */
+.brand { text-align:center; margin-bottom:52px; width:100%; flex-shrink:0; }
+.brand-ring {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:48px; height:48px; border-radius:50%;
+  background: radial-gradient(ellipse at 38% 28%, rgba(201,169,110,0.08), transparent 65%);
+  border:1px solid var(--gold-dim);
+  box-shadow: var(--glass-specular), 0 0 32px rgba(201,169,110,0.08);
+  position:relative; margin-bottom:16px; flex-shrink:0;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+.brand-ring::before {
+  content:''; position:absolute; inset:8px;
+  border-radius:50%; border:1px solid rgba(201,169,110,0.12);
+}
+.brand-dot {
+  width:5px; height:5px; border-radius:50%;
+  background: radial-gradient(circle at 35% 35%, #f0d090, var(--gold));
+  box-shadow: 0 0 10px var(--gold), 0 0 22px rgba(201,169,110,0.4);
+}
+.brand-name {
+  font-family: var(--font-display);
+  font-size:11px; font-weight:400;
+  letter-spacing: var(--tracking-widest);
+  text-transform:uppercase; color:var(--gold); display:block;
+  text-shadow: 0 0 24px rgba(201,169,110,0.3);
+}
+
+.mood-question { width:100%; margin-bottom:40px; min-height:112px; flex-shrink:0; }
+.mood-question .eyebrow { margin-bottom:12px; }
+.mood-question h1 {
+  font-size: clamp(36px,9.5vw,52px);
+  margin-bottom:12px;
+  text-shadow: 0 2px 32px rgba(0,0,0,0.5);
+}
+.mood-question p  {
+  font-size:13.5px; color:var(--text-dim);
+  line-height: var(--leading-body);
+  letter-spacing: 0.01em;
+}
+
+.mood-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:9px; width:100%; margin-bottom:28px; flex-shrink:0;
+}
+.mood-chip {
+  min-height:90px; flex-shrink:0;
+  padding:17px 8px 14px;
+  background: var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:16px; text-align:center; cursor:pointer;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  touch-action: manipulation;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-specular), var(--shadow-sm);
+  transition: border-color .28s, transform .25s, background .28s, box-shadow .32s;
+}
+.mood-chip:hover {
+  border-color: var(--gold-dim);
+  transform: translateY(-3px);
+  box-shadow: var(--glass-specular), var(--shadow-md), 0 0 20px rgba(201,169,110,0.06);
+}
+.mood-chip.sel {
+  border-color: var(--gold);
+  background: linear-gradient(160deg, rgba(201,169,110,0.14) 0%, rgba(201,169,110,0.06) 100%);
+  box-shadow: var(--glass-specular), var(--shadow-gold);
+}
+.mood-chip .ic   { font-size:26px; display:block; margin-bottom:7px; line-height:1; }
+.mood-chip .lbl  {
+  font-size:10px; letter-spacing:0.06em;
+  color:var(--text-dim); transition:color .25s;
+  font-weight: 400;
+}
+.mood-chip.sel .lbl { color:var(--gold); }
+
+.textarea-wrap {
+  position:relative; width:100%; margin-bottom:24px;
+  min-height:112px; flex-shrink:0;
+}
+.textarea-label {
+  position:absolute; top:-9px; left:16px;
+  padding:0 6px; background:var(--void);
+  font-size:9px; letter-spacing: var(--tracking-wide);
+  text-transform:uppercase; color:var(--text-dim); z-index:1;
+  font-weight: 500;
+}
+.mood-textarea {
+  width:100%; height:104px;
+  background: var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:18px; padding:18px 20px;
+  color:var(--text-prime);
+  font-family: var(--font-ui);
+  font-size:16px; font-weight:300;
+  line-height: var(--leading-body);
+  resize:none; outline:none;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-specular);
+  transition: border-color .35s, box-shadow .35s;
+  touch-action: manipulation;
+}
+.mood-textarea::placeholder { color:var(--text-ghost); font-style:italic; }
+.mood-textarea:focus {
+  border-color: var(--gold-dim);
+  box-shadow: var(--glass-specular), 0 0 0 3px rgba(201,169,110,0.07), 0 0 28px rgba(201,169,110,0.06);
+}
+
+.cta-btn {
+  width:100%; padding:20px 32px; flex-shrink:0;
+  background: linear-gradient(135deg, #d4a95a 0%, var(--gold) 35%, #9a6e30 100%);
+  border:none; border-radius:16px;
+  color: rgba(6,4,0,0.9);
+  font-family: var(--font-ui);
+  font-size:11px; font-weight:600;
+  letter-spacing: var(--tracking-wider);
+  text-transform:uppercase;
+  cursor:pointer; position:relative; overflow:hidden;
+  touch-action: manipulation;
+  box-shadow: 0 1px 0 rgba(255,220,140,0.35) inset,
+              0 -1px 0 rgba(0,0,0,0.2) inset,
+              var(--shadow-gold);
+  transition: transform .28s cubic-bezier(.4,0,.2,1), box-shadow .28s;
+}
+/* Top specular sweep */
+.cta-btn::before {
+  content:''; position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.04) 55%, transparent 100%);
+  pointer-events:none;
+}
+/* Hover shimmer */
+.cta-btn::after {
+  content:''; position:absolute; top:0; left:-100%; width:60%; height:100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
+  transition: left 0s;
+}
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 0 rgba(255,220,140,0.35) inset,
+              0 -1px 0 rgba(0,0,0,0.2) inset,
+              0 20px 56px rgba(201,169,110,0.36), 0 4px 12px rgba(201,169,110,0.18);
+}
+.cta-btn:hover::after { left:160%; transition:left .55s ease; }
+.cta-btn:active { transform:translateY(0); }
+
+/* ═══════════════════════════════════════════
+   SANCTUARY SCREEN
+═══════════════════════════════════════════ */
+.sanctuary-inner {
+  max-width:480px;
+  padding: calc(44px + env(safe-area-inset-top)) calc(24px + env(safe-area-inset-right)) calc(56px + env(safe-area-inset-bottom)) calc(24px + env(safe-area-inset-left));
+  display:flex; flex-direction:column; align-items:center;
+}
+
+.mood-badge-wrap { min-height:36px; flex-shrink:0; display:flex; align-items:center; margin-bottom:16px; }
+.mood-badge {
+  display:inline-flex; align-items:center; gap:7px;
+  padding:6px 18px;
+  background: linear-gradient(135deg, rgba(201,169,110,0.14), rgba(201,169,110,0.07));
+  border:1px solid var(--gold-dim);
+  border-radius:100px;
+  font-family: var(--font-ui);
+  font-size:11px; color:var(--gold); letter-spacing:0.1em; font-weight:400;
+  box-shadow: var(--glass-specular), 0 4px 16px rgba(201,169,110,0.1);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.freq-badge-wrap { min-height:28px; flex-shrink:0; display:flex; align-items:center; margin-bottom:28px; }
+.freq-badge {
+  display:inline-flex; align-items:center; gap:7px;
+  padding:5px 16px;
+  background: var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:100px;
+  font-size:9px; letter-spacing: var(--tracking-wide);
+  color:var(--text-ghost); text-transform:uppercase; transition:all .5s;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-specular);
+}
+.freq-badge.on {
+  border-color:var(--gold-dim); color:var(--gold);
+  background: linear-gradient(135deg, rgba(201,169,110,0.12), rgba(201,169,110,0.05));
+  box-shadow: var(--glass-specular), 0 0 20px rgba(201,169,110,0.12);
+}
+.freq-dot {
+  width:5px; height:5px; border-radius:50%;
+  background:var(--text-ghost); transition:background .5s, box-shadow .5s;
+}
+.freq-badge.on .freq-dot {
+  background: radial-gradient(circle at 35% 35%, #f0d090, var(--gold));
+  box-shadow:0 0 8px var(--gold), 0 0 14px rgba(201,169,110,0.5);
+  animation:blink 2.2s ease-in-out infinite;
+}
+@keyframes blink {
+  0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.65)}
+}
+
+/* Breathing orb */
+.breath-wrap {
+  position:relative; width:180px; height:180px; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:20px;
+}
+/* ── Breathing rings: transition-only, NO keyframe conflict ── */
+.b-ring {
+  position: absolute; border-radius: 50%; border: 1px solid var(--gold-ghost);
+  /* Animasyon YOK — sadece CSS transition. Keyframe + class transform çakışmasını önler. */
+  transform: scale(1); opacity: 0.45;
+  will-change: transform, opacity;
+}
+.b-ring-1 {
+  width: 180px; height: 180px;
+  transition: transform var(--breath-dur, 4s) ease-in-out,
+              opacity   var(--breath-dur, 4s) ease-in-out;
+}
+.b-ring-2 {
+  width: 140px; height: 140px; border-color: var(--gold-dim);
+  transition: transform var(--breath-dur, 4s) ease-in-out,
+              opacity   var(--breath-dur, 4s) ease-in-out;
+  transition-delay: 0.12s;
+}
+.b-ring-3 {
+  width: 100px; height: 100px; border-color: var(--gold);
+  box-shadow: 0 0 28px var(--gold-ghost);
+  transition: transform var(--breath-dur, 4s) ease-in-out,
+              opacity   var(--breath-dur, 4s) ease-in-out;
+  transition-delay: 0.24s;
+}
+/* Faz sınıfları — JS'ten cycle süresine göre --breath-dur CSS var ile güncellenir */
+.breath-wrap.breath-inhale .b-ring { transform: scale(1.14); opacity: 1; }
+.breath-wrap.breath-exhale .b-ring { transform: scale(0.86); opacity: 0.35; }
+.breath-wrap.breath-hold   .b-ring { transform: scale(1.0);  opacity: 0.65; }
+/* Idle (play öncesi) — hafif nabız, sadece CSS animasyon */
+@keyframes idlePulse {
+  0%,100% { transform: scale(1);    opacity: .35; }
+  50%     { transform: scale(1.04); opacity: .65; }
+}
+.breath-wrap.breath-idle .b-ring-1 { animation: idlePulse 5s ease-in-out infinite; }
+.breath-wrap.breath-idle .b-ring-2 { animation: idlePulse 5s ease-in-out infinite .4s; }
+.breath-wrap.breath-idle .b-ring-3 { animation: idlePulse 5s ease-in-out infinite .8s; }
+.b-core {
+  width:52px; height:52px; border-radius:50%; flex-shrink:0;
+  background:radial-gradient(circle at 38% 38%, #e8c98a, #9a6e30);
+  box-shadow:0 0 32px var(--gold-dim);
+  display:flex; align-items:center; justify-content:center;
+  font-size:20px; position:relative; z-index:1;
+  transition:transform .1s ease-out, box-shadow .1s ease-out;
+}
+
+.breath-guide-wrap { min-height:22px; flex-shrink:0; margin-bottom:20px; display:flex; align-items:center; }
+.breath-guide {
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--text-ghost); transition:color .4s;
+}
+.breath-guide.on { color:var(--gold); }
+
+/* Waveform */
+.waveform { display:flex; align-items:center; gap:3px; height:30px; flex-shrink:0; margin-bottom:20px; }
+.wbar {
+  width:3px; border-radius:4px; background:var(--text-ghost);
+  height:4px; flex-shrink:0; transition:background .4s;
+}
+.wbar.on {
+  background:var(--gold);
+  animation:waveAnim var(--dur) ease-in-out infinite alternate;
+  animation-delay:var(--del);
+}
+@keyframes waveAnim {
+  from{height:4px;opacity:.4} to{height:var(--h);opacity:1}
+}
+
+/* Play button */
+.play-wrap { display:flex; flex-direction:column; align-items:center; gap:10px; flex-shrink:0; margin-bottom:18px; }
+.play-btn {
+  position:relative; width:72px; height:72px; border-radius:50%; flex-shrink:0;
+  background: radial-gradient(ellipse at 40% 30%, rgba(201,169,110,0.06), transparent 60%),
+              var(--glass-bg);
+  border:1px solid rgba(201,169,110,0.28);
+  cursor:pointer; display:flex; align-items:center; justify-content:center;
+  outline:none; touch-action: manipulation;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.08) inset,
+              0 -1px 0 rgba(0,0,0,0.2) inset,
+              var(--shadow-md);
+  transition: all .32s cubic-bezier(.4,0,.2,1);
+}
+.play-btn::before {
+  content:''; position:absolute; inset:-8px; border-radius:50%;
+  border:1px solid rgba(201,169,110,0.1); transition:all .32s;
+}
+.play-btn:hover {
+  border-color: var(--gold);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset,
+              0 -1px 0 rgba(0,0,0,0.2) inset,
+              0 0 32px rgba(201,169,110,0.2), var(--shadow-md);
+}
+.play-btn:hover::before { inset:-14px; border-color:var(--gold-dim); }
+.play-btn.on {
+  background: radial-gradient(ellipse at 40% 30%, rgba(201,169,110,0.18), rgba(201,169,110,0.06) 70%);
+  border-color: var(--gold);
+  box-shadow: 0 1px 0 rgba(255,220,140,0.2) inset,
+              0 -1px 0 rgba(0,0,0,0.2) inset,
+              0 0 48px rgba(201,169,110,0.28), var(--shadow-gold);
+}
+.play-btn.on::before { animation:ringPulse 2.2s ease-in-out infinite; }
+@keyframes ringPulse {
+  0%{inset:-8px;opacity:1;border-color:var(--gold-dim)} 100%{inset:-28px;opacity:0;border-color:transparent}
+}
+.play-icon {
+  font-size:22px; color:var(--gold); margin-left:3px;
+  transition:margin .2s; user-select:none; line-height:1;
+  filter: drop-shadow(0 0 6px rgba(201,169,110,0.5));
+}
+.play-btn.on .play-icon { margin-left:0; }
+.play-lbl {
+  font-size:9px; letter-spacing: var(--tracking-wider);
+  text-transform:uppercase; color:var(--text-ghost);
+  transition:color .3s; font-weight:500;
+}
+
+/* Pills row */
+.pills-row { display:flex; align-items:center; gap:10px; min-height:36px; flex-shrink:0; margin-bottom:28px; }
+.pill {
+  display:flex; align-items:center; gap:6px; padding:6px 16px; flex-shrink:0;
+  background: var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:100px; font-size:9.5px; letter-spacing:0.1em;
+  text-transform:uppercase; color:var(--text-ghost); transition:all .45s;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-specular);
+  font-weight: 400;
+}
+.pill.on     { border-color:rgba(110,205,196,0.5); color:var(--teal);   background:rgba(110,205,196,.08); box-shadow:var(--glass-specular),0 0 16px rgba(110,205,196,0.1); }
+.pill-b.on   { border-color:rgba(155,142,196,0.5); color:var(--violet); background:rgba(155,142,196,.08); box-shadow:var(--glass-specular),0 0 16px rgba(155,142,196,0.1); }
+.pill-icon { font-size:12px; }
+
+.div-line { width:44px; height:1px; background:linear-gradient(90deg,transparent,var(--gold-dim),transparent); flex-shrink:0; margin:0 auto 20px; }
+
+.sanc-title {
+  font-size:clamp(28px,7vw,44px); text-align:center; margin-bottom:12px;
+  min-height:54px; flex-shrink:0;
+  text-shadow: 0 2px 40px rgba(0,0,0,0.4);
+}
+.sanc-sub {
+  font-size:13px; color:var(--text-dim);
+  line-height: var(--leading-loose);
+  text-align:center; max-width:340px; margin-bottom:32px;
+  min-height:72px; flex-shrink:0;
+  letter-spacing: 0.01em;
+}
+
+.s-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; width:100%; margin-bottom:26px; flex-shrink:0; }
+.s-card {
+  background: var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:18px; padding:18px 10px; text-align:center; cursor:pointer;
+  min-height:90px; flex-shrink:0;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-specular), var(--shadow-sm);
+  transition: all .32s cubic-bezier(.4,0,.2,1); position:relative; overflow:hidden;
+}
+/* Top specular rim */
+.s-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:1px;
+  background: linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent);
+}
+/* Bottom gold accent */
+.s-card::after {
+  content:''; position:absolute; bottom:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:0; transition:opacity .3s;
+}
+.s-card:hover {
+  border-color: var(--glass-border-hi);
+  transform:translateY(-3px);
+  box-shadow: var(--glass-specular), var(--shadow-md);
+}
+.s-card:hover::after { opacity:1; }
+.s-card-ic  { font-size:22px; display:block; margin-bottom:8px; }
+.s-card-nm  { font-size:10px; color:var(--text-dim); letter-spacing:0.06em; margin-bottom:3px; font-weight:400; }
+.s-card-dur { font-size:9px; color:var(--text-ghost); letter-spacing:0.1em; }
+
+.affirm {
+  background: var(--glass-bg-deep);
+  border:1px solid var(--glass-border);
+  border-radius:22px; padding:28px 26px; width:100%; margin-bottom:28px;
+  position:relative; overflow:hidden; min-height:100px; flex-shrink:0;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-specular), var(--shadow-md);
+}
+.affirm::before {
+  content:'"'; position:absolute; top:-10px; left:16px;
+  font-family: var(--font-display); font-size:88px;
+  color:rgba(201,169,110,0.08); line-height:1; pointer-events:none;
+}
+.affirm-text {
+  font-family: var(--font-display);
+  font-size:18px; font-weight:300; font-style:italic;
+  color:var(--text-prime); line-height:1.7; position:relative; z-index:1;
+  text-shadow: 0 1px 12px rgba(0,0,0,0.3);
+}
+
+.back-btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:12px 24px; flex-shrink:0;
+  background: var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:100px;
+  color:var(--text-dim); font-family: var(--font-ui);
+  font-size:10.5px; letter-spacing: var(--tracking-wide);
+  text-transform:uppercase; cursor:pointer; touch-action: manipulation;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-specular);
+  transition: all .3s; font-weight:400;
+}
+.back-btn:hover {
+  border-color:var(--gold-dim); color:var(--gold);
+  box-shadow: var(--glass-specular), 0 0 20px rgba(201,169,110,0.08);
+}
+
+/* ═══════════════════════════════════════════
+   SLEEP TIMER
+═══════════════════════════════════════════ */
+.sleep-timer-row {
+  display:flex; align-items:center; gap:8px;
+  width:100%; justify-content:center;
+  margin-bottom:18px; flex-shrink:0; flex-wrap:wrap;
+}
+.sleep-timer-label {
+  font-size:9.5px; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--text-ghost); width:100%; text-align:center; margin-bottom:4px;
+}
+.stimer-btn {
+  padding:6px 14px; background:var(--surface); border:1px solid var(--border);
+  border-radius:100px; font-size:10px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--text-ghost); cursor:pointer; transition:all .3s; font-family:'Figtree',sans-serif;
+}
+.stimer-btn:hover { border-color:var(--gold-dim); color:var(--gold); }
+.stimer-btn.active { border-color:var(--violet); color:var(--violet); background:rgba(155,142,196,.1); }
+.stimer-btn.fading { border-color:var(--teal); color:var(--teal); background:rgba(110,205,196,.08);
+  animation:blink 1.8s ease-in-out infinite; }
+#stimer-status {
+  font-size:9.5px; letter-spacing:.14em; color:var(--text-ghost);
+  text-align:center; width:100%; margin-top:2px; min-height:14px; transition:color .4s;
+}
+#stimer-status.active { color:var(--violet); }
+#stimer-status.fading { color:var(--teal); }
+
+/* ═══════════════════════════════════════════
+   ANALYTICS SCREEN
+═══════════════════════════════════════════ */
+.analytics-header { text-align:center; margin-bottom:32px; width:100%; }
+.analytics-header h2 {
+  font-family:'Cormorant Garamond',serif; font-size:clamp(28px,7vw,38px);
+  font-weight:300; margin-bottom:8px;
+}
+.analytics-header p { font-size:12px; color:var(--text-dim); letter-spacing:.08em; }
+
+.analytics-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:9px; width:100%; margin-bottom:24px;
+}
+.astat {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:14px; padding:16px 8px; text-align:center;
+}
+.astat-val {
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px; font-weight:300; color:var(--gold); line-height:1.1; display:block;
+}
+.astat-lbl { font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-ghost); margin-top:4px; display:block; }
+
+.chart-wrap {
+  width:100%; background:var(--surface); border:1px solid var(--border);
+  border-radius:16px; padding:20px 16px; margin-bottom:20px;
+}
+.chart-title { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--text-dim); margin-bottom:16px; }
+#analytics-canvas { width:100%; display:block; }
+
+.mood-log-list { width:100%; margin-bottom:24px; }
+.log-item {
+  display:flex; align-items:center; gap:10px; padding:10px 0;
+  border-bottom:1px solid var(--border);
+}
+.log-item:last-child { border-bottom:none; }
+.log-emoji { font-size:18px; flex-shrink:0; }
+.log-info { flex:1; min-width:0; }
+.log-mood { font-size:12px; color:var(--text-prime); margin-bottom:2px; }
+.log-meta { font-size:10px; color:var(--text-ghost); letter-spacing:.06em; }
+.log-dur { font-size:11px; color:var(--gold); margin-left:auto; flex-shrink:0; }
+
+.clear-data-btn {
+  padding:9px 22px; background:transparent; border:1px solid rgba(255,80,80,.2);
+  border-radius:100px; color:rgba(255,100,100,.5); font-family:'Figtree',sans-serif;
+  font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+  cursor:pointer; transition:all .3s; margin-bottom:16px;
+}
+.clear-data-btn:hover { border-color:rgba(255,80,80,.5); color:rgba(255,120,120,.8); }
+
+/* ═══════════════════════════════════════════
+   NOTIFICATION TOAST
+═══════════════════════════════════════════ */
+#notif-toast {
+  position:fixed; bottom:calc(24px + env(safe-area-inset-bottom)); left:50%; transform:translateX(-50%) translateY(140px);
+  background: var(--glass-bg-deep);
+  border:1px solid var(--glass-border-hi);
+  border-radius:22px; padding:18px 22px;
+  width:calc(100% - 48px); max-width:380px;
+  z-index:600; transition:transform .5s cubic-bezier(.4,0,.2,1);
+  backdrop-filter: var(--glass-blur) saturate(160%);
+  -webkit-backdrop-filter: var(--glass-blur) saturate(160%);
+  box-shadow: var(--glass-specular), var(--shadow-lg);
+  will-change: transform;
+}
+#notif-toast.show { transform:translateX(-50%) translateY(0); }
+#notif-toast .nt-title {
+  font-size:12px; font-weight:500; color:var(--text-prime);
+  margin-bottom:5px; letter-spacing:0.05em;
+}
+#notif-toast .nt-body {
+  font-size:11.5px; color:var(--text-dim);
+  line-height: var(--leading-body); margin-bottom:16px;
+}
+#notif-toast .nt-actions { display:flex; gap:8px; justify-content:flex-end; }
+#notif-toast .nt-yes {
+  padding:8px 20px;
+  background: linear-gradient(135deg, rgba(201,169,110,0.18), rgba(201,169,110,0.09));
+  border:1px solid var(--gold-dim);
+  border-radius:100px; color:var(--gold);
+  font-family: var(--font-ui); font-size:9.5px;
+  letter-spacing: var(--tracking-wide); text-transform:uppercase; cursor:pointer;
+  box-shadow: var(--glass-specular); transition:all .3s;
+}
+#notif-toast .nt-yes:hover { background:rgba(201,169,110,0.24); box-shadow:var(--glass-specular),0 0 16px rgba(201,169,110,0.12); }
+#notif-toast .nt-no {
+  padding:8px 16px; background:transparent;
+  border:1px solid var(--glass-border);
+  border-radius:100px; color:var(--text-ghost);
+  font-family: var(--font-ui); font-size:9.5px;
+  letter-spacing: var(--tracking-wide); text-transform:uppercase; cursor:pointer;
+}
+
+/* ═══════════════════════════════════════════
+   HEALTH EXPORT MODAL
+═══════════════════════════════════════════ */
+#health-modal {
+  position:fixed; inset:0; z-index:700; background:rgba(5,5,7,.85);
+  backdrop-filter:blur(16px); display:flex; align-items:flex-end; justify-content:center;
+  opacity:0; pointer-events:none; transition:opacity .4s;
+}
+#health-modal.show { opacity:1; pointer-events:all; }
+.health-sheet {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:24px 24px 0 0; padding:28px 24px 40px;
+  width:100%; max-width:480px;
+  transform:translateY(100%); transition:transform .45s cubic-bezier(.4,0,.2,1);
+}
+#health-modal.show .health-sheet { transform:translateY(0); }
+.health-sheet h3 {
+  font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:300;
+  margin-bottom:6px; text-align:center;
+}
+.health-sheet .hs-sub { font-size:11px; color:var(--text-dim); text-align:center; margin-bottom:20px; letter-spacing:.06em; }
+.health-json {
+  background:var(--void); border:1px solid var(--border); border-radius:12px;
+  padding:14px 16px; font-family:monospace; font-size:10.5px; color:var(--teal);
+  white-space:pre-wrap; word-break:break-all; max-height:160px; overflow-y:auto;
+  margin-bottom:16px; line-height:1.6;
+}
+.hs-actions { display:flex; gap:10px; }
+.hs-copy {
+  flex:1; padding:13px; background:var(--gold-ghost); border:1px solid var(--gold-dim);
+  border-radius:12px; color:var(--gold); font-family:'Figtree',sans-serif;
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase; cursor:pointer;
+  transition:all .3s;
+}
+.hs-copy:hover { background:rgba(201,169,110,.2); }
+.hs-close {
+  padding:13px 18px; background:transparent; border:1px solid var(--border);
+  border-radius:12px; color:var(--text-ghost); font-family:'Figtree',sans-serif;
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase; cursor:pointer;
+}
+
+/* Analytics button inside sanctuary */
+/* ── Premium Sound Cards ── */
+.sounds-section { width:100%; margin-bottom:24px; flex-shrink:0; }
+.sounds-section-title {
+  font-size:9px; letter-spacing: var(--tracking-wider); text-transform:uppercase;
+  color:var(--text-dim); margin-bottom:12px; display:flex; align-items:center; gap:10px;
+  font-weight:500;
+}
+.sounds-section-title::after {
+  content:''; flex:1; height:1px;
+  background: linear-gradient(90deg, var(--glass-border), transparent);
+}
+.s-sounds-grid {
+  display:grid; grid-template-columns:repeat(2,1fr);
+  gap:9px; width:100%;
+}
+.s-card.premium {
+  border-color: rgba(201,169,110,0.14);
+  background: linear-gradient(160deg,
+    rgba(201,169,110,0.07) 0%,
+    rgba(17,17,24,0.55) 100%);
+}
+.s-card.premium:hover {
+  border-color: var(--gold-dim);
+  box-shadow: var(--glass-specular), var(--shadow-md), 0 0 24px rgba(201,169,110,0.08);
+}
+.s-card-lock {
+  position:absolute; top:9px; right:10px;
+  font-size:12px; line-height:1; opacity:0.85;
+  z-index:2;
+  filter: drop-shadow(0 0 6px rgba(201,169,110,0.8)) drop-shadow(0 1px 3px rgba(0,0,0,0.6));
+  pointer-events:none;
+}
+.s-card-tag {
+  font-size:8.5px; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--gold); margin-top:2px; opacity:.7;
+}
+
+/* Analytics link */
+.analytics-link {
+  display:inline-flex; align-items:center; gap:6px;
+  font-size:9.5px; letter-spacing: var(--tracking-wide); text-transform:uppercase;
+  color:var(--text-ghost); cursor:pointer; margin-bottom:16px;
+  padding:8px 18px;
+  background: var(--glass-bg);
+  border:1px solid var(--glass-border);
+  border-radius:100px; transition:all .3s;
+  font-family: var(--font-ui); font-weight:400;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-specular);
+}
+.analytics-link:hover {
+  color:var(--gold); border-color:var(--gold-dim);
+  box-shadow: var(--glass-specular), 0 0 16px rgba(201,169,110,0.08);
+}
+
+/* ═══════════════════════════════════════════
+   AI ORACLE — REFINED GLASS
+═══════════════════════════════════════════ */
+.ai-oracle { width:100%; margin-bottom:28px; flex-shrink:0; position:relative; }
+.ai-oracle-header {
+  display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;
+}
+.ai-oracle-title {
+  font-size:9px; letter-spacing: var(--tracking-wider); text-transform:uppercase;
+  color:var(--text-dim); display:flex; align-items:center; gap:8px; font-weight:500;
+}
+.ai-oracle-title::before {
+  content:''; display:inline-block; width:6px; height:6px; border-radius:50%;
+  background: radial-gradient(circle at 35% 35%, #c4b8e8, #7b6ec4);
+  box-shadow: 0 0 8px rgba(155,142,196,.7), 0 0 16px rgba(155,142,196,.3);
+  animation: aiDot 2.4s ease-in-out infinite;
+}
+@keyframes aiDot {
+  0%,100%{ box-shadow:0 0 8px rgba(155,142,196,.7), 0 0 16px rgba(155,142,196,.3); }
+  50%    { box-shadow:0 0 14px rgba(110,205,196,.9), 0 0 28px rgba(110,205,196,.4); }
+}
+.ai-oracle-badge {
+  font-size:8px; letter-spacing: var(--tracking-wide); text-transform:uppercase;
+  padding:4px 12px;
+  background: rgba(155,142,196,0.1);
+  border:1px solid rgba(155,142,196,0.22);
+  border-radius:100px; color:var(--violet);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset;
+  font-weight:500;
+}
+
+/* AI card — deep glass with scan line */
+.ai-card {
+  background: linear-gradient(160deg,
+    rgba(155,142,196,0.08) 0%,
+    rgba(10,10,16,0.65) 100%);
+  border:1px solid rgba(155,142,196,0.16);
+  border-radius:22px; padding:22px;
+  position:relative; overflow:hidden;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 0 0 1px rgba(155,142,196,0.06) inset,
+    var(--shadow-lg);
+}
+/* Top specular rim */
+.ai-card::after {
+  content:''; position:absolute; top:0; left:0; right:0; height:1px;
+  background: linear-gradient(90deg, transparent, rgba(155,142,196,0.4), rgba(110,205,196,0.3), transparent);
+  pointer-events:none;
+}
+/* Animated scan line */
+.ai-card::before {
+  content:''; position:absolute; top:0; left:-60%; width:55%; height:1px;
+  background:linear-gradient(90deg,transparent,rgba(155,142,196,.55),rgba(110,205,196,.35),transparent);
+  animation:aiScan 4s ease-in-out infinite; pointer-events:none;
+}
+@keyframes aiScan {
+  0%  { left:-60%; opacity:0; }
+  12% { opacity:1; }
+  88% { opacity:1; }
+  100%{ left:115%; opacity:0; }
+}
+
+/* AI Mic Button — STT bridge */
+.ai-mic-btn {
+  position: absolute; bottom: 12px; right: 12px;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(155,142,196,0.12);
+  border: 1px solid rgba(155,142,196,0.28);
+  color: rgba(155,142,196,0.75);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; touch-action: manipulation;
+  transition: all .25s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset;
+}
+.ai-mic-btn:hover {
+  background: rgba(155,142,196,0.22);
+  border-color: rgba(155,142,196,0.55);
+  color: var(--violet);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 0 14px rgba(155,142,196,0.18);
+}
+.ai-mic-btn.recording {
+  background: rgba(212,80,100,0.18);
+  border-color: rgba(212,80,100,0.5);
+  color: #d45064;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 0 16px rgba(212,80,100,0.28);
+  animation: micPulse 1.2s ease-in-out infinite;
+}
+@keyframes micPulse {
+  0%,100% { transform: scale(1); }
+  50%      { transform: scale(1.12); }
+}
+.ai-textarea-wrap { position:relative; margin-bottom:14px; }
+.ai-textarea { padding-right: 54px !important; }
+
+.ai-textarea-label {
+  position:absolute; top:-9px; left:14px; padding:0 6px;
+  background: rgba(10,10,16,0.9);
+  font-size:8.5px; letter-spacing: var(--tracking-wide);
+  text-transform:uppercase; color:rgba(155,142,196,0.75); z-index:1;
+  font-weight:500;
+}
+.ai-textarea {
+  width:100%; min-height:90px;
+  background: rgba(5,5,7,0.55);
+  border:1px solid rgba(155,142,196,0.18);
+  border-radius:16px; padding:16px 18px; color:var(--text-prime);
+  font-family: var(--font-ui); font-size:16px; font-weight:300;
+  line-height: var(--leading-body); resize:none; outline:none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset;
+  transition: border-color .3s, box-shadow .3s; touch-action:manipulation;
+}
+.ai-textarea::placeholder{ color:var(--text-ghost); font-style:italic; font-size:14px; }
+.ai-textarea:focus{
+  border-color: rgba(155,142,196,0.42);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset,
+              0 0 0 3px rgba(155,142,196,0.07),
+              0 0 24px rgba(155,142,196,0.06);
+}
+
+/* AI Generate button — indigo-teal luxury */
+.ai-generate-btn {
+  width:100%; padding:18px;
+  background: linear-gradient(135deg, #7c6fb5 0%, #4a8585 100%);
+  border:none; border-radius:16px;
+  color: rgba(255,255,255,0.94);
+  font-family: var(--font-ui); font-size:11px; font-weight:600;
+  letter-spacing: var(--tracking-wider); text-transform:uppercase;
+  cursor:pointer; position:relative; overflow:hidden; touch-action:manipulation;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.18) inset,
+    0 -1px 0 rgba(0,0,0,0.22) inset,
+    0 8px 28px rgba(107,95,160,0.3), 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform .28s cubic-bezier(.4,0,.2,1), box-shadow .28s, opacity .2s;
+}
+/* Top specular */
+.ai-generate-btn::after {
+  content:''; position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.14) 0%, transparent 55%);
+  pointer-events:none;
+}
+/* Hover shimmer */
+.ai-generate-btn::before {
+  content:''; position:absolute; top:0; left:-100%; width:60%; height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.16),transparent);
+}
+.ai-generate-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.18) inset,
+    0 -1px 0 rgba(0,0,0,0.22) inset,
+    0 16px 44px rgba(107,95,160,0.45), 0 4px 12px rgba(0,0,0,0.22);
+}
+.ai-generate-btn:hover::before{ left:160%; transition:left .55s ease; }
+.ai-generate-btn:active{ transform:translateY(0); opacity:.85; }
+.ai-generate-btn:disabled{ opacity:.38; cursor:not-allowed; transform:none; }
+
+/* AI Result panel */
+.ai-result {
+  margin-top:14px; padding:16px 18px;
+  background: rgba(110,205,196,0.05);
+  border:1px solid rgba(110,205,196,0.18);
+  border-radius:16px; display:none; flex-direction:column; gap:8px;
+  animation: fadeUp .5s ease both;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 rgba(110,205,196,0.08) inset;
+}
+.ai-result.show{ display:flex; }
+.ai-result-label{
+  font-size:8.5px; letter-spacing: var(--tracking-wider);
+  text-transform:uppercase; color:var(--teal); font-weight:500;
+}
+.ai-result-text{
+  font-family: var(--font-display); font-size:16px;
+  font-weight:300; font-style:italic;
+  color:var(--text-prime); line-height:1.65;
+}
+.ai-result-freq{ display:flex; gap:8px; flex-wrap:wrap; margin-top:2px; }
+.ai-freq-chip{
+  padding:4px 12px;
+  background: rgba(110,205,196,0.09);
+  border:1px solid rgba(110,205,196,0.22);
+  border-radius:100px; font-size:9px;
+  letter-spacing:0.12em; color:var(--teal);
+  text-transform:uppercase; font-weight:500;
+  box-shadow: 0 1px 0 rgba(110,205,196,0.08) inset;
+}
+
+/* ── AI Processing Overlay ── */
+#ai-processing{
+  position:fixed; inset:0; z-index:1800;
+  display:none; align-items:center; justify-content:center;
+  background:rgba(5,5,7,.88);
+  backdrop-filter:blur(28px); -webkit-backdrop-filter:blur(28px);
+}
+#ai-processing.show{display:flex; animation:fadeIn .3s ease both;}
+
+/* ── Brainwave pulse: the breathing orb glows when AI is thinking ── */
+@keyframes brainwavePulse {
+  0%   { box-shadow: 0 0 18px rgba(155,142,196,0.35), 0 0 36px rgba(110,205,196,0.15); transform: scale(0.98); }
+  25%  { box-shadow: 0 0 38px rgba(155,142,196,0.75), 0 0 72px rgba(110,205,196,0.35), 0 0 100px rgba(201,169,110,0.15); transform: scale(1.05); }
+  50%  { box-shadow: 0 0 24px rgba(110,205,196,0.55), 0 0 56px rgba(155,142,196,0.3);  transform: scale(1.02); }
+  75%  { box-shadow: 0 0 42px rgba(201,169,110,0.6),  0 0 80px rgba(155,142,196,0.35), 0 0 110px rgba(110,205,196,0.12); transform: scale(1.06); }
+  100% { box-shadow: 0 0 18px rgba(155,142,196,0.35), 0 0 36px rgba(110,205,196,0.15); transform: scale(0.98); }
+}
+@keyframes brainwaveRingPulse {
+  0%,100% { opacity: 0.45; transform: scale(1); }
+  50%     { opacity: 1;    transform: scale(1.04); }
+}
+/* Applied to b-core while AI is thinking */
+.b-core-ai-thinking {
+  animation: brainwavePulse 1.6s ease-in-out infinite !important;
+}
+/* Applied to breath-wrap rings while AI is thinking */
+.breath-wrap.ai-thinking .b-ring { animation: brainwaveRingPulse 1.6s ease-in-out infinite !important; }
+.breath-wrap.ai-thinking .b-ring:nth-child(2) { animation-delay: 0.22s !important; }
+.breath-wrap.ai-thinking .b-ring:nth-child(3) { animation-delay: 0.44s !important; }
+/* Gold glow halo behind orb during thinking */
+.breath-wrap.ai-thinking::after {
+  content: '';
+  position: absolute; inset: -18px; border-radius: 50%;
+  background: radial-gradient(ellipse at center,
+    rgba(155,142,196,0.18) 0%,
+    rgba(110,205,196,0.10) 45%,
+    transparent 75%);
+  animation: brainwaveRingPulse 2s ease-in-out infinite;
+  pointer-events: none; z-index: -1;
+}
+
+/* ── AI Thinking status label on sanctuary screen ── */
+#ai-thinking-label {
+  position: absolute; bottom: -26px; left: 50%; transform: translateX(-50%);
+  font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--violet); white-space: nowrap; opacity: 0;
+  transition: opacity 0.4s ease;
+  font-family: var(--font-ui); font-weight: 500;
+  text-shadow: 0 0 12px rgba(155,142,196,0.7);
+  pointer-events: none;
+}
+#ai-thinking-label.show { opacity: 1; }
+
+/* ── Voice button red glow when recording ── */
+.ai-mic-btn.recording {
+  background: rgba(212,80,100,0.18) !important;
+  border-color: rgba(255,60,80,0.7) !important;
+  color: #ff4060 !important;
+  box-shadow: 0 0 0 3px rgba(255,60,80,0.18),
+              0 0 20px rgba(255,60,80,0.42),
+              0 0 40px rgba(255,60,80,0.18) !important;
+  animation: micRecordGlow 1.1s ease-in-out infinite !important;
+}
+@keyframes micRecordGlow {
+  0%,100% { box-shadow: 0 0 0 3px rgba(255,60,80,0.18), 0 0 18px rgba(255,60,80,0.38), 0 0 36px rgba(255,60,80,0.15); }
+  50%     { box-shadow: 0 0 0 5px rgba(255,60,80,0.28), 0 0 32px rgba(255,60,80,0.65), 0 0 64px rgba(255,60,80,0.25); }
+}
+
+/* ── Fallback notification banner (non-intrusive) ── */
+#fallback-notice {
+  position: fixed; top: calc(env(safe-area-inset-top, 0px) + 8px); left: 50%;
+  transform: translateX(-50%) translateY(-80px);
+  z-index: 1900; display: flex; align-items: center; gap: 10px;
+  background: var(--glass-bg-deep);
+  border: 1px solid rgba(201,169,110,0.28);
+  border-radius: 100px; padding: 10px 18px;
+  font-size: 11px; letter-spacing: 0.04em; color: var(--gold);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 24px rgba(201,169,110,0.1);
+  transition: transform 0.5s cubic-bezier(0.34,1.3,0.64,1);
+  white-space: nowrap; pointer-events: none;
+  will-change: transform;
+}
+#fallback-notice.show { transform: translateX(-50%) translateY(0); }
+#fallback-notice .fn-icon { font-size: 14px; flex-shrink: 0; }
+
+/* ── Crossfade transition indicator (subtle) ── */
+#crossfade-indicator {
+  position: fixed; bottom: calc(env(safe-area-inset-bottom, 0px) + 80px); right: 16px;
+  z-index: 600; display: flex; align-items: center; gap: 6px;
+  font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--teal); opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none; font-family: var(--font-ui);
+}
+#crossfade-indicator.show { opacity: 1; }
+#crossfade-indicator .cf-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--teal);
+  animation: cfDot 0.7s ease-in-out infinite alternate;
+}
+@keyframes cfDot {
+  from { opacity: 0.3; transform: scale(0.7); }
+  to   { opacity: 1;   transform: scale(1.2); }
+}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+.ai-proc-inner{
+  display:flex; flex-direction:column; align-items:center; gap:28px;
+  padding:0 32px; text-align:center;
+}
+.ai-orb{
+  position:relative; width:120px; height:120px;
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.ai-orb-ring{position:absolute;border-radius:50%;border:1px solid transparent;}
+.ai-orb-ring-1{
+  width:120px; height:120px; border-color:rgba(155,142,196,.35);
+  animation:orbSpin 4s linear infinite;
+  box-shadow:0 0 12px rgba(155,142,196,.15);
+}
+.ai-orb-ring-2{
+  width:86px; height:86px; border-color:rgba(110,205,196,.4);
+  animation:orbSpin 2.8s linear infinite reverse;
+  box-shadow:0 0 10px rgba(110,205,196,.15);
+}
+.ai-orb-ring-3{
+  width:54px; height:54px; border-color:rgba(201,169,110,.5);
+  animation:orbSpin 1.8s linear infinite;
+  box-shadow:0 0 14px rgba(201,169,110,.2);
+}
+@keyframes orbSpin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+.ai-orb-ring-1::after{
+  content:''; position:absolute; top:-3px; left:50%; transform:translateX(-50%);
+  width:6px; height:6px; border-radius:50%;
+  background:var(--violet); box-shadow:0 0 10px var(--violet);
+}
+.ai-orb-ring-2::after{
+  content:''; position:absolute; bottom:-3px; left:50%; transform:translateX(-50%);
+  width:5px; height:5px; border-radius:50%;
+  background:var(--teal); box-shadow:0 0 10px var(--teal);
+}
+.ai-orb-ring-3::after{
+  content:''; position:absolute; top:-2.5px; left:50%; transform:translateX(-50%);
+  width:5px; height:5px; border-radius:50%;
+  background:var(--gold); box-shadow:0 0 8px var(--gold);
+}
+.ai-orb-core{
+  width:28px; height:28px; border-radius:50%;
+  background:radial-gradient(circle at 40% 40%,#b8a8e0,#5a4f8a);
+  box-shadow:0 0 24px rgba(155,142,196,.6);
+  animation:coreBreath 2s ease-in-out infinite; position:relative; z-index:1;
+}
+@keyframes coreBreath{
+  0%,100%{transform:scale(1);  box-shadow:0 0 24px rgba(155,142,196,.6);}
+  50%    {transform:scale(1.18);box-shadow:0 0 40px rgba(155,142,196,.9),0 0 60px rgba(110,205,196,.3);}
+}
+.ai-stars{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
+.ai-star{
+  position:absolute;border-radius:50%;background:white;
+  animation:starTwinkle var(--dur) ease-in-out infinite var(--del);
+}
+@keyframes starTwinkle{
+  0%,100%{opacity:0;transform:scale(0);}
+  50%    {opacity:var(--op);transform:scale(1);}
+}
+.ai-proc-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(22px,6vw,30px); font-weight:300;
+  color:var(--text-prime); line-height:1.2;
+}
+.ai-proc-title em{color:var(--violet);font-style:italic;}
+.ai-proc-sub{
+  font-size:11.5px; color:var(--text-dim); letter-spacing:.08em;
+  line-height:1.7; max-width:280px;
+}
+.ai-proc-dots span{
+  display:inline-block; animation:dotBounce 1.2s ease-in-out infinite; color:var(--violet);
+}
+.ai-proc-dots span:nth-child(2){animation-delay:.2s;}
+.ai-proc-dots span:nth-child(3){animation-delay:.4s;}
+@keyframes dotBounce{
+  0%,100%{opacity:.2;transform:translateY(0);}
+  50%    {opacity:1; transform:translateY(-4px);}
+}
+.ai-proc-wave{display:flex;align-items:center;gap:4px;height:32px;}
+.ai-proc-bar{
+  width:3px; border-radius:3px;
+  background:linear-gradient(180deg,var(--violet),var(--teal));
+  animation:procBar var(--dur) ease-in-out infinite alternate var(--del);
+}
+@keyframes procBar{from{height:4px;opacity:.35;}to{height:var(--h);opacity:1;}}
+
+/* ═══════════════════════════════════════════
+   PAYWALL OVERLAY — STEP 1
+═══════════════════════════════════════════ */
+
+#paywall-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  display: none;
+  align-items: center; justify-content: center;
+  background: rgba(4,3,8,0.88);
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+}
+#paywall-overlay.show {
+  display: flex;
+  animation: paywallFadeIn .4s cubic-bezier(.4,0,.2,1) both;
+}
+@keyframes paywallFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Full-screen sheet that scrolls internally ── */
+.paywall-sheet {
+  position: relative;
+  width: calc(100% - 32px); max-width: 440px;
+  max-height: calc(100dvh - 40px);
+  background: linear-gradient(170deg, #161224 0%, #0c0a15 55%, #0a0812 100%);
+  border: 1px solid rgba(201,169,110,0.20);
+  border-radius: 28px;
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  transform: translateY(28px) scale(0.96);
+  opacity: 0;
+  transition: transform .55s cubic-bezier(.34,1.3,.64,1), opacity .4s ease;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.7), 0 1px 0 rgba(255,255,255,0.07) inset;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+#paywall-overlay.show .paywall-sheet {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+/* Cinematic gold shimmer at the top */
+.paywall-sheet::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 240px;
+  background: radial-gradient(ellipse 80% 60% at 50% -10%,
+    rgba(201,169,110,0.18) 0%, transparent 70%);
+  pointer-events: none; z-index: 0; border-radius: 28px 28px 0 0;
+}
+
+/* ── Close button ── */
+.pw-close {
+  position: absolute; top: 16px; right: 16px; z-index: 10;
+  width: 32px; height: 32px;
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--text-dim); font-size: 15px;
+  transition: all .25s; font-family: 'Figtree', sans-serif; line-height: 1;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.pw-close:hover { background: rgba(255,255,255,0.14); color: var(--text-prime);
+  box-shadow: 0 0 16px rgba(255,255,255,0.08); }
+
+/* ── Hero ── */
+.pw-hero {
+  position: relative; z-index: 1;
+  padding: 44px 28px 24px;
+  text-align: center;
+}
+.pw-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 16px;
+  background: var(--gold-ghost); border: 1px solid var(--gold-dim);
+  border-radius: 100px; font-size: 9px; letter-spacing: .26em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
+  box-shadow: 0 0 20px rgba(201,169,110,0.10);
+}
+.pw-badge-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--gold); box-shadow: 0 0 8px var(--gold);
+  animation: blink 2s ease-in-out infinite;
+}
+.pw-hero h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(30px, 8.5vw, 42px);
+  font-weight: 300; line-height: 1.08;
+  color: var(--text-prime); margin-bottom: 10px; letter-spacing: -0.02em;
+}
+.pw-hero h2 em { color: var(--gold); font-style: italic; }
+.pw-hero p {
+  font-size: 12.5px; color: var(--text-dim);
+  line-height: 1.72; max-width: 280px; margin: 0 auto;
+}
+
+/* ── Feature list ── */
+.pw-features {
+  position: relative; z-index: 1;
+  padding: 8px 24px 20px;
+  display: flex; flex-direction: column; gap: 11px;
+}
+.pw-feat {
+  display: flex; align-items: flex-start; gap: 13px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px;
+}
+.pw-feat-ic {
+  width: 34px; height: 34px; border-radius: 9px; flex-shrink: 0;
+  background: rgba(201,169,110,0.08); border: 1px solid var(--gold-dim);
+  display: flex; align-items: center; justify-content: center; font-size: 15px;
+}
+.pw-feat-text { flex: 1; padding-top: 2px; }
+.pw-feat-title {
+  font-size: 12.5px; color: var(--text-prime); font-weight: 400;
+  letter-spacing: .01em; margin-bottom: 2px;
+}
+.pw-feat-sub { font-size: 11px; color: var(--text-dim); line-height: 1.55; }
+
+/* ── Free Trial Toggle ── */
+.pw-trial-row {
+  position: relative; z-index: 1;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 6px 24px 16px;
+}
+.pw-trial-label {
+  font-size: 11px; letter-spacing: .06em; color: var(--text-dim);
+}
+.pw-trial-label strong { color: var(--gold); font-weight: 500; }
+
+/* Toggle switch */
+.pw-toggle {
+  position: relative; width: 44px; height: 26px; flex-shrink: 0; cursor: pointer;
+}
+.pw-toggle input {
+  opacity: 0; width: 0; height: 0; position: absolute;
+}
+.pw-toggle-track {
+  position: absolute; inset: 0; border-radius: 13px;
+  background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.12);
+  transition: background .3s, border-color .3s;
+}
+.pw-toggle input:checked + .pw-toggle-track {
+  background: linear-gradient(135deg, #d4a95a, var(--gold));
+  border-color: var(--gold);
+  box-shadow: 0 0 14px rgba(201,169,110,0.35);
+}
+.pw-toggle-thumb {
+  position: absolute; top: 3px; left: 3px;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  transition: transform .3s cubic-bezier(.34,1.4,.64,1);
+  z-index: 1; pointer-events: none;
+}
+.pw-toggle input:checked ~ .pw-toggle-thumb {
+  transform: translateX(18px);
+}
+
+/* ── Plans ── */
+.pw-plans {
+  position: relative; z-index: 1;
+  padding: 0 20px 16px;
+  display: flex; gap: 9px;
+}
+.pw-plan {
+  flex: 1; padding: 18px 10px 14px;
+  background: rgba(17,17,28,0.7); border: 1.5px solid rgba(255,255,255,0.08);
+  border-radius: 18px; text-align: center; cursor: pointer;
+  transition: all .3s cubic-bezier(.4,0,.2,1); position: relative; overflow: hidden;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+}
+.pw-plan:hover {
+  border-color: rgba(201,169,110,0.4); transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+}
+.pw-plan.sel {
+  border-color: var(--gold);
+  background: rgba(201,169,110,0.08);
+  box-shadow: 0 0 0 1px var(--gold), 0 8px 32px rgba(201,169,110,0.20);
+}
+/* Top glow on selected */
+.pw-plan.sel::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.pw-plan-badge {
+  position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+  padding: 3px 11px;
+  background: linear-gradient(135deg, #e8c070, #9a6e30);
+  border-radius: 0 0 10px 10px;
+  font-size: 8px; letter-spacing: .16em; text-transform: uppercase;
+  color: rgba(5,3,0,.95); font-weight: 600; white-space: nowrap;
+  box-shadow: 0 3px 12px rgba(201,169,110,0.30);
+}
+.pw-plan-period {
+  font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--text-dim); margin-bottom: 8px; margin-top: 12px;
+  transition: color .25s;
+}
+.pw-plan.sel .pw-plan-period { color: var(--gold); }
+.pw-plan-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(22px, 6vw, 28px); font-weight: 300;
+  color: var(--text-prime); line-height: 1;
+}
+.pw-plan-sub {
+  font-size: 9px; color: var(--text-ghost); margin-top: 5px;
+  line-height: 1.5; transition: color .25s; min-height: 28px;
+  display: flex; align-items: center; justify-content: center;
+}
+.pw-plan.sel .pw-plan-sub { color: rgba(201,169,110,0.7); }
+
+/* ── CTA Button ── */
+.pw-cta-wrap { position: relative; z-index: 1; padding: 2px 20px 14px; }
+.pw-cta {
+  width: 100%; padding: 20px 24px;
+  background: linear-gradient(135deg, #e8c070 0%, var(--gold) 40%, #8a5e22 100%);
+  border: none; border-radius: 16px;
+  color: rgba(6,4,0,0.90); font-family: 'Figtree', sans-serif;
+  font-size: 11.5px; font-weight: 600; letter-spacing: .24em;
+  text-transform: uppercase; cursor: pointer;
+  position: relative; overflow: hidden;
+  transition: transform .3s cubic-bezier(.4,0,.2,1), box-shadow .3s;
+  box-shadow: 0 1px 0 rgba(255,220,140,.4) inset,
+              0 -1px 0 rgba(0,0,0,.2) inset,
+              0 12px 36px rgba(201,169,110,0.32);
+}
+/* Specular sweep */
+.pw-cta::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,.25) 0%, rgba(255,255,255,.04) 50%, transparent 100%);
+  pointer-events: none;
+}
+/* Hover shimmer */
+.pw-cta::after {
+  content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent);
+  transition: left 0s;
+}
+.pw-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 0 rgba(255,220,140,.4) inset,
+              0 -1px 0 rgba(0,0,0,.2) inset,
+              0 20px 56px rgba(201,169,110,0.44);
+}
+.pw-cta:hover::after { left: 160%; transition: left .55s ease; }
+.pw-cta:active { transform: translateY(0); }
+.pw-cta-note {
+  text-align: center; font-size: 10px; color: var(--text-ghost);
+  letter-spacing: .06em; margin-top: 8px;
+}
+
+/* ── Legal links (App Store Required) ── */
+.pw-legal {
+  position: relative; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: wrap; gap: 6px 14px;
+  padding: 2px 20px 20px;
+}
+.pw-legal a, .pw-legal button {
+  font-size: 10px; letter-spacing: .06em;
+  color: var(--text-ghost); background: none; border: none;
+  cursor: pointer; font-family: 'Figtree', sans-serif;
+  text-decoration: underline; text-underline-offset: 3px;
+  transition: color .2s; padding: 4px 0;
+}
+.pw-legal a:hover, .pw-legal button:hover { color: var(--text-dim); }
+.pw-legal .pw-sep { color: var(--text-ghost); font-size: 9px; }
+
+/* PWA install banner */
+#pwa-banner {
+  position:fixed; bottom:0; left:0; right:0; z-index:550;
+  background:var(--surface); border-top:1px solid var(--border);
+  padding:14px 20px; display:flex; align-items:center; gap:12px;
+  transform:translateY(100%); transition:transform .5s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
+}
+#pwa-banner.show { transform:translateY(0); }
+#pwa-banner .pb-text { flex:1; font-size:12px; color:var(--text-dim); line-height:1.5; }
+#pwa-banner .pb-install {
+  padding:9px 18px; background:var(--gold-ghost); border:1px solid var(--gold-dim);
+  border-radius:100px; color:var(--gold); font-family:'Figtree',sans-serif;
+  font-size:10px; letter-spacing:.12em; text-transform:uppercase; cursor:pointer;
+  white-space:nowrap; flex-shrink:0;
+}
+#pwa-banner .pb-close {
+  color:var(--text-ghost); cursor:pointer; font-size:16px; padding:4px; flex-shrink:0;
+}
+</style>
+</head>
+<body>
+
+<canvas id="gen-canvas"></canvas>
+<div id="touch-layer"></div>
+
+<!-- Headphones banner -->
+<div id="hp-banner" role="status" aria-live="polite">
+  <span class="hp-icon" aria-hidden="true">🎧</span>
+  <span>En iyi deneyim için kulaklık kullanın — binaural ses sol/sağ kanalda çalışır</span>
+  <span class="hp-close" onclick="dismissBanner()" role="button" aria-label="Bildirimi kapat" tabindex="0">✕</span>
+</div>
+
+<!-- ══════════════════════════════
+     SCREEN 1 — MOOD INPUT
+══════════════════════════════ -->
+<div class="screen on" id="screen-mood">
+  <div class="inner">
+
+    <div class="brand a1">
+      <div class="brand-ring"><div class="brand-dot"></div></div>
+      <span class="brand-name">Sanctuary</span>
+    </div>
+
+    <div class="mood-question a2">
+      <p class="eyebrow">Günün Tonu</p>
+      <h1 class="display">Şu an nasıl<br><em>hissediyorsun?</em></h1>
+      <p>Seni gerçekten dinleyecek bir alan. Bugün hangi duygular içindesin?</p>
+    </div>
+
+    <div class="mood-grid a3" role="group" aria-label="Ruh hali seç">
+      <div class="mood-chip" data-mood="Huzursuz" onclick="pickMood(this)" role="button" aria-label="Huzursuz" tabindex="0">
+        <span class="ic" aria-hidden="true">🌊</span><span class="lbl">Huzursuz</span>
+      </div>
+      <div class="mood-chip" data-mood="Yorgun" onclick="pickMood(this)" role="button" aria-label="Yorgun" tabindex="0">
+        <span class="ic" aria-hidden="true">🌙</span><span class="lbl">Yorgun</span>
+      </div>
+      <div class="mood-chip" data-mood="Kaygılı" onclick="pickMood(this)" role="button" aria-label="Kaygılı" tabindex="0">
+        <span class="ic" aria-hidden="true">🌪</span><span class="lbl">Kaygılı</span>
+      </div>
+      <div class="mood-chip" data-mood="Mutsuz" onclick="pickMood(this)" role="button" aria-label="Mutsuz" tabindex="0">
+        <span class="ic" aria-hidden="true">🌧</span><span class="lbl">Mutsuz</span>
+      </div>
+      <div class="mood-chip" data-mood="Sakin" onclick="pickMood(this)" role="button" aria-label="Sakin" tabindex="0">
+        <span class="ic" aria-hidden="true">🕯</span><span class="lbl">Sakin</span>
+      </div>
+      <div class="mood-chip" data-mood="Minnettar" onclick="pickMood(this)" role="button" aria-label="Minnettar" tabindex="0">
+        <span class="ic" aria-hidden="true">✨</span><span class="lbl">Minnettar</span>
+      </div>
+    </div>
+
+    <div class="textarea-wrap a4">
+      <span class="textarea-label" id="textarea-label">Biraz daha anlat</span>
+      <textarea class="mood-textarea" rows="3"
+        aria-labelledby="textarea-label"
+        placeholder="Bugün aklında neler var? Yazmak zorunda değilsin..."></textarea>
+    </div>
+
+    <button class="cta-btn a5" onclick="goSanctuary()" aria-label="Sanctuary ekranına geç">
+      Sanctuary'ye Gir
+    </button>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     SCREEN 2 — SANCTUARY
+══════════════════════════════ -->
+<div class="screen off" id="screen-sanctuary">
+  <div class="inner sanctuary-inner">
+
+    <div class="mood-badge-wrap a1">
+      <div class="mood-badge">
+        <span id="s-emoji">🌊</span>
+        <span id="s-mood">Huzursuz</span>
+      </div>
+    </div>
+
+    <div class="freq-badge-wrap a2">
+      <div class="freq-badge" id="freq-badge">
+        <div class="freq-dot"></div>
+        <span id="freq-label">Frekans Seçildi</span>
+      </div>
+    </div>
+
+    <div class="breath-wrap a3" style="position:relative;">
+      <div class="b-ring b-ring-1"></div>
+      <div class="b-ring b-ring-2"></div>
+      <div class="b-ring b-ring-3"></div>
+      <div class="b-core" id="b-core">☽</div>
+      <span id="ai-thinking-label">✦ AI Düşünüyor</span>
+    </div>
+
+    <div class="breath-guide-wrap a4">
+      <span class="breath-guide" id="breath-guide">Hazır olduğunda butona dokun</span>
+    </div>
+
+    <div class="waveform a4" id="waveform"></div>
+
+    <div class="play-wrap a5">
+      <button class="play-btn" id="play-btn" onclick="togglePlay()" aria-label="Frekansı başlat" aria-pressed="false">
+        <span class="play-icon" id="play-icon" aria-hidden="true">▶</span>
+      </button>
+      <span class="play-lbl" id="play-lbl">Frekansı Başlat</span>
+    </div>
+
+    <div class="pills-row a5">
+      <div class="pill" id="pill-h">
+        <span class="pill-icon">📳</span><span>Haptik</span>
+      </div>
+      <div class="pill pill-b" id="pill-b">
+        <span class="pill-icon">〰️</span><span>Binaural</span>
+      </div>
+    </div>
+
+    <!-- Sleep Timer -->
+    <div class="sleep-timer-row a5" role="group" aria-label="Uyku sayacı">
+      <span class="sleep-timer-label" aria-hidden="true">🌙 Uyku Sayacı</span>
+      <button class="stimer-btn" onclick="setSleepTimer(10)" aria-label="10 dakika uyku sayacı">10dk</button>
+      <button class="stimer-btn" onclick="setSleepTimer(20)" aria-label="20 dakika uyku sayacı">20dk</button>
+      <button class="stimer-btn" onclick="setSleepTimer(30)" aria-label="30 dakika uyku sayacı">30dk</button>
+      <button class="stimer-btn" onclick="setSleepTimer(45)" aria-label="45 dakika uyku sayacı">45dk</button>
+      <button class="stimer-btn" id="stimer-cancel-btn" onclick="cancelSleepTimer()" aria-label="Sayacı iptal et" style="display:none">✕ İptal</button>
+      <div id="stimer-status" aria-live="polite"></div>
+    </div>
+
+    <div class="div-line a6"></div>
+    <h1 class="display sanc-title a6">Hoş geldin,<br><em>burası senin alanın</em></h1>
+    <p class="sanc-sub a6" id="s-message">Hissettiklerin tamamen geçerli. Şu an için tek yapman gereken bir nefes almak.</p>
+
+    <div class="s-cards a7">
+      <div class="s-card"><span class="s-card-ic">🫁</span><span class="s-card-nm">Nefes</span><span class="s-card-dur">4 · 7 · 8</span></div>
+      <div class="s-card"><span class="s-card-ic">🎵</span><span class="s-card-nm">Ses</span><span class="s-card-dur">Ambiyans</span></div>
+      <div class="s-card"><span class="s-card-ic">✍️</span><span class="s-card-nm">Günlük</span><span class="s-card-dur">Serbest yaz</span></div>
+    </div>
+
+    <!-- Premium Sound Grid — JS ile render edilir -->
+    <div class="sounds-section a7">
+      <div class="sounds-section-title">Premium Frekanslar</div>
+      <div class="s-sounds-grid" id="premium-sounds-grid"></div>
+    </div>
+
+    <!-- AI Oracle Section — Step 1 -->
+    <div class="ai-oracle a7" id="ai-oracle-section">
+      <div class="ai-oracle-header">
+        <span class="ai-oracle-title">AI Oracle</span>
+        <span class="ai-oracle-badge">✦ Premium</span>
+      </div>
+      <div class="ai-card">
+        <div class="ai-textarea-wrap">
+          <span class="ai-textarea-label">Frekans İsteğin</span>
+          <textarea
+            class="ai-textarea"
+            id="ai-input"
+            rows="3"
+            aria-label="AI frekans isteği"
+            placeholder="Bugün nasıl hissediyorsun? (ör: 2 saatlik çalışma odağı için stres altındayım, net düşünmem lazım…)"></textarea>
+          <button class="ai-mic-btn" id="ai-mic-btn" onclick="STTBridge.toggle()" title="Sesle komut ver" aria-label="Sesle giriş yap">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </button>
+        </div>
+        <button class="ai-generate-btn" id="ai-generate-btn" onclick="handleAIGenerate()">
+          ✦ &nbsp;Kişisel Frekansımı Oluştur
+        </button>
+        <!-- Result area — JS ile doldurulur -->
+        <div class="ai-result" id="ai-result">
+          <span class="ai-result-label">Oracle'ın Sana Özel Kompozisyonu</span>
+          <p class="ai-result-text" id="ai-result-text"></p>
+          <div class="ai-result-freq" id="ai-result-freq"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="affirm a7">
+      <p class="affirm-text" id="s-affirm">"Hissetmek zayıflık değil, var olmaktır."</p>
+    </div>
+
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:4px;" class="a7">
+      <button class="analytics-link" onclick="goAnalytics()">📊 Geçmiş</button>
+      <button class="analytics-link" onclick="openHealthModal()" id="health-export-btn" style="display:none">❤️ Sağlık</button>
+    </div>
+
+    <button class="back-btn a7" onclick="goMood()" aria-label="Ruh hali seçimine geri dön">← Geri dön</button>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     SCREEN 3 — ANALYTICS
+══════════════════════════════ -->
+<div class="screen off" id="screen-analytics">
+  <div class="inner" style="max-width:480px;padding:44px 24px 64px;">
+
+    <div class="analytics-header a1">
+      <p class="eyebrow">Mindfulness</p>
+      <h2 class="display">Yolculuğun</h2>
+      <p>Seans geçmişin ve istatistiklerin</p>
+    </div>
+
+    <div class="analytics-grid a2" id="analytics-stats">
+      <div class="astat"><span class="astat-val" id="stat-total">0</span><span class="astat-lbl">Toplam Seans</span></div>
+      <div class="astat"><span class="astat-val" id="stat-minutes">0</span><span class="astat-lbl">Toplam Dakika</span></div>
+      <div class="astat"><span class="astat-val" id="stat-streak">0</span><span class="astat-lbl">Gün Serisi</span></div>
+    </div>
+
+    <div class="chart-wrap a3">
+      <div class="chart-title">Son 7 Gün — Seans Süresi (dk)</div>
+      <canvas id="analytics-canvas" height="100"></canvas>
+    </div>
+
+    <div class="mood-log-list a4" id="mood-log-list"></div>
+
+    <button class="clear-data-btn a5" onclick="clearAnalyticsData()">🗑 Tüm Verileri Sil</button>
+    <button class="clear-data-btn a5" onclick="resetPremium()" style="border-color:rgba(201,169,110,0.2);color:rgba(201,169,110,0.5);margin-top:8px;">🔓 Premium Durumunu Sıfırla</button>
+    <button class="back-btn a5" onclick="goBack()">← Geri dön</button>
+
+  </div>
+</div>
+
+<!-- Notification Toast -->
+<div id="notif-toast">
+  <div class="nt-title" id="nt-title">Yarın da hatırlatalım mı?</div>
+  <div class="nt-body" id="nt-body">Sanctuary seansını yarın da yapmak ister misin? Seni hatırlatalım.</div>
+  <div class="nt-actions">
+    <button class="nt-no" onclick="dismissNotifToast()">Hayır</button>
+    <button class="nt-yes" onclick="scheduleNotification()">Evet, Hatırlat</button>
+  </div>
+</div>
+
+<!-- Health Export Modal -->
+<div id="health-modal" onclick="closeHealthModal(event)">
+  <div class="health-sheet">
+    <h3>❤️ Sağlık Uygulaması</h3>
+    <p class="hs-sub">Apple Health / Google Fit formatında dışa aktar</p>
+    <div class="health-json" id="health-json-content"></div>
+    <div class="hs-actions">
+      <button class="hs-copy" onclick="copyHealthData()">Kopyala</button>
+      <button class="hs-close" onclick="closeHealthModal()">Kapat</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     AI PROCESSING OVERLAY — Step 2
+══════════════════════════════ -->
+<div id="ai-processing" role="status" aria-label="AI frekans oluşturuyor" aria-live="polite">
+  <!-- Star field — JS ile dinamik üretilir -->
+  <div class="ai-stars" id="ai-stars"></div>
+
+  <div class="ai-proc-inner">
+    <!-- Orbital rig -->
+    <div class="ai-orb">
+      <div class="ai-orb-ring ai-orb-ring-1"></div>
+      <div class="ai-orb-ring ai-orb-ring-2"></div>
+      <div class="ai-orb-ring ai-orb-ring-3"></div>
+      <div class="ai-orb-core"></div>
+    </div>
+
+    <!-- Wave bars -->
+    <div class="ai-proc-wave" id="ai-proc-wave"></div>
+
+    <!-- Text -->
+    <div>
+      <div class="ai-proc-title">Oracle <em>dinliyor</em></div>
+      <p class="ai-proc-sub">
+        Bilinçdışının frekansına ayarlanıyor<br>
+        <span class="ai-proc-dots">
+          <span>·</span><span>·</span><span>·</span>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     PAYWALL OVERLAY — STEP 1
+══════════════════════════════ -->
+<div id="paywall-overlay" role="dialog" aria-modal="true" aria-label="Sanctuary Premium">
+  <div class="paywall-sheet">
+
+    <!-- Close X -->
+    <button class="pw-close" onclick="closePaywall()" aria-label="Kapat">✕</button>
+
+    <!-- Hero -->
+    <div class="pw-hero">
+      <div class="pw-badge"><span class="pw-badge-dot"></span>Sanctuary Premium</div>
+      <h2 class="display">Daha Derin<br>Bir <em>Huzur</em></h2>
+      <p>Bilim destekli ses frekanslarıyla zihin ve bedeninizin tam potansiyelini açın.</p>
+    </div>
+
+    <!-- Features -->
+    <div class="pw-features">
+      <div class="pw-feat">
+        <div class="pw-feat-ic">🎛️</div>
+        <div class="pw-feat-text">
+          <div class="pw-feat-title">AI Destekli Özel Ritimler</div>
+          <div class="pw-feat-sub">Ruh halinize özel, gerçek zamanlı üretilen binaural beat kompozisyonları.</div>
+        </div>
+      </div>
+      <div class="pw-feat">
+        <div class="pw-feat-ic">🌙</div>
+        <div class="pw-feat-text">
+          <div class="pw-feat-title">Çevrimdışı Erişim</div>
+          <div class="pw-feat-sub">İnternet olmadan, uçakta bile tüm premium seanslara erişin.</div>
+        </div>
+      </div>
+      <div class="pw-feat">
+        <div class="pw-feat-ic">❤️</div>
+        <div class="pw-feat-text">
+          <div class="pw-feat-title">Sağlık Verisi Senkronizasyonu</div>
+          <div class="pw-feat-sub">Apple Health & Google Fit ile otomatik mindfulness takibi.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Free Trial Toggle -->
+    <div class="pw-trial-row" id="pw-trial-row">
+      <label class="pw-toggle" aria-label="7 Günlük Ücretsiz Deneme">
+        <input type="checkbox" id="pw-trial-toggle" checked onchange="updateTrialState()">
+        <div class="pw-toggle-track"></div>
+        <div class="pw-toggle-thumb"></div>
+      </label>
+      <div class="pw-trial-label" id="pw-trial-label">
+        <strong>7 Günlük Ücretsiz Deneme</strong> — İstediğin zaman iptal et
+      </div>
+    </div>
+
+    <!-- Plans — 3 cards -->
+    <div class="pw-plans" id="pw-plans">
+
+      <!-- Monthly -->
+      <div class="pw-plan" data-plan="monthly" onclick="selectPlan(this)">
+        <div class="pw-plan-period">Aylık</div>
+        <div class="pw-plan-price">$9.99</div>
+        <div class="pw-plan-sub">aylık faturalanır</div>
+      </div>
+
+      <!-- Yearly — default selected + popular badge -->
+      <div class="pw-plan sel" data-plan="yearly" onclick="selectPlan(this)">
+        <div class="pw-plan-badge">En Popüler</div>
+        <div class="pw-plan-period">Yıllık</div>
+        <div class="pw-plan-price">$59.99</div>
+        <div class="pw-plan-sub">$5.00 / ay · %50 tasarruf</div>
+      </div>
+
+      <!-- Lifetime -->
+      <div class="pw-plan" data-plan="lifetime" onclick="selectPlan(this)">
+        <div class="pw-plan-period">Ömürlük</div>
+        <div class="pw-plan-price">$199</div>
+        <div class="pw-plan-sub">tek seferlik ödeme</div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="pw-cta-wrap">
+      <button class="pw-cta" id="pw-cta-btn" onclick="handlePurchase()">
+        Ücretsiz Dene — 7 Gün
+      </button>
+      <div class="pw-cta-note" id="pw-cta-note">
+        Deneme bittikten sonra $59.99/yıl olarak faturalandırılır. İptal edilebilir.
+      </div>
+    </div>
+
+    <!-- Legal (App Store Mandatory) -->
+    <div class="pw-legal">
+      <button onclick="restorePurchase()">Satın Alımı Geri Yükle</button>
+      <span class="pw-sep">·</span>
+      <a href="#" onclick="return false;">Kullanım Koşulları</a>
+      <span class="pw-sep">·</span>
+      <a href="#" onclick="return false;">Gizlilik Politikası</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- PWA Install Banner -->
+<div id="pwa-banner">
+  <div class="pb-text">📱 Sanctuary'yi ana ekrana ekle — Uçak modunda bile çalışır</div>
+  <button class="pb-install" id="pwa-install-btn" onclick="triggerPWAInstall()">Ekle</button>
+  <span class="pb-close" onclick="dismissPWABanner()">✕</span>
+</div>
+
+<div id="fallback-notice" role="status" aria-live="polite">
+  <span class="fn-icon">🌿</span>
+  <span id="fallback-notice-text">Default Zen modu aktif — 432 Hz</span>
+</div>
+
+<div id="crossfade-indicator" aria-hidden="true">
+  <div class="cf-dot"></div>
+  <span>Geçiş</span>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════
+   API CONFIGURATION — Buraya kendi anahtarınızı girin
+   https://aistudio.google.com/app/apikey adresinden alın.
+   Prodüksiyon ortamında bir sunucu proxy kullanın.
+═══════════════════════════════════════════════ */
+const GEMINI_API_KEY  = 'YOUR_API_KEY_HERE';
+const GEMINI_MODEL    = 'gemini-pro';
+const GEMINI_BASE     = 'https://generativelanguage.googleapis.com/v1beta/models/';
+const GEMINI_ENDPOINT = GEMINI_BASE + GEMINI_MODEL + ':generateContent?key=' + GEMINI_API_KEY;
+// const GEMINI_PROXY_ENDPOINT = 'https://your-worker.your-subdomain.workers.dev/gemini'; // Prodüksiyon proxy
+
+let audioCtx          = null;
+let isPremium         = false;
+let pannerNode        = null;   // alias referansı (spatialPanner ile aynı)
+let currentBreathSpeed = 1.0;
+let trialEnabled      = true;
+
+/* ── SanctuaryNative Stub (Step 1) ───────────────────────────
+   Capacitor/Cordova bridge mevcut değilse hiçbir şey patlamaması için
+   güvenli varsayılan uygulamalar. Gerçek native bridge varsa üzerine yazar. */
+if (!window.SanctuaryNative) {
+  window.SanctuaryNative = {
+    purchase(payload) {
+      // Web demo — gerçek ödeme altyapısı olmadan premium aktif edilir (test amaçlı)
+      const meta = PLAN_META[payload.plan] || PLAN_META.yearly;
+      const priceStr = meta.price;
+      const msg = payload.trial
+        ? `7 günlük ücretsiz deneme başlıyor!\nPlan: ${meta.label} — ${priceStr}\n\n[Demo modu: Gerçek ortamda StoreKit / Google Play Billing kullanılacak]`
+        : `Satın alma: ${meta.label} — ${priceStr}\n\n[Demo modu: Gerçek ortamda StoreKit / Google Play Billing kullanılacak]`;
+      if (confirm(msg + '\n\nDevam edilsin mi?')) {
+        applyPremiumUI();
+        closePaywall();
+      }
+    },
+    restorePurchases() {
+      alert('Satın alım bulunamadı.\n\nGerçek bir satın alım yapmadan premium aktif edilemez.');
+    },
+    vibrate(style) {
+      // Web fallback: navigator.vibrate API kullan
+      if (!navigator.vibrate) return;
+      const patterns = {
+        light:  [12],
+        medium: [22],
+        heavy:  [40]
+      };
+      navigator.vibrate(patterns[style] || [12]);
+    }
+  };
+}
+
+/* ═══════════════════════════════════════════════
+   MOOD DATA
+═══════════════════════════════════════════════ */
+const MOODS = {
+  Huzursuz: {
+    emoji:'🌊', rgb:[110,205,196],
+    carrier:220, beat:7, solfeggio:396,
+    freqLabel:'220 Hz · Alpha · 7 Hz Beat',
+    breathCycle:[4,0,6,2],
+    hapticPattern:[200,180,200,1420],
+    msg:'Huzursuz hissetmek, içinde bir şeylerin canlı olduğunun işareti. Dalgaların dinmesi için bu alan seninle.',
+    affirm:'"Fırtınalar geçer. Sen geçirmişsin hepsini — bu da geçecek. Şu an, sadece var ol."'
+  },
+  Yorgun: {
+    emoji:'🌙', rgb:[155,142,196],
+    carrier:180, beat:10, solfeggio:528,
+    freqLabel:'180 Hz · Alpha · 10 Hz Beat',
+    breathCycle:[5,2,5,0],
+    hapticPattern:[300,150,300,1550],
+    msg:'Yorgunluk, çok şey taşıdığının sessiz kanıtı. Burada biraz bırakabilirsin yükünü.',
+    affirm:'"Dinlenmek kaçmak değildir. Ruhun en derin ihtiyacı bazen tek bir sessiz nefestir."'
+  },
+  Kaygılı: {
+    emoji:'🌪', rgb:[212,120,138],
+    carrier:200, beat:4, solfeggio:396,
+    freqLabel:'200 Hz · Theta · 4 Hz Beat',
+    breathCycle:[4,7,8,0],
+    hapticPattern:[100,180,100,1620],
+    msg:'Kaygı zihnin seni koruma çabası. Savaşmana gerek yok — sadece burada birlikte oturalım.',
+    affirm:'"Şu an güvendesin. Gelecek henüz gelmedi, geçmiş artık gitmiş. Burada, şimdi, nefes al."'
+  },
+  Mutsuz: {
+    emoji:'🌧', rgb:[138,171,203],
+    carrier:210, beat:6, solfeggio:417,
+    freqLabel:'210 Hz · Theta · 6 Hz Beat',
+    breathCycle:[4,0,4,4],
+    hapticPattern:[200,200,200,1400],
+    msg:'Mutsuzluk zayıflık değil. Hissetmeye cesaret etmek güçtür. Burada yargılanmaksızın ağlayabilirsin.',
+    affirm:'"Her yağmur bir şeyleri besler. Gözyaşların da seninle büyümeni sağlıyor."'
+  },
+  Sakin: {
+    emoji:'🕯', rgb:[201,169,110],
+    carrier:250, beat:10, solfeggio:528,
+    freqLabel:'250 Hz · Alpha · 10 Hz Beat',
+    breathCycle:[5,0,5,0],
+    hapticPattern:[500,100,500,1900],
+    msg:'Sakinlik nadir ve değerli bir hediye. Bunu derinleştirmek ve taşımak için buradasın.',
+    affirm:'"Sakin bir an tüm zamanların özüdür. Şu anı dolu dolu içine çek."'
+  },
+  Minnettar: {
+    emoji:'✨', rgb:[240,192,128],
+    carrier:300, beat:12, solfeggio:639,
+    freqLabel:'300 Hz · SMR · 12 Hz Beat',
+    breathCycle:[4,0,4,0],
+    hapticPattern:[150,120,150,580],
+    msg:'Minnettarlık dünyayı değiştirmese de bakışını dönüştürür. Bu ışığı birlikte büyütelim.',
+    affirm:'"Güzelliği fark edebilmek en derin bir sanattır. Bugün bunu başardın."'
+  }
+};
+
+/* ═══════════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════════ */
+let activeMood = null;
+let playing    = false;
+
+// Binaural oscillators (4 per channel, pure sine)
+let oscL = [], oscR = [];
+let gainPerOscL = [], gainPerOscR = [];
+let gainL = null, gainR = null;
+let pannerL = null, pannerR = null;
+
+// Solfeggio + noise path
+let oscSol = null, gainSol = null;
+let noiseNode = null, gainNoise = null;
+let shaper = null;
+
+// Shared chain
+let lpf = null, comp = null, mGain = null, analyser = null;
+let analyserBuf = null;
+
+// Silent keep-alive
+let silentOsc  = null;
+let silentGain = null;
+
+// MediaSession flag
+let _msActive = false;
+
+// Spatial audio
+let spatialPanner = null;
+let spatialRafId  = null;
+
+// Breath
+let hapticTmr  = null;
+let breathTmr  = null;
+let breathStep = 0;
+const BNAMES   = ['Nefes Al','Tut','Nefes Ver','Bekle'];
+
+// Breath haptic tracking
+let _breathPhase = null;  // 'inhale' | 'exhale' | null
+
+/**
+ * applyPremiumUI()
+ * Premium durumunu uygular: state günceller, localStorage'a kaydeder,
+ * kilit ikonlarını gizler, badge metinlerini "Açık" olarak günceller.
+ */
+function applyPremiumUI() {
+  isPremium = true;
+
+  // localStorage'a kaydet
+  try { localStorage.setItem('sanctuary_premium', '1'); } catch(e){}
+
+  // Tüm kilit ikonlarını gizle
+  document.querySelectorAll('.s-card-lock, .lock-icon').forEach(el => {
+    el.style.display = 'none';
+  });
+
+  // Premium badge metinlerini "Açık" yap
+  document.querySelectorAll('.s-card-tag').forEach(el => {
+    if (el.closest('.s-card.premium')) {
+      // kilit işaretini kaldır, tag'i güncelleme — frekans bilgisi kalsın
+    }
+  });
+
+  // Premium-sounds grid'i yeniden render et (kilitsiz)
+  buildPremiumSounds();
+
+  // AI Oracle badge'i güncelle
+  const oracleBadge = document.querySelector('.ai-oracle-badge');
+  if (oracleBadge) {
+    oracleBadge.textContent = '✦ Açık';
+    oracleBadge.style.color = 'var(--teal)';
+    oracleBadge.style.borderColor = 'rgba(110,205,196,0.35)';
+    oracleBadge.style.background = 'rgba(110,205,196,0.1)';
+  }
+
+  // Paywall'ı kapat (eğer açıksa)
+  closePaywall();
+
+  console.log('[Sanctuary] Premium aktif edildi.');
+}
+
+/* ═══════════════════════════════════════════════
+   HEADPHONES BANNER
+═══════════════════════════════════════════════ */
+function dismissBanner() {
+  document.getElementById('hp-banner').style.transform = 'translateY(-100%)';
+}
+
+/* ═══════════════════════════════════════════════
+   WAVEFORM
+═══════════════════════════════════════════════ */
+function buildWaveform() {
+  const el = document.getElementById('waveform');
+  el.innerHTML = '';
+  const H  = [5,9,14,20,26,22,17,28,22,26,20,14,9,17,24,18,11,7];
+  const DU = [.6,.8,.5,.9,.7,1,.6,.8,.5,.7,.9,.6,.8,.7,.5,.9,.6,.8];
+  H.forEach((h,i) => {
+    const b = document.createElement('div');
+    b.className = 'wbar';
+    b.style.setProperty('--h',  h+'px');
+    b.style.setProperty('--dur',DU[i]+'s');
+    b.style.setProperty('--del',(i*.045)+'s');
+    el.appendChild(b);
+  });
+}
+function setWave(on) {
+  document.querySelectorAll('.wbar').forEach(b => b.classList.toggle('on', on));
+}
+
+/* ═══════════════════════════════════════════════
+   WAVESHAPER CURVE
+═══════════════════════════════════════════════ */
+function makeSaturationCurve(amount) {
+  if (amount === undefined) amount = 40;
+  const samples = 256;
+  const curve = new Float32Array(samples);
+  for (let i = 0; i < samples; i++) {
+    const x = (i * 2) / samples - 1;
+    curve[i] = ((Math.PI + amount) * x) / (Math.PI + amount * Math.abs(x));
+  }
+  return curve;
+}
+
+/* ═══════════════════════════════════════════════
+   AUDIO ENGINE
+═══════════════════════════════════════════════ */
+function centsToRatio(cents) {
+  return Math.pow(2, cents / 1200);
+}
+
+async function ensureAudioContext() {
+  if (!audioCtx) {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }
+  // iOS Safari ve Chrome politikası: kullanıcı etkileşimi sonrası resume() zorunlu
+  if (audioCtx.state === 'suspended') {
+    await audioCtx.resume();
+  }
+  return audioCtx;
+}
+
+async function initAudioContext() {
+  return ensureAudioContext();
+}
+
+async function startAudio(m) {
+  await ensureAudioContext();
+  const ctx = audioCtx;
+  const t   = ctx.currentTime;
+
+  lpf = ctx.createBiquadFilter();
+  lpf.type            = 'lowpass';
+  lpf.frequency.value = 800;
+  lpf.Q.value         = 0.5;
+
+  comp = ctx.createDynamicsCompressor();
+  comp.threshold.value = -24;
+  comp.knee.value      = 18;
+  comp.ratio.value     = 7;
+  comp.attack.value    = 0.003;
+  comp.release.value   = 0.20;
+
+  mGain = ctx.createGain();
+  mGain.gain.setValueAtTime(0.0001, t);
+  mGain.gain.exponentialRampToValueAtTime(1.2, t + 2);
+
+  analyser = ctx.createAnalyser();
+  analyser.fftSize               = 256;
+  analyser.smoothingTimeConstant = 0.80;
+  analyserBuf = new Uint8Array(analyser.frequencyBinCount);
+
+  spatialPanner = ctx.createStereoPanner();
+  spatialPanner.pan.value = 0;
+  pannerNode = spatialPanner;
+
+  lpf.connect(comp);
+  comp.connect(spatialPanner);
+  spatialPanner.connect(mGain);
+  mGain.connect(analyser);
+  analyser.connect(ctx.destination);
+
+  spatialLogic();
+
+  silentGain = ctx.createGain();
+  silentGain.gain.value = 0.00001;
+  silentOsc = ctx.createOscillator();
+  silentOsc.frequency.value = 1;
+  silentOsc.connect(silentGain);
+  silentGain.connect(ctx.destination);
+  silentOsc.start();
+
+  gainL = ctx.createGain();
+  gainL.gain.setValueAtTime(0.0001, t);
+  gainL.gain.exponentialRampToValueAtTime(0.68, t + 2);
+
+  pannerL = ctx.createStereoPanner();
+  pannerL.pan.value = -1;
+
+  oscL = []; gainPerOscL = [];
+  const detuneCents = [-3, -1, 1, 3];
+  detuneCents.forEach(c => {
+    const o = ctx.createOscillator();
+    const g = ctx.createGain();
+    o.type            = 'sine';
+    o.frequency.value = m.carrier * centsToRatio(c);
+    g.gain.value      = 0.28;
+    o.connect(g);
+    g.connect(gainL);
+    oscL.push(o); gainPerOscL.push(g);
+  });
+  gainL.connect(pannerL);
+  pannerL.connect(lpf);
+
+  gainR = ctx.createGain();
+  gainR.gain.setValueAtTime(0.0001, t);
+  gainR.gain.exponentialRampToValueAtTime(0.68, t + 2);
+
+  pannerR = ctx.createStereoPanner();
+  pannerR.pan.value = +1;
+
+  oscR = []; gainPerOscR = [];
+  detuneCents.forEach(c => {
+    const o = ctx.createOscillator();
+    const g = ctx.createGain();
+    o.type            = 'sine';
+    o.frequency.value = (m.carrier + m.beat) * centsToRatio(c);
+    g.gain.value      = 0.28;
+    o.connect(g);
+    g.connect(gainR);
+    oscR.push(o); gainPerOscR.push(g);
+  });
+  gainR.connect(pannerR);
+  pannerR.connect(lpf);
+
+  shaper = ctx.createWaveShaper();
+  shaper.curve      = makeSaturationCurve(40);
+  shaper.oversample = '2x';
+
+  oscSol = ctx.createOscillator();
+  gainSol = ctx.createGain();
+  oscSol.type            = 'sine';
+  oscSol.frequency.value = m.solfeggio;
+  gainSol.gain.setValueAtTime(0.0001, t);
+  gainSol.gain.exponentialRampToValueAtTime(0.14, t + 2);
+  oscSol.connect(gainSol);
+  gainSol.connect(shaper);
+  shaper.connect(lpf);
+
+  const SR   = ctx.sampleRate;
+  const nBuf = ctx.createBuffer(2, SR * 4, SR);
+  for (let ch = 0; ch < 2; ch++) {
+    const d = nBuf.getChannelData(ch);
+    let last = 0;
+    for (let i = 0; i < d.length; i++) {
+      const w = Math.random() * 2 - 1;
+      last = (last + 0.02 * w) / 1.02;
+      d[i] = last;
+    }
+    let mx = 0;
+    for (let i = 0; i < d.length; i++) if (Math.abs(d[i]) > mx) mx = Math.abs(d[i]);
+    if (mx > 0) for (let i = 0; i < d.length; i++) d[i] /= mx;
+  }
+  noiseNode = ctx.createBufferSource();
+  noiseNode.buffer = nBuf;
+  noiseNode.loop   = true;
+  gainNoise = ctx.createGain();
+  gainNoise.gain.setValueAtTime(0.0001, t);
+  gainNoise.gain.exponentialRampToValueAtTime(0.007, t + 2);
+  noiseNode.connect(gainNoise);
+  gainNoise.connect(shaper);
+
+  noiseNode.start();
+  [...oscL, ...oscR, oscSol].forEach(o => o.start());
+}
+
+function stopAudio() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime;
+
+  const fadeOut = function(g) {
+    if (!g) return;
+    const cur = Math.max(g.gain.value, 0.0001);
+    g.gain.setValueAtTime(cur, t);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + 2);
+  };
+  fadeOut(mGain); fadeOut(gainSol); fadeOut(gainNoise);
+
+  if (spatialRafId !== null) {
+    cancelAnimationFrame(spatialRafId);
+    spatialRafId = null;
+  }
+
+  setTimeout(function() {
+    try {
+      // Oscillator'ları durdur ve bağlantılarını kes — bellek sızıntısını önler
+      [...oscL, ...oscR].forEach(function(o) { if (o) { try { o.stop(); } catch(e){} o.disconnect(); } });
+      if (oscSol)    { try { oscSol.stop();    } catch(e){} oscSol.disconnect();    }
+      if (noiseNode) { try { noiseNode.stop(); } catch(e){} noiseNode.disconnect(); }
+      if (silentOsc) { try { silentOsc.stop(); } catch(e){} silentOsc.disconnect(); }
+
+      // GainNode'ları ve PannerNode'ları bağlantısını kes
+      [gainPerOscL, gainPerOscR].forEach(function(arr) {
+        arr.forEach(function(g) { if (g) g.disconnect(); });
+      });
+      if (gainL)        gainL.disconnect();
+      if (gainR)        gainR.disconnect();
+      if (pannerL)      pannerL.disconnect();
+      if (pannerR)      pannerR.disconnect();
+      if (gainSol)      gainSol.disconnect();
+      if (gainNoise)    gainNoise.disconnect();
+      if (silentGain)   silentGain.disconnect();
+      if (shaper)       shaper.disconnect();
+      if (spatialPanner)spatialPanner.disconnect();
+      if (lpf)          lpf.disconnect();
+      if (comp)         comp.disconnect();
+      if (mGain)        mGain.disconnect();
+      if (analyser)     analyser.disconnect();
+    } catch(e) { console.warn('[Sanctuary] stopAudio cleanup hata:', e); }
+
+    // Tüm referansları temizle
+    oscL=[]; oscR=[]; gainPerOscL=[]; gainPerOscR=[];
+    oscSol=noiseNode=null; gainSol=gainNoise=null;
+    gainL=gainR=pannerL=pannerR=shaper=null;
+    spatialPanner=null;
+    pannerNode=null;
+    lpf=comp=mGain=null;
+    silentOsc=silentGain=null;
+    analyser=null; analyserBuf=null;
+    _breathPhase=null;
+  }, 2300);
+}
+
+/* ═══════════════════════════════════════════════
+   HAPTIC
+═══════════════════════════════════════════════ */
+function startHaptic(pattern) {
+  if (!navigator.vibrate) return;
+  const total = pattern.reduce(function(a,b) { return a+b; }, 0);
+  navigator.vibrate(pattern);
+  hapticTmr = setInterval(function() { navigator.vibrate(pattern); }, total + 60);
+}
+function stopHaptic() {
+  clearInterval(hapticTmr); hapticTmr = null;
+  navigator.vibrate && navigator.vibrate(0);
+}
+
+/* ═══════════════════════════════════════════════
+   BREATH GUIDE + RING SYNC
+   inhalasyon zirvesinde ve ekshalasyon dibinde tetiklenir.
+═══════════════════════════════════════════════ */
+function startBreath(cycle) {
+  const guide = document.getElementById('breath-guide');
+  const wrap  = document.querySelector('.breath-wrap');
+  guide.classList.add('on');
+  breathStep = 0;
+  _breathPhase = null;
+
+  wrap.classList.remove('breath-idle');
+
+  function setRingDuration(dur) {
+    wrap.style.setProperty('--breath-dur', dur + 's');
+  }
+
+  function tick() {
+    const active = cycle.map(function(d,i) { return {d:d, name: BNAMES[i]}; }).filter(function(p) { return p.d > 0; });
+    const ph = active[breathStep % active.length];
+
+    const scaledDur = Math.min(2.5, Math.max(0.5, ph.d * currentBreathSpeed));
+
+    guide.textContent = ph.name + ' · ' + Math.round(scaledDur) + 's';
+
+    const core = document.getElementById('b-core');
+
+    wrap.classList.remove('breath-inhale', 'breath-exhale', 'breath-hold');
+
+    requestAnimationFrame(function() {
+      setRingDuration(scaledDur);
+      core.style.transition = 'transform ' + scaledDur + 's ease-in-out, box-shadow ' + scaledDur + 's ease-in-out';
+
+      if (ph.name === 'Nefes Al') {
+        wrap.classList.add('breath-inhale');
+        core.style.transform  = 'scale(1.35)';
+        core.style.boxShadow  = '0 0 60px rgba(201,169,110,0.5), 0 0 120px rgba(201,169,110,0.2)';
+        if (_breathPhase !== 'inhale') {
+          _breathPhase = 'inhale';
+          // Zirveye yakın nokta: scaledDur'un %80'inde
+          setTimeout(function() {
+            window.SanctuaryNative.vibrate('light');
+          }, scaledDur * 800);
+        }
+
+      } else if (ph.name === 'Nefes Ver') {
+        wrap.classList.add('breath-exhale');
+        core.style.transform  = 'scale(0.78)';
+        core.style.boxShadow  = '0 0 18px rgba(201,169,110,0.2)';
+        if (_breathPhase !== 'exhale') {
+          _breathPhase = 'exhale';
+          // Dip noktası: scaledDur'un %85'inde
+          setTimeout(function() {
+            window.SanctuaryNative.vibrate('light');
+          }, scaledDur * 850);
+        }
+
+      } else {
+        wrap.classList.add('breath-hold');
+        core.style.transform  = 'scale(1.0)';
+        core.style.boxShadow  = '0 0 32px rgba(201,169,110,0.35)';
+        _breathPhase = 'hold';
+      }
+    });
+
+    breathStep++;
+    breathTmr = setTimeout(tick, scaledDur * 1000);
+  }
+  tick();
+}
+
+function stopBreath() {
+  clearTimeout(breathTmr); breathTmr = null;
+  _breathPhase = null;
+  const guide = document.getElementById('breath-guide');
+  const core  = document.getElementById('b-core');
+  const wrap  = document.querySelector('.breath-wrap');
+
+  guide.classList.remove('on');
+  guide.textContent = 'Hazır olduğunda butona dokun';
+  core.style.transform = core.style.transition = core.style.boxShadow = '';
+
+  wrap.classList.remove('breath-inhale', 'breath-exhale', 'breath-hold');
+  wrap.style.removeProperty('--breath-dur');
+  setTimeout(function() { wrap.classList.add('breath-idle'); }, 600);
+}
+
+/* ═══════════════════════════════════════════════
+   ANALYSER
+═══════════════════════════════════════════════ */
+function getAmp() {
+  if (!analyser || !analyserBuf) return 0;
+  analyser.getByteFrequencyData(analyserBuf);
+  let s = 0;
+  for (let i = 0; i < analyserBuf.length; i++) s += analyserBuf[i];
+  return (s / analyserBuf.length) / 255;
+}
+
+/* ═══════════════════════════════════════════════
+   GENERATIVE CANVAS
+═══════════════════════════════════════════════ */
+const CV = document.getElementById('gen-canvas');
+const CX = CV.getContext('2d');
+const TL = document.getElementById('touch-layer');
+
+let cvActive  = false;
+let cvTime    = 0;
+let cvBeat    = 7;
+let cvRgb     = [110, 205, 196];
+let _cvRgbNow = [110, 205, 196];
+const ripples = [];
+const MAX_RIPPLES = 12;
+
+const BLOBS = Array.from({length: 8}, function() {
+  return {
+    x:  0.08 + Math.random() * 0.84,
+    y:  0.08 + Math.random() * 0.84,
+    vx: (Math.random() - 0.5) * 0.00038,
+    vy: (Math.random() - 0.5) * 0.00038,
+    r:  0.046 + Math.random() * 0.040,
+    ph: Math.random() * Math.PI * 2
+  };
+});
+
+function resizeCV() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  CV.width  = innerWidth  * dpr;
+  CV.height = innerHeight * dpr;
+  CV.style.width  = innerWidth  + 'px';
+  CV.style.height = innerHeight + 'px';
+  CX.scale(dpr, dpr);
+}
+window.addEventListener('resize', resizeCV);
+resizeCV();
+
+const lerp = function(a, b, t) { return a + (b - a) * t; };
+
+let _lastTs = 0;
+(function renderLoop(ts) {
+  requestAnimationFrame(renderLoop);
+  const dt  = Math.min((ts - _lastTs) / 16.67, 3);
+  _lastTs   = ts;
+  const W   = innerWidth;
+  const H   = innerHeight;
+  const amp = cvActive ? getAmp() : 0;
+
+  const lerpT = 0.022 * dt;
+  _cvRgbNow[0] = lerp(_cvRgbNow[0], cvRgb[0], lerpT);
+  _cvRgbNow[1] = lerp(_cvRgbNow[1], cvRgb[1], lerpT);
+  _cvRgbNow[2] = lerp(_cvRgbNow[2], cvRgb[2], lerpT);
+  const r = _cvRgbNow[0], g = _cvRgbNow[1], b = _cvRgbNow[2];
+
+  const intensity = 0.10 + amp * 0.90;
+  const spd = 0.005 * dt * (0.4 + cvBeat / 24) * (1 + amp * 2.0);
+  cvTime += spd;
+
+  const fadeAlpha = cvActive ? (0.036 + amp * 0.022) : 0.055;
+  CX.fillStyle = 'rgba(5,5,7,' + fadeAlpha + ')';
+  CX.fillRect(0, 0, W, H);
+
+  BLOBS.forEach(function(bl) {
+    const pulse = 0.86 + 0.14 * Math.sin(cvTime * 1.1 + bl.ph);
+    bl.x += bl.vx * pulse * dt * (1 + amp * 1.2);
+    bl.y += bl.vy * pulse * dt * (1 + amp * 1.2);
+    if (bl.x < 0.02 || bl.x > 0.98) { bl.vx *= -1; bl.x = Math.max(0.02, Math.min(0.98, bl.x)); }
+    if (bl.y < 0.02 || bl.y > 0.98) { bl.vy *= -1; bl.y = Math.max(0.02, Math.min(0.98, bl.y)); }
+  });
+
+  if (cvActive || amp > 0.02) {
+    const step = cvActive ? 20 : 28;
+    for (let px = 0; px < W; px += step) {
+      for (let py = 0; py < H; py += step) {
+        let field = 0;
+        for (let bi = 0; bi < BLOBS.length; bi++) {
+          const bl = BLOBS[bi];
+          const dx = (px / W) - bl.x;
+          const dy = (py / H) - bl.y;
+          const rr = bl.r * (1 + amp * 0.65) * (1 + 0.16 * Math.sin(cvTime * cvBeat * 0.12 + bl.ph));
+          field += (rr * rr) / (dx * dx + dy * dy + 1e-5);
+        }
+        if (field > 0.011 && field < 0.11) {
+          const tt = Math.min((field - 0.011) / 0.099, 1);
+          CX.fillStyle = 'rgba(' + (r|0) + ',' + (g|0) + ',' + (b|0) + ',' + (tt * intensity * 0.17) + ')';
+          CX.fillRect(px - step * 0.5, py - step * 0.5, step, step);
+        }
+      }
+    }
+  }
+
+  const ribbonCount = cvActive ? 4 : 2;
+  for (let ri = 0; ri < ribbonCount; ri++) {
+    const yBase = H * (0.15 + ri * 0.22);
+    const ampW  = H * (0.048 + ri * 0.015) * (1 + amp * 0.8);
+    const freq  = cvBeat * 0.065 + ri * 0.22;
+    const ph    = cvTime * (1 + ri * 0.36) + ri * 1.5;
+    const alpha = (0.038 - ri * 0.006) * intensity;
+    const xStep = cvActive ? 5 : 9;
+    CX.beginPath();
+    for (let x = 0; x <= W; x += xStep) {
+      const y = yBase
+        + Math.sin(x / W * Math.PI * freq * 4 + ph)          * ampW
+        + Math.sin(x / W * Math.PI * freq * 1.8 - ph * 0.65) * ampW * 0.36
+        + Math.sin(x / W * Math.PI * freq * 0.85 + ph * 1.4) * ampW * 0.18;
+      x === 0 ? CX.moveTo(x, y) : CX.lineTo(x, y);
+    }
+    CX.strokeStyle = 'rgba(' + (r|0) + ',' + (g|0) + ',' + (b|0) + ',' + alpha + ')';
+    CX.lineWidth   = 1.3 + ri * 0.32;
+    CX.stroke();
+  }
+
+  if (cvActive && Math.random() < 0.12 + amp * 0.55) {
+    const px = Math.random() * W;
+    const py = Math.random() * H;
+    const pr = 0.6 + Math.random() * 2.2;
+    CX.beginPath();
+    CX.arc(px, py, pr, 0, Math.PI * 2);
+    CX.fillStyle = 'rgba(' + (r|0) + ',' + (g|0) + ',' + (b|0) + ',' + ((0.022 + Math.random() * 0.065) * intensity) + ')';
+    CX.fill();
+  }
+
+  if (cvActive && amp > 0.04) {
+    const glR  = Math.min(W, H) * 0.32 * amp;
+    const grad = CX.createRadialGradient(W * 0.5, H * 0.5, 0, W * 0.5, H * 0.5, glR);
+    grad.addColorStop(0, 'rgba(' + (r|0) + ',' + (g|0) + ',' + (b|0) + ',' + (amp * 0.065) + ')');
+    grad.addColorStop(1, 'rgba(' + (r|0) + ',' + (g|0) + ',' + (b|0) + ',0)');
+    CX.beginPath();
+    CX.arc(W * 0.5, H * 0.5, glR, 0, Math.PI * 2);
+    CX.fillStyle = grad;
+    CX.fill();
+  }
+
+  for (let i = ripples.length - 1; i >= 0; i--) {
+    const rp = ripples[i];
+    rp.rad   += 3.6 * dt;
+    rp.alpha -= 0.012 * dt;
+    if (rp.alpha <= 0) { ripples.splice(i, 1); continue; }
+    for (let ring = 0; ring < 3; ring++) {
+      const rr = rp.rad - ring * 22;
+      if (rr <= 0) continue;
+      CX.beginPath();
+      CX.arc(rp.x, rp.y, rr, 0, Math.PI * 2);
+      CX.strokeStyle = 'rgba(' + (r|0) + ',' + (g|0) + ',' + (b|0) + ',' + (rp.alpha * (1 - ring * 0.32)) + ')';
+      CX.lineWidth   = 1.1 - ring * 0.28;
+      CX.stroke();
+    }
+    const gd = CX.createRadialGradient(rp.x, rp.y, 0, rp.x, rp.y, rp.rad * 0.42);
+    gd.addColorStop(0, 'rgba(' + (r|0) + ',' + (g|0) + ',' + (b|0) + ',' + (rp.alpha * 0.3) + ')');
+    gd.addColorStop(1, 'rgba(' + (r|0) + ',' + (g|0) + ',' + (b|0) + ',0)');
+    CX.beginPath();
+    CX.arc(rp.x, rp.y, rp.rad * 0.42, 0, Math.PI * 2);
+    CX.fillStyle = gd;
+    CX.fill();
+  }
+})(0);
+
+function spawnRipple(x, y) {
+  if (ripples.length >= MAX_RIPPLES) ripples.shift();
+  ripples.push({x: x, y: y, rad: 0, alpha: 0.75});
+  navigator.vibrate && navigator.vibrate(14);
+}
+document.addEventListener('touchstart', function(e) {
+  if (!cvActive) return;
+  Array.from(e.touches).forEach(function(t) { spawnRipple(t.clientX, t.clientY); });
+}, {passive:true});
+document.addEventListener('touchmove', function(e) {
+  if (!cvActive) return;
+  if (Math.random() < .28) Array.from(e.touches).forEach(function(t) { spawnRipple(t.clientX, t.clientY); });
+}, {passive:true});
+document.addEventListener('mousedown',  function(e) { if (cvActive) spawnRipple(e.clientX, e.clientY); });
+document.addEventListener('mousemove',  function(e) { if (cvActive && e.buttons && Math.random() < .14) spawnRipple(e.clientX, e.clientY); });
+
+/* ═══════════════════════════════════════════════
+   PREMIUM SOUNDS
+═══════════════════════════════════════════════ */
+const SOUNDS = [
+  { id:'lucid-dreaming',    emoji:'💫', name:'Lucid Dreaming',    tag:'40Hz · Gamma',    carrier:240, beat:40,  solfeggio:528, premium:true },
+  { id:'deep-sleep',        emoji:'🌑', name:'Deep Sleep',        tag:'2.5Hz · Delta',   carrier:160, beat:2.5, solfeggio:396, premium:true },
+  { id:'astral-projection', emoji:'🌌', name:'Astral Projection', tag:'6.3Hz · Theta',   carrier:200, beat:6.3, solfeggio:417, premium:true },
+  { id:'pineal-activation', emoji:'🔮', name:'Pineal Activation', tag:'963Hz · Solfeggio',carrier:963,beat:7,   solfeggio:963, premium:true }
+];
+
+function buildPremiumSounds() {
+  const grid = document.getElementById('premium-sounds-grid');
+  if (!grid) return;
+  grid.innerHTML = SOUNDS.map(function(s) {
+    return '<div class="s-card premium" data-sound-id="' + s.id + '" onclick="handleSoundClick(\'' + s.id + '\')"' +
+      ' role="button" aria-label="' + s.name + ' — ' + (s.premium && !isPremium ? 'Premium, kilidi açmak için tıkla' : s.tag) + '">' +
+      (s.premium && !isPremium ? '<span class="s-card-lock lock-icon" aria-hidden="true">🔒</span>' : '') +
+      '<span class="s-card-ic">' + s.emoji + '</span>' +
+      '<span class="s-card-nm">' + s.name + '</span>' +
+      '<span class="s-card-tag">' + s.tag + '</span>' +
+      '</div>';
+  }).join('');
+}
+
+function handleSoundClick(soundId) {
+  const sound = SOUNDS.find(function(s) { return s.id === soundId; });
+  if (!sound) return;
+  if (sound.premium && !isPremium) {
+    showPaywall();
+    return;
+  }
+  // Premium erişim: sesi çal
+  const aiMood = {
+    emoji: sound.emoji,
+    rgb: activeMood ? activeMood.rgb : [110,205,196],
+    carrier: sound.carrier,
+    beat: sound.beat,
+    solfeggio: sound.solfeggio,
+    freqLabel: sound.tag,
+    breathCycle: activeMood ? activeMood.breathCycle : [4,0,6,2],
+    hapticPattern: activeMood ? activeMood.hapticPattern : [200,180,200,1420],
+    msg: sound.name + ' — ' + sound.tag,
+    affirm: '"' + sound.name + ' frekansı seni derinlere çekiyor."'
+  };
+  activeMood = aiMood;
+  if (!playing) togglePlay();
+}
+
+/* ═══════════════════════════════════════════════
+   TOGGLE PLAY
+═══════════════════════════════════════════════ */
+function togglePlay() {
+  const m = activeMood;
+  if (!m) return;
+
+  const btn  = document.getElementById('play-btn');
+  const icon = document.getElementById('play-icon');
+  const lbl  = document.getElementById('play-lbl');
+  const fBdg = document.getElementById('freq-badge');
+  const pH   = document.getElementById('pill-h');
+  const pB   = document.getElementById('pill-b');
+
+  if (!playing) {
+    playing  = true;
+    cvActive = true;
+    cvRgb = m.rgb; cvBeat = m.beat;
+
+    startAudio(m);
+    startHaptic(m.hapticPattern);
+    startBreath(m.breathCycle);
+    setWave(true);
+    TL.classList.add('on');
+
+    updateAppTheme(m);
+
+    document.getElementById('hp-banner').classList.add('show');
+    setTimeout(function() { dismissBanner(); }, 5000);
+
+    btn.classList.add('on'); icon.textContent='⏹'; lbl.textContent='Durdur';
+    fBdg.classList.add('on'); pH.classList.add('on'); pB.classList.add('on');
+    btn.setAttribute('aria-pressed', 'true');
+
+    setMediaSession(m);
+
+  } else {
+    playing  = false;
+    cvActive = false;
+
+    stopAudio(); stopHaptic(); stopBreath();
+    setWave(false);
+    TL.classList.remove('on');
+
+    resetAppTheme();
+
+    btn.classList.remove('on'); icon.textContent='▶'; lbl.textContent='Frekansı Başlat';
+    fBdg.classList.remove('on'); pH.classList.remove('on'); pB.classList.remove('on');
+    btn.setAttribute('aria-pressed', 'false');
+
+    clearMediaSession();
+  }
+}
+
+function _syncUIToPlaying() {
+  const btn  = document.getElementById('play-btn');
+  const icon = document.getElementById('play-icon');
+  const lbl  = document.getElementById('play-lbl');
+  const fBdg = document.getElementById('freq-badge');
+  const pH   = document.getElementById('pill-h');
+  const pB   = document.getElementById('pill-b');
+  if (playing) {
+    btn.classList.add('on');    icon.textContent='⏹'; lbl.textContent='Durdur';
+    fBdg.classList.add('on');   pH.classList.add('on'); pB.classList.add('on');
+    btn.setAttribute('aria-pressed', 'true');
+  } else {
+    btn.classList.remove('on'); icon.textContent='▶'; lbl.textContent='Frekansı Başlat';
+    fBdg.classList.remove('on'); pH.classList.remove('on'); pB.classList.remove('on');
+    btn.setAttribute('aria-pressed', 'false');
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════════ */
+function pickMood(el) {
+  document.querySelectorAll('.mood-chip').forEach(function(c) { c.classList.remove('sel'); });
+  el.classList.add('sel');
+  activeMood = MOODS[el.dataset.mood];
+  if (activeMood) { cvRgb = activeMood.rgb; cvBeat = activeMood.beat; }
+}
+
+function scrollToTop(screenId) {
+  const el = document.getElementById(screenId);
+  if (el) el.scrollTop = 0;
+}
+
+function goSanctuary() {
+  if (!activeMood) activeMood = MOODS.Huzursuz;
+  const m = activeMood;
+  const key = Object.keys(MOODS).find(function(k) { return MOODS[k] === m; }) || '';
+
+  document.getElementById('s-emoji').textContent    = m.emoji;
+  document.getElementById('s-mood').textContent     = key;
+  document.getElementById('s-message').textContent  = m.msg;
+  document.getElementById('s-affirm').textContent   = m.affirm;
+  document.getElementById('freq-label').textContent = m.freqLabel;
+  cvRgb = m.rgb; cvBeat = m.beat;
+
+  buildWaveform();
+  buildPremiumSounds();
+
+  playing = false; cvActive = false;
+  document.getElementById('play-btn').classList.remove('on');
+  document.getElementById('play-icon').textContent = '▶';
+  document.getElementById('play-lbl').textContent  = 'Frekansı Başlat';
+  document.getElementById('freq-badge').classList.remove('on');
+  document.getElementById('pill-h').classList.remove('on');
+  document.getElementById('pill-b').classList.remove('on');
+  document.getElementById('breath-guide').classList.remove('on');
+  document.getElementById('breath-guide').textContent = 'Hazır olduğunda butona dokun';
+  const core = document.getElementById('b-core');
+  core.style.transform = core.style.transition = core.style.boxShadow = '';
+  const wrap = document.querySelector('.breath-wrap');
+  wrap.classList.remove('breath-inhale','breath-exhale','breath-hold');
+  wrap.classList.add('breath-idle');
+
+  document.getElementById('screen-mood').classList.replace('on','off');
+  setTimeout(function() {
+    document.getElementById('screen-sanctuary').classList.replace('off','on');
+    scrollToTop('screen-sanctuary');
+  }, 60);
+}
+
+function goMood() {
+  if (playing) togglePlay();
+  document.querySelector('.breath-wrap').classList.remove('breath-idle','breath-inhale','breath-exhale','breath-hold');
+  document.getElementById('screen-sanctuary').classList.replace('on','off');
+  setTimeout(function() {
+    document.getElementById('screen-mood').classList.replace('off','on');
+    scrollToTop('screen-mood');
+  }, 60);
+}
+
+document.addEventListener('visibilitychange', function() {
+  if (!document.hidden && audioCtx && audioCtx.state === 'suspended' && playing) {
+    audioCtx.resume().catch(function() {});
+  }
+  // Arka plana gidince ses kesilmez — silent oscillator aktif tutar.
+});
+
+/* ═══════════════════════════════════════════════
+   SPATIAL AUDIO
+═══════════════════════════════════════════════ */
+function spatialLogic() {
+  const CYCLE_MS  = 10000;
+  const PAN_DEPTH = 0.8;
+  let startTs = null;
+
+  function frame(ts) {
+    if (!spatialPanner) return;
+    if (startTs === null) startTs = ts;
+    const elapsed = ts - startTs;
+    const pan = PAN_DEPTH * Math.sin((elapsed / CYCLE_MS) * 2 * Math.PI);
+    spatialPanner.pan.value = pan;
+    spatialRafId = requestAnimationFrame(frame);
+  }
+  spatialRafId = requestAnimationFrame(frame);
+}
+
+/* ═══════════════════════════════════════════════
+   MOOD → THEME MAPPING
+═══════════════════════════════════════════════ */
+function _moodToTheme(m) {
+  const key = Object.keys(MOODS).find(function(k) { return MOODS[k] === m; }) || '';
+
+  const THEME_MAP = {
+    Sakin:     'calm',
+    Minnettar: 'calm',
+    Huzursuz:  'energy',
+    Kaygılı:   'focus',
+    Mutsuz:    'focus',
+    Yorgun:    'deep'
+  };
+
+  const state = THEME_MAP[key] || 'energy';
+
+  const THEMES = {
+    calm: {
+      state:        'calm',
+      accent:       '#6ecdc4',
+      accentRgb:    '110,205,196',
+      accentDim:    'rgba(110,205,196,0.35)',
+      accentGhost:  'rgba(110,205,196,0.10)',
+      bgGradient:   'radial-gradient(ellipse at 50% 0%, rgba(110,205,196,0.07) 0%, transparent 65%)',
+      breathSpeed:  1.6,
+      label:        'Calm · Ocean Blue'
+    },
+    energy: {
+      state:        'energy',
+      accent:       '#c9a96e',
+      accentRgb:    '201,169,110',
+      accentDim:    'rgba(201,169,110,0.35)',
+      accentGhost:  'rgba(201,169,110,0.10)',
+      bgGradient:   'radial-gradient(ellipse at 50% 0%, rgba(201,169,110,0.07) 0%, transparent 65%)',
+      breathSpeed:  1.0,
+      label:        'Energy · Amber'
+    },
+    focus: {
+      state:        'focus',
+      accent:       '#4caf82',
+      accentRgb:    '76,175,130',
+      accentDim:    'rgba(76,175,130,0.35)',
+      accentGhost:  'rgba(76,175,130,0.10)',
+      bgGradient:   'radial-gradient(ellipse at 50% 0%, rgba(76,175,130,0.07) 0%, transparent 65%)',
+      breathSpeed:  0.85,
+      label:        'Focus · Emerald'
+    },
+    deep: {
+      state:        'deep',
+      accent:       '#9b8ec4',
+      accentRgb:    '155,142,196',
+      accentDim:    'rgba(155,142,196,0.35)',
+      accentGhost:  'rgba(155,142,196,0.10)',
+      bgGradient:   'radial-gradient(ellipse at 50% 0%, rgba(155,142,196,0.07) 0%, transparent 65%)',
+      breathSpeed:  1.3,
+      label:        'Deep · Royal Purple'
+    }
+  };
+
+  return THEMES[state];
+}
+
+function updateAppTheme(m) {
+  const theme = _moodToTheme(m);
+  const root  = document.documentElement;
+
+  root.style.setProperty('--theme-accent',       theme.accent);
+  root.style.setProperty('--theme-accent-rgb',   theme.accentRgb);
+  root.style.setProperty('--theme-accent-dim',   theme.accentDim);
+  root.style.setProperty('--theme-accent-ghost', theme.accentGhost);
+  root.style.setProperty('--theme-bg-inject',    theme.bgGradient);
+
+  const _BREATH_SPEED_MAP = { calm: '8s', energy: '4s', focus: '5s', deep: '7s' };
+  root.style.setProperty('--breath-speed', _BREATH_SPEED_MAP[theme.state] || '6s');
+
+  currentBreathSpeed = theme.breathSpeed;
+
+  const bcore = document.getElementById('b-core');
+  if (bcore) {
+    bcore.style.boxShadow = '0 0 32px ' + theme.accentDim;
+  }
+
+  document.body.style.setProperty('--theme-bg-inject', theme.bgGradient);
+}
+
+function resetAppTheme() {
+  const root = document.documentElement;
+  ['--theme-accent','--theme-accent-rgb','--theme-accent-dim',
+   '--theme-accent-ghost','--theme-bg-inject','--breath-speed'].forEach(function(p) {
+    root.style.removeProperty(p);
+  });
+
+  document.body.style.removeProperty('--theme-bg-inject');
+  currentBreathSpeed = 1.0;
+
+  const bcore = document.getElementById('b-core');
+  if (bcore) bcore.style.boxShadow = '';
+}
+
+/* ═══════════════════════════════════════════════
+   MEDIA SESSION
+═══════════════════════════════════════════════ */
+function setMediaSession(m) {
+  if (!('mediaSession' in navigator)) return;
+
+  const moodName = Object.keys(MOODS).find(function(k) { return MOODS[k] === m; }) || 'Sanctuary';
+
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title:  'Sanctuary',
+    artist: 'Binaural Flow',
+    album:  m.freqLabel || moodName,
+    artwork: [
+      { src: _mediaSessionArtwork(), sizes: '512x512', type: 'image/svg+xml' }
+    ]
+  });
+
+  navigator.mediaSession.playbackState = 'playing';
+
+  navigator.mediaSession.setActionHandler('play', function() {
+    if (!playing && activeMood) {
+      playing  = true;
+      cvActive = true;
+      startAudio(activeMood);
+      startHaptic(activeMood.hapticPattern);
+      startBreath(activeMood.breathCycle);
+      setWave(true);
+      TL.classList.add('on');
+      updateAppTheme(activeMood);
+      navigator.mediaSession.playbackState = 'playing';
+      _syncUIToPlaying();
+    }
+  });
+
+  navigator.mediaSession.setActionHandler('pause', function() {
+    if (playing) {
+      playing  = false;
+      cvActive = false;
+      stopAudio();
+      stopHaptic();
+      stopBreath();
+      setWave(false);
+      TL.classList.remove('on');
+      resetAppTheme();
+      navigator.mediaSession.playbackState = 'paused';
+      _syncUIToPlaying();
+    }
+  });
+
+  navigator.mediaSession.setActionHandler('seekbackward', function() {});
+  navigator.mediaSession.setActionHandler('seekforward',  function() {});
+
+  navigator.mediaSession.setActionHandler('stop', function() {
+    if (playing) togglePlay();
+  });
+
+  _msActive = true;
+}
+
+function clearMediaSession() {
+  if (!('mediaSession' in navigator) || !_msActive) return;
+
+  navigator.mediaSession.playbackState = 'none';
+  navigator.mediaSession.metadata      = null;
+
+  ['play', 'pause', 'stop', 'seekbackward', 'seekforward'].forEach(function(action) {
+    try { navigator.mediaSession.setActionHandler(action, null); } catch(e) {}
+  });
+
+  _msActive = false;
+}
+
+function _mediaSessionArtwork() {
+  const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">' +
+    '<rect width="512" height="512" fill="#050507"/>' +
+    '<circle cx="256" cy="256" r="200" fill="none" stroke="#c9a96e" stroke-width="1.5" opacity="0.35"/>' +
+    '<circle cx="256" cy="256" r="140" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.20"/>' +
+    '<radialGradient id="g" cx="42%" cy="38%"><stop offset="0%" stop-color="#f0d090"/><stop offset="100%" stop-color="#9a6e30"/></radialGradient>' +
+    '<circle cx="256" cy="256" r="42" fill="url(#g)"/>' +
+    '</svg>';
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+
+/* ═══════════════════════════════════════════════
+   SLEEP TIMER MODULE
+═══════════════════════════════════════════════ */
+const SleepTimerModule = (function() {
+  let timerInterval  = null;
+  let fadeTimeout    = null;
+  let endTime        = null;
+  let durationMs     = 0;
+  let isFading       = false;
+
+  function updateStatus() {
+    if (!endTime) return;
+    const remaining = Math.max(0, endTime - Date.now());
+    const mins = Math.floor(remaining / 60000);
+    const secs = Math.floor((remaining % 60000) / 1000);
+    const st   = document.getElementById('stimer-status');
+    if (!st) return;
+    if (isFading) {
+      st.textContent = '🌙 Ses yumuşuyor... Uyu güzel';
+      st.className   = 'fading';
+    } else {
+      st.textContent = 'Kalan: ' + mins + ':' + secs.toString().padStart(2,'0');
+      st.className   = 'active';
+    }
+    if (remaining <= 0) clearAll();
+  }
+
+  function startFade() {
+    if (!mGain || !audioCtx) { stopAudio(); clearAll(); return; }
+    isFading = true;
+    const fadeSeconds = 300;
+    const t = audioCtx.currentTime;
+    mGain.gain.cancelScheduledValues(t);
+    mGain.gain.setValueAtTime(mGain.gain.value || 1.2, t);
+    mGain.gain.exponentialRampToValueAtTime(0.001, t + fadeSeconds);
+    setTimeout(function() { if (playing) togglePlay(); clearAll(); }, fadeSeconds * 1000 + 200);
+    updateStatus();
+  }
+
+  function clearAll() {
+    clearInterval(timerInterval);
+    clearTimeout(fadeTimeout);
+    timerInterval = fadeTimeout = endTime = null;
+    isFading = false;
+    durationMs = 0;
+    document.querySelectorAll('.stimer-btn').forEach(function(b) { b.classList.remove('active','fading'); });
+    const cancel = document.getElementById('stimer-cancel-btn');
+    if (cancel) cancel.style.display = 'none';
+    const st = document.getElementById('stimer-status');
+    if (st) { st.textContent = ''; st.className = ''; }
+  }
+
+  return {
+    start: function(minutes) {
+      clearAll();
+      durationMs = minutes * 60 * 1000;
+      endTime    = Date.now() + durationMs;
+      const fadeTrigger = Math.max(0, durationMs - 5 * 60 * 1000);
+
+      document.querySelectorAll('.stimer-btn').forEach(function(b) {
+        b.classList.remove('active');
+        if (b.textContent === (minutes + 'dk')) b.classList.add('active');
+      });
+      const cancel = document.getElementById('stimer-cancel-btn');
+      if (cancel) cancel.style.display = '';
+
+      timerInterval = setInterval(updateStatus, 1000);
+      fadeTimeout   = setTimeout(startFade, fadeTrigger);
+      updateStatus();
+    },
+    cancel: clearAll
+  };
+})();
+
+function setSleepTimer(minutes) {
+  if (!playing) {
+    togglePlay();
+    setTimeout(function() { SleepTimerModule.start(minutes); }, 300);
+  } else {
+    SleepTimerModule.start(minutes);
+  }
+}
+function cancelSleepTimer() { SleepTimerModule.cancel(); }
+
+/* ═══════════════════════════════════════════════
+   ANALYTICS MODULE
+═══════════════════════════════════════════════ */
+const Analytics = (function() {
+  const KEY = 'sanctuary_sessions';
+
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || []; }
+    catch(e) { return []; }
+  }
+  function save(sessions) {
+    try { localStorage.setItem(KEY, JSON.stringify(sessions)); } catch(e){}
+  }
+
+  return {
+    logSession: function(moodKey, moodObj, durationMs) {
+      if (durationMs < 5000) return;
+      const sessions = load();
+      sessions.push({
+        mood: moodKey,
+        emoji: moodObj.emoji,
+        duration_ms: Math.round(durationMs),
+        carrier_hz: moodObj.carrier,
+        beat_hz: moodObj.beat,
+        solfeggio_hz: moodObj.solfeggio,
+        timestamp: new Date().toISOString()
+      });
+      if (sessions.length > 200) sessions.splice(0, sessions.length - 200);
+      save(sessions);
+    },
+    getSessions: load,
+    clear: function() { localStorage.removeItem(KEY); },
+    getStats: function() {
+      const sessions = load();
+      const totalMs  = sessions.reduce(function(a,s) { return a + s.duration_ms; }, 0);
+      const days = new Set(sessions.map(function(s) { return s.timestamp.slice(0,10); }));
+      let streak = 0;
+      const today = new Date();
+      for (let i = 0; i < 365; i++) {
+        const d = new Date(today);
+        d.setDate(d.getDate() - i);
+        if (days.has(d.toISOString().slice(0,10))) streak++;
+        else if (i > 0) break;
+      }
+      return { total: sessions.length, totalMinutes: Math.round(totalMs/60000), streak: streak };
+    },
+    getLast7Days: function() {
+      const sessions = load();
+      const result   = {};
+      for (let i = 6; i >= 0; i--) {
+        const d = new Date();
+        d.setDate(d.getDate() - i);
+        const key = d.toISOString().slice(0,10);
+        result[key] = 0;
+      }
+      sessions.forEach(function(s) {
+        const day = s.timestamp.slice(0,10);
+        if (day in result) result[day] += s.duration_ms / 60000;
+      });
+      return result;
+    }
+  };
+})();
+
+let sessionStartTime = null;
+(function initSessionObserver() {
+  const playBtn = document.getElementById('play-btn');
+  if (!playBtn) { setTimeout(initSessionObserver, 200); return; }
+  const observer = new MutationObserver(function() {
+    const isOn = playBtn.classList.contains('on');
+    if (isOn && !sessionStartTime) {
+      sessionStartTime = Date.now();
+    } else if (!isOn && sessionStartTime) {
+      const dur     = Date.now() - sessionStartTime;
+      const moodKey = Object.keys(MOODS).find(function(k) { return MOODS[k] === activeMood; }) || 'Bilinmiyor';
+      if (activeMood) Analytics.logSession(moodKey, activeMood, dur);
+      sessionStartTime = null;
+      if (dur > 5000 && activeMood) {
+        setTimeout(function() { NotificationScheduler.onSessionEnd(activeMood); }, 3000);
+        document.getElementById('health-export-btn').style.display = '';
+      }
+    }
+  });
+  observer.observe(playBtn, { attributes: true, attributeFilter: ['class'] });
+})();
+
+function renderAnalytics() {
+  const stats   = Analytics.getStats();
+  const last7   = Analytics.getLast7Days();
+  const sessions = Analytics.getSessions().slice(-20).reverse();
+
+  document.getElementById('stat-total').textContent   = stats.total;
+  document.getElementById('stat-minutes').textContent = stats.totalMinutes;
+  document.getElementById('stat-streak').textContent  = stats.streak;
+
+  const canvas  = document.getElementById('analytics-canvas');
+  const ctx     = canvas.getContext('2d');
+  const entries = Object.entries(last7);
+  const dpr     = window.devicePixelRatio || 1;
+  const W       = canvas.parentElement.clientWidth - 32;
+  const H       = 100;
+  canvas.width  = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W+'px'; canvas.style.height = H+'px';
+  ctx.scale(dpr, dpr);
+
+  const maxVal  = Math.max.apply(Math, entries.map(function(e) { return e[1]; }).concat([1]));
+  const barW    = (W - 48) / entries.length;
+  ctx.clearRect(0,0,W,H);
+
+  entries.forEach(function(entry, i) {
+    const day = entry[0], mins = entry[1];
+    const barH  = Math.max(2, (mins / maxVal) * (H - 30));
+    const x     = 24 + i * barW + barW * .15;
+    const y     = H - 20 - barH;
+    const bw    = barW * .7;
+
+    const grad  = ctx.createLinearGradient(0, y, 0, y + barH);
+    grad.addColorStop(0, 'rgba(201,169,110,0.8)');
+    grad.addColorStop(1, 'rgba(201,169,110,0.2)');
+    ctx.fillStyle = mins > 0 ? grad : 'rgba(255,255,255,0.05)';
+    ctx.beginPath();
+    ctx.roundRect ? ctx.roundRect(x, y, bw, barH, 3) : ctx.rect(x, y, bw, barH);
+    ctx.fill();
+
+    const dayNames = ['Paz','Pzt','Sal','Çar','Per','Cum','Cmt'];
+    const d   = new Date(day);
+    const lbl = dayNames[d.getDay()];
+    ctx.fillStyle = 'rgba(122,120,144,0.8)';
+    ctx.font      = '10px Figtree, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(lbl, x + bw/2, H - 4);
+
+    if (mins > 0) {
+      ctx.fillStyle = 'rgba(201,169,110,0.9)';
+      ctx.font      = '9px Figtree, sans-serif';
+      ctx.fillText(Math.round(mins) + 'dk', x + bw/2, y - 4);
+    }
+  });
+
+  const list = document.getElementById('mood-log-list');
+  if (!sessions.length) {
+    list.innerHTML = '<div style="text-align:center;color:var(--text-ghost);font-size:12px;padding:20px 0;">Henüz seans kaydedilmedi.</div>';
+    return;
+  }
+  list.innerHTML = sessions.slice(0,10).map(function(s) {
+    const date = new Date(s.timestamp);
+    const dateStr = date.toLocaleDateString('tr-TR', {day:'numeric',month:'short', hour:'2-digit', minute:'2-digit'});
+    const durMin  = Math.round(s.duration_ms / 60000);
+    return '<div class="log-item">' +
+      '<span class="log-emoji">' + (s.emoji||'🎵') + '</span>' +
+      '<div class="log-info">' +
+      '<div class="log-mood">' + s.mood + '</div>' +
+      '<div class="log-meta">' + dateStr + ' · ' + s.carrier_hz + 'Hz · ' + s.beat_hz + 'Hz Beat</div>' +
+      '</div>' +
+      '<span class="log-dur">' + durMin + 'dk</span>' +
+      '</div>';
+  }).join('');
+}
+
+function resetPremium() {
+  if (!confirm('Premium durumu sıfırlanacak. Emin misin?')) return;
+  try { localStorage.removeItem('sanctuary_premium'); } catch(e) {}
+  isPremium = false;
+  buildPremiumSounds();
+  alert('Premium sıfırlandı. Kartlar tekrar kilitlendi.');
+}
+
+function clearAnalyticsData() {
+  if (confirm('Tüm seans geçmişi silinsin mi?')) {
+    Analytics.clear();
+    renderAnalytics();
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   NOTIFICATION SCHEDULER
+═══════════════════════════════════════════════ */
+const NotificationScheduler = (function() {
+  const MOOD_TIMES = {
+    Kaygılı:   { hour: 8,  min: 0,  label: 'Sabah 08:00' },
+    Yorgun:    { hour: 21, min: 30, label: 'Akşam 21:30' },
+    Huzursuz:  { hour: 20, min: 0,  label: 'Akşam 20:00' },
+    Mutsuz:    { hour: 9,  min: 0,  label: 'Sabah 09:00' },
+    Sakin:     { hour: 7,  min: 0,  label: 'Sabah 07:00' },
+    Minnettar: { hour: 7,  min: 30, label: 'Sabah 07:30' }
+  };
+
+  let pendingMood = null;
+
+  return {
+    onSessionEnd: function(moodObj) {
+      const key = Object.keys(MOODS).find(function(k) { return MOODS[k] === moodObj; });
+      pendingMood = key;
+      const timeInfo = MOOD_TIMES[key] || { label: 'yarın' };
+      const toast = document.getElementById('notif-toast');
+      document.getElementById('nt-title').textContent = 'Harika bir seans! 🌟';
+      document.getElementById('nt-body').textContent  =
+        '"' + key + '" modunu yarın ' + timeInfo.label + '\'de tekrar deneyelim mi? Seni hatırlatalım.';
+      toast.classList.add('show');
+      setTimeout(function() { toast.classList.remove('show'); }, 12000);
+    },
+    scheduleFor: function(key) {
+      const timeInfo = MOOD_TIMES[key] || { hour: 8, min: 0 };
+      const now   = new Date();
+      const target = new Date();
+      target.setDate(target.getDate() + 1);
+      target.setHours(timeInfo.hour, timeInfo.min, 0, 0);
+      const ms = target - now;
+      if ('Notification' in window) {
+        Notification.requestPermission().then(function(perm) {
+          if (perm === 'granted') {
+            setTimeout(function() {
+              new Notification('🧘 Sanctuary Seni Bekliyor', {
+                body: key + ' modunda bir seans seni bekliyor. Birkaç dakikan var mı?',
+                icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="%23111118"/><circle cx="16" cy="16" r="4" fill="%23c9a96e"/></svg>'
+              });
+            }, ms);
+            const toast = document.getElementById('notif-toast');
+            document.getElementById('nt-title').textContent = '✓ Hatırlatıcı kuruldu';
+            document.getElementById('nt-body').textContent  = timeInfo.label + '\'de seni arayacağız.';
+            setTimeout(function() { toast.classList.remove('show'); }, 3000);
+          }
+        });
+      } else {
+        dismissNotifToast();
+      }
+    }
+  };
+})();
+
+function scheduleNotification() {
+  const key = Object.keys(MOODS).find(function(k) { return MOODS[k] === activeMood; }) || 'Sakin';
+  NotificationScheduler.scheduleFor(key);
+}
+function dismissNotifToast() {
+  document.getElementById('notif-toast').classList.remove('show');
+}
+
+/* ═══════════════════════════════════════════════
+   PWA
+═══════════════════════════════════════════════ */
+let deferredInstallPrompt = null;
+window.addEventListener('beforeinstallprompt', function(e) {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  setTimeout(function() { document.getElementById('pwa-banner').classList.add('show'); }, 4000);
+});
+function triggerPWAInstall() {
+  if (deferredInstallPrompt) {
+    deferredInstallPrompt.prompt();
+    deferredInstallPrompt.userChoice.then(function() {
+      deferredInstallPrompt = null;
+      dismissPWABanner();
+    });
+  }
+}
+function dismissPWABanner() {
+  document.getElementById('pwa-banner').classList.remove('show');
+}
+
+/* ═══════════════════════════════════════════════
+   HEALTH EXPORT
+═══════════════════════════════════════════════ */
+let lastSessionData = null;
+
+function openHealthModal() {
+  if (!lastSessionData) {
+    const sessions = Analytics.getSessions();
+    lastSessionData = sessions[sessions.length - 1] || null;
+  }
+  if (!lastSessionData) return;
+
+  const startDate = new Date(lastSessionData.timestamp);
+  const endDate   = new Date(startDate.getTime() + lastSessionData.duration_ms);
+
+  const healthKitPayload = {
+    platform: "HealthKit / Google Fit",
+    note: "Sanctuary — Mindful Session Export",
+    HealthKit: {
+      type: "HKCategoryTypeIdentifierMindfulSession",
+      startDate: startDate.toISOString(),
+      endDate: endDate.toISOString(),
+      sourceName: "Sanctuary App",
+      sourceVersion: "1.0",
+      metadata: {
+        mood: lastSessionData.mood,
+        carrierFrequency_hz: lastSessionData.carrier_hz,
+        binauralBeat_hz: lastSessionData.beat_hz,
+        solfeggioFrequency_hz: lastSessionData.solfeggio_hz
+      }
+    },
+    GoogleFit: {
+      dataTypeName: "com.google.activity.segment",
+      activityType: "MEDITATION",
+      startTimeMillis: startDate.getTime(),
+      endTimeMillis: endDate.getTime(),
+      application: { packageName: "app.sanctuary.wellness" }
+    }
+  };
+
+  document.getElementById('health-json-content').textContent =
+    JSON.stringify(healthKitPayload, null, 2);
+  document.getElementById('health-modal').classList.add('show');
+
+  if (window.SanctuaryNative && window.SanctuaryNative.logMindfulSession) {
+    window.SanctuaryNative.logMindfulSession(healthKitPayload);
+  }
+}
+
+function closeHealthModal(e) {
+  if (!e) {
+    document.getElementById('health-modal').classList.remove('show');
+    return;
+  }
+  const sheet = document.querySelector('.health-sheet');
+  if (sheet && !sheet.contains(e.target)) {
+    document.getElementById('health-modal').classList.remove('show');
+  }
+}
+
+function copyHealthData() {
+  const text = document.getElementById('health-json-content').textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    const btn = document.querySelector('.hs-copy');
+    btn.textContent = '✓ Kopyalandı!';
+    setTimeout(function() { btn.textContent = 'Kopyala'; }, 2000);
+  }).catch(function() {
+    const el = document.getElementById('health-json-content');
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+  });
+}
+
+/* ═══════════════════════════════════════════════
+   NAVIGATION — ANALYTICS
+═══════════════════════════════════════════════ */
+let previousScreen = 'screen-sanctuary';
+
+function goAnalytics() {
+  previousScreen = 'screen-sanctuary';
+  renderAnalytics();
+  document.getElementById('screen-sanctuary').classList.replace('on','off');
+  setTimeout(function() {
+    document.getElementById('screen-analytics').classList.replace('off','on');
+    scrollToTop('screen-analytics');
+  }, 60);
+}
+function goBack() {
+  document.getElementById('screen-analytics').classList.replace('on','off');
+  setTimeout(function() {
+    document.getElementById(previousScreen).classList.replace('off','on');
+    scrollToTop(previousScreen);
+  }, 60);
+}
+
+const STTBridge = (function() {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  let recognition = null;
+  let isListening = false;
+
+  function isSupported() {
+    return !!SpeechRecognition;
+  }
+
+  function start(opts) {
+    if (!SpeechRecognition) {
+      console.warn('[STT] Web Speech API not supported in this browser.');
+      if (opts && opts.onError) opts.onError('STT desteklenmiyor.');
+      return;
+    }
+    if (isListening) stop();
+
+    recognition = new SpeechRecognition();
+    recognition.lang          = (opts && opts.lang)      || 'tr-TR';
+    recognition.continuous    = (opts && opts.continuous) || false;
+    recognition.interimResults= (opts && opts.interimResults !== undefined) ? opts.interimResults : true;
+    recognition.maxAlternatives = 1;
+
+    AppState.stt.active = true;
+    isListening = true;
+
+    recognition.onresult = function(event) {
+      let interim = '', final = '';
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const t = event.results[i][0].transcript;
+        if (event.results[i].isFinal) final += t;
+        else interim += t;
+      }
+      AppState.stt.transcript = final || interim;
+
+      // Live preview in textarea
+      const ta = document.getElementById('ai-input');
+      if (ta) ta.value = AppState.stt.transcript;
+
+      if (opts && opts.onResult) opts.onResult(AppState.stt.transcript, !!(final));
+    };
+
+    recognition.onerror = function(event) {
+      console.warn('[STT] Error:', event.error);
+      isListening = false;
+      AppState.stt.active = false;
+      _updateMicBtn(false);
+      if (opts && opts.onError) opts.onError(event.error);
+    };
+
+    recognition.onend = function() {
+      isListening = false;
+      AppState.stt.active = false;
+      _updateMicBtn(false);
+
+      // Auto-submit if we have a transcript
+      const transcript = AppState.stt.transcript.trim();
+      if (transcript && opts && opts.autoSubmit) {
+        if (opts.onComplete) opts.onComplete(transcript);
+      }
+    };
+
+    recognition.onstart = function() {
+      _updateMicBtn(true);
+      if (opts && opts.onStart) opts.onStart();
+    };
+
+    recognition.start();
+  }
+
+  function stop() {
+    if (recognition) {
+      try { recognition.stop(); } catch(e) {}
+      recognition = null;
+    }
+    isListening = false;
+    AppState.stt.active = false;
+    _updateMicBtn(false);
+  }
+
+  function _updateMicBtn(active) {
+    const btn = document.getElementById('ai-mic-btn');
+    if (!btn) return;
+    if (active) {
+      btn.classList.add('recording');
+      btn.title = 'Dinleniyor... (tıkla durdur)';
+    } else {
+      btn.classList.remove('recording');
+      btn.title = 'Sesle komut ver';
+    }
+  }
+
+  // Public API: toggle microphone
+  function toggle() {
+    if (isListening) {
+      stop();
+      return;
+    }
+    start({
+      lang         : 'tr-TR',
+      interimResults: true,
+      autoSubmit   : false,
+      onComplete   : function(transcript) {
+        const ta = document.getElementById('ai-input');
+        if (ta) ta.value = transcript;
+      },
+      onError: function(err) {
+        console.warn('[STT Bridge] onError:', err);
+      }
+    });
+  }
+
+  // Public API: capture then send directly to fetchMoodAnalysis
+  function captureAndAnalyze() {
+    if (!isSupported()) {
+      alert('Tarayıcınız ses tanımayı desteklemiyor. Lütfen metin kutusuna yazın.');
+      return;
+    }
+    start({
+      lang          : 'tr-TR',
+      interimResults: true,
+      autoSubmit    : true,
+      onStart: function() {
+        const ta = document.getElementById('ai-input');
+        if (ta) {
+          ta.placeholder = '🎙 Dinleniyor...';
+          ta.value = '';
+        }
+      },
+      onComplete: function(transcript) {
+        const ta = document.getElementById('ai-input');
+        if (ta) ta.value = transcript;
+        // Trigger AI generation with captured voice
+        handleAIGenerate();
+      },
+      onError: function(err) {
+        const ta = document.getElementById('ai-input');
+        if (ta) ta.placeholder = 'Şu an nasıl hissediyorsun? Sana özel bir frekans üreteyim...';
+        console.warn('[STT] capture error:', err);
+      }
+    });
+  }
+
+  return { start, stop, toggle, captureAndAnalyze, isSupported, isListening: function() { return isListening; } };
+})();
+
+/* ═══════════════════════════════════════════════
+   AI ORACLE
+═══════════════════════════════════════════════ */
+function buildAIOverlayAssets() {
+  const starContainer = document.getElementById('ai-stars');
+  if (starContainer && !starContainer.dataset.built) {
+    const fragment = document.createDocumentFragment();
+    for (let i = 0; i < 28; i++) {
+      const s = document.createElement('div');
+      s.className = 'ai-star';
+      const size = 1 + Math.random() * 2.5;
+      s.style.cssText = [
+        'width:' + size + 'px', 'height:' + size + 'px',
+        'left:' + (5 + Math.random() * 90) + '%',
+        'top:' + (5 + Math.random() * 90) + '%',
+        '--dur:' + (1.8 + Math.random() * 2.6) + 's',
+        '--del:' + (Math.random() * 2) + 's',
+        '--op:' + (0.35 + Math.random() * 0.65)
+      ].join(';');
+      fragment.appendChild(s);
+    }
+    starContainer.appendChild(fragment);
+    starContainer.dataset.built = '1';
+  }
+
+  const waveEl = document.getElementById('ai-proc-wave');
+  if (waveEl && !waveEl.dataset.built) {
+    const heights = [6,10,18,26,20,30,22,28,16,24,12,20,8,14];
+    const durs    = [.5,.7,.4,.9,.6,.8,.5,.7,.6,.8,.4,.9,.5,.7];
+    waveEl.innerHTML = heights.map(function(h, i) {
+      return '<div class="ai-proc-bar" style="--h:' + h + 'px;--dur:' + durs[i] + 's;--del:' + (i * .06) + 's"></div>';
+    }).join('');
+    waveEl.dataset.built = '1';
+  }
+}
+
+function showAIProcessing() {
+  buildAIOverlayAssets();
+  document.getElementById('ai-processing').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function hideAIProcessing() {
+  document.getElementById('ai-processing').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+const AppState = {
+  // Core mood/audio state
+  activeMood        : null,
+  playing           : false,
+  breathingPattern  : null,   // { inhale, hold, exhale, rest } in seconds
+
+  // AI-generated parameters (full schema)
+  ai: {
+    frequency        : null,  // binaural base Hz
+    detune           : null,  // beat offset Hz
+    breathingPattern : null,
+    visuals          : null,  // { primaryColor, secondaryColor, animationSpeed }
+    ambientLayers    : []
+  },
+
+  // STT
+  stt: {
+    active     : false,
+    transcript : ''
+  },
+
+  update(partial) {
+    Object.assign(this, partial);
+    // Sync legacy variables that existing code references
+    if ('activeMood'       in partial) activeMood       = partial.activeMood;
+    if ('playing'          in partial) playing           = partial.playing;
+    if ('breathingPattern' in partial) breathingPattern  = partial.breathingPattern;
+  },
+
+  updateAI(aiPartial) {
+    Object.assign(this.ai, aiPartial);
+  }
+};
+
+// Keep legacy vars in sync on first load
+(function syncLegacyInit() {
+  Object.defineProperty(AppState, '_activeMoodProxy', {
+    get() { return activeMood; },
+    set(v) { activeMood = v; AppState.activeMood = v; }
+  });
+})();
+
+// ── Full JSON schema the AI must return ──
+const AI_SCHEMA_DESCRIPTION = `{
+  "frequency": number,          // Binaural beat base carrier Hz (80–963)
+  "detune": number,             // Beat offset for brainwave entrainment (0.5–40)
+  "breathingPattern": {
+    "inhale": number,           // seconds (2–8)
+    "hold":   number,           // seconds (0–7)
+    "exhale": number,           // seconds (2–10)
+    "rest":   number            // seconds (0–4)
+  },
+  "visuals": {
+    "primaryColor":    "hex",   // 6-digit hex, no #
+    "secondaryColor":  "hex",
+    "animationSpeed":  number   // multiplier 0.5–2.5
+  },
+  "ambientLayers": string[],    // subset of: ["rain","brown_noise","forest","ocean","fire","wind","singing_bowls"]
+  "description": string         // Turkish, 1 lyrical sentence
+}`;
+
+const FALLBACK_FREQUENCY = {
+  frequency        : 432,
+  detune           : 7.83,
+  breathingPattern : { inhale:4, hold:2, exhale:6, rest:2 },
+  visuals          : { primaryColor:'c9a96e', secondaryColor:'6ecdc4', animationSpeed:1.0 },
+  ambientLayers    : ['brown_noise'],
+  description      : 'Evrenin temel rezonansı. 432 Hz doğanın matematiğine ayarlı, 7.83 Hz Schumann dalgası zihinle yeri birleştirir.',
+  isFallback       : true
+};
+
+// ── Bio-Acoustic Therapist System Instruction ──
+// Simpler, direct instruction for bioacoustic therapy JSON output.
+const GEMINI_SYSTEM_INSTRUCTION = [
+  'Sen bir biyo-akustik terapistisin.',
+  'Kullanıcı mood girişi yaptığında sadece şu JSON formatında yanıt ver:',
+  '{',
+  '  "frequency": number,',
+  '  "breathingPattern": {',
+  '    "inhale": number,',
+  '    "hold": number,',
+  '    "exhale": number,',
+  '    "rest": number',
+  '  },',
+  '  "visuals": {',
+  '    "primaryColor": string,',
+  '    "secondaryColor": string',
+  '  }',
+  '}',
+  '',
+  'KURALLAR:',
+  '- frequency: 80-963 arasında Hz değeri (kullanıcının mood\'una göre terapötik frekans)',
+  '- breathingPattern saniye cinsinden: inhale 2-8, hold 0-7, exhale 2-10, rest 0-4',
+  '- visuals renkleri 6 haneli hex, # işareti OLMADAN (örn: "c9a96e")',
+  '- YALNIZCA ham JSON döndür, başka hiçbir şey yazma.'
+].join('\n');
+
+// Legacy inline prompt kept for backward compat reference
+const GEMINI_SYSTEM_PROMPT = GEMINI_SYSTEM_INSTRUCTION;
+
+// ── Thinking step messages shown during API wait ──
+const THINKING_STEPS = [
+  { icon: '🧠', text: 'Duygusal frekansın okunuyor...' },
+  { icon: '🌊', text: 'Binaural beat kombinasyonu hesaplanıyor...' },
+  { icon: '🌬️', text: 'Nefes ritmin kalibre ediliyor...' },
+  { icon: '✨', text: 'Terapi planın oluşturuluyor...' }
+];
+let _thinkingTimer = null;
+
+function _startThinkingSteps() {
+  const titleEl = document.querySelector('#ai-processing .ai-proc-title');
+  const subEl   = document.querySelector('#ai-processing .ai-proc-sub');
+  if (!titleEl || !subEl) return;
+
+  let step = 0;
+
+  function showStep() {
+    const s = THINKING_STEPS[step % THINKING_STEPS.length];
+    titleEl.innerHTML = s.icon + ' <em>Düşünüyor</em>';
+    subEl.innerHTML   = s.text + '<br><span class="ai-proc-dots"><span>·</span><span>·</span><span>·</span></span>';
+    step++;
+  }
+
+  showStep();
+  _thinkingTimer = setInterval(showStep, 1800);
+}
+
+function _stopThinkingSteps() {
+  if (_thinkingTimer) { clearInterval(_thinkingTimer); _thinkingTimer = null; }
+  const titleEl = document.querySelector('#ai-processing .ai-proc-title');
+  const subEl   = document.querySelector('#ai-processing .ai-proc-sub');
+  if (titleEl) titleEl.innerHTML = 'Oracle <em>dinliyor</em>';
+  if (subEl)   subEl.innerHTML   = 'Bilinçdışının frekansına ayarlanıyor<br><span class="ai-proc-dots"><span>·</span><span>·</span><span>·</span></span>';
+}
+
+async function fetchMoodAnalysis(userInput) {
+  // ── Gemini-pro compatible request body ──
+  // Note: system_instruction and responseMimeType are gemini-1.5+ features.
+  // For gemini-pro we inject the system role as the first user/model turn pair.
+  const body = {
+    contents: [
+      {
+        role : 'user',
+        parts: [{
+          text: GEMINI_SYSTEM_INSTRUCTION +
+            '\n\nKullanıcının mevcut mood girişi:\n"' + userInput + '"'
+        }]
+      }
+    ],
+    generationConfig: {
+      temperature    : 0.75,
+      maxOutputTokens: 512,
+      topP           : 0.90
+      // responseMimeType not supported by gemini-pro; we strip fences manually below
+    }
+  };
+
+  // Use proxy endpoint in production, direct endpoint in development
+  const endpoint = (typeof GEMINI_PROXY_ENDPOINT !== 'undefined')
+    ? GEMINI_PROXY_ENDPOINT
+    : GEMINI_ENDPOINT;
+
+  const res = await fetch(endpoint, {
+    method : 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body   : JSON.stringify(body),
+    signal : AbortSignal.timeout(18000)   // 18s — generous for slow connections
+  });
+
+  if (!res.ok) {
+    // Attempt to surface Google's error message for easier debugging
+    let errDetail = 'HTTP ' + res.status;
+    try {
+      const errJson = await res.json();
+      errDetail += ': ' + ((errJson.error && errJson.error.message) || JSON.stringify(errJson));
+    } catch(e) { /* ignore secondary parse error */ }
+    throw new Error('Gemini API hatası — ' + errDetail);
+  }
+
+  const data    = await res.json();
+  const rawText = (
+    data?.candidates?.[0]?.content?.parts?.[0]?.text
+  ) || '';
+
+  // Strip any accidental markdown fences
+  const cleaned = rawText
+    .replace(/^```(?:json)?\s*/i, '')
+    .replace(/\s*```$/,           '')
+    .trim();
+
+  if (!cleaned) throw new Error('Gemini boş yanıt döndürdü.');
+
+  let parsed;
+  try { parsed = JSON.parse(cleaned); }
+  catch(e) {
+    console.error('[Sanctuary AI] JSON parse hatası. Ham yanıt:', cleaned.slice(0, 200));
+    throw new Error('JSON parse hatası: ' + cleaned.slice(0, 80));
+  }
+
+  // ── Explicit field validation ──
+  if (!parsed.frequency || !parsed.breathingPattern) {
+    console.error('[Sanctuary AI] Geçersiz AI formatı. Gelen veri:', JSON.stringify(parsed).slice(0, 200));
+    throw new Error('Geçersiz AI formatı: frequency veya breathingPattern eksik.');
+  }
+  const frequency = clamp(Number(parsed.frequency || parsed.carrierFreq || 432), 80, 963);
+  const detune    = clamp(Number(parsed.detune    || parsed.beatFreq    || 7.83), 0.5, 40);
+
+  const bp = parsed.breathingPattern || {};
+  const breathingPattern = {
+    inhale : clamp(Number(bp.inhale) || 4, 2, 8),
+    hold   : clamp(Number(bp.hold)   || 0, 0, 7),
+    exhale : clamp(Number(bp.exhale) || 6, 2, 10),
+    rest   : clamp(Number(bp.rest)   || 2, 0, 4)
+  };
+
+  const vis = parsed.visuals || {};
+  const stripHash = function(c) { return (c || '').replace(/^#/, ''); };
+  const visuals = {
+    primaryColor   : /^[0-9a-fA-F]{6}$/.test(stripHash(vis.primaryColor))   ? stripHash(vis.primaryColor)   : 'c9a96e',
+    secondaryColor : /^[0-9a-fA-F]{6}$/.test(stripHash(vis.secondaryColor)) ? stripHash(vis.secondaryColor) : '6ecdc4',
+    animationSpeed : clamp(Number(vis.animationSpeed) || 1.0, 0.5, 2.5)
+  };
+
+  const VALID_LAYERS = ['rain','brown_noise','forest','ocean','fire','wind','singing_bowls'];
+  const ambientLayers = Array.isArray(parsed.ambientLayers)
+    ? parsed.ambientLayers.filter(function(l) { return VALID_LAYERS.indexOf(l) !== -1; })
+    : [];
+
+  const description = String(parsed.description || '').slice(0, 300);
+
+  if (!frequency || !detune) throw new Error('Geçersiz frekans değerleri — model beklenen JSON şemasını döndürmedi.');
+
+  return { frequency, detune, breathingPattern, visuals, ambientLayers, description };
+}
+
+async function generateAIFrequency(prompt) {
+  return fetchMoodAnalysis(prompt);
+}
+
+function lerpFrequencies(carrierFreq, beatFreq, rampSec) {
+  if (!playing || !oscL.length || !oscR.length) return;
+  const t           = audioCtx.currentTime;
+  const timeConst   = rampSec / 3.0;          // setTargetAtTime time constant
+  const detuneCents = [-3, -1, 1, 3];
+
+  oscL.forEach(function(o, i) {
+    o.frequency.setTargetAtTime(
+      carrierFreq * centsToRatio(detuneCents[i]),
+      t, timeConst
+    );
+  });
+  oscR.forEach(function(o, i) {
+    o.frequency.setTargetAtTime(
+      (carrierFreq + beatFreq) * centsToRatio(detuneCents[i]),
+      t, timeConst
+    );
+  });
+  if (oscSol) {
+    oscSol.frequency.setTargetAtTime(nearestSolfeggio(carrierFreq), t, timeConst);
+  }
+  cvBeat = beatFreq;
+}
+
+function applyAIVisuals(visuals, animationSpeed) {
+  if (!visuals) return;
+  const root   = document.documentElement;
+  const p      = '#' + visuals.primaryColor;
+  const s      = '#' + visuals.secondaryColor;
+  const pRgb   = hexToRgb(visuals.primaryColor);
+  const sRgb   = hexToRgb(visuals.secondaryColor);
+  const speed  = animationSpeed || visuals.animationSpeed || 1.0;
+
+  // Override every relevant CSS variable for instant re-theme
+  root.style.setProperty('--gold',       p);
+  root.style.setProperty('--gold-mid',   shadeHex(visuals.primaryColor, -30));
+  root.style.setProperty('--gold-dim',   'rgba(' + pRgb + ',0.35)');
+  root.style.setProperty('--gold-ghost', 'rgba(' + pRgb + ',0.10)');
+  root.style.setProperty('--teal',       s);
+
+  // Theme accent variables
+  root.style.setProperty('--theme-accent',       p);
+  root.style.setProperty('--theme-accent-rgb',   pRgb);
+  root.style.setProperty('--theme-accent-dim',   'rgba(' + pRgb + ',0.35)');
+  root.style.setProperty('--theme-accent-ghost', 'rgba(' + pRgb + ',0.10)');
+  root.style.setProperty('--theme-bg-inject',
+    'radial-gradient(ellipse at 50% 0%, rgba(' + pRgb + ',0.09) 0%, transparent 65%)'
+  );
+
+  // Breathing speed from animationSpeed (inverse: faster anim = shorter breath cycle)
+  const breathMs = Math.round(6000 / speed);
+  root.style.setProperty('--breath-speed', breathMs + 'ms');
+  currentBreathSpeed = speed;
+
+  // Propagate to body as well (existing code writes both)
+  document.body.style.setProperty('--theme-bg-inject',
+    'radial-gradient(ellipse at 50% 0%, rgba(' + pRgb + ',0.09) 0%, transparent 65%)'
+  );
+
+  // Update b-core glow
+  const bcore = document.getElementById('b-core');
+  if (bcore) bcore.style.boxShadow = '0 0 32px rgba(' + pRgb + ',0.35)';
+}
+
+// Hex helpers
+function hexToRgb(hex) {
+  const h = hex.replace('#', '');
+  const r = parseInt(h.slice(0,2), 16);
+  const g = parseInt(h.slice(2,4), 16);
+  const b = parseInt(h.slice(4,6), 16);
+  return r + ',' + g + ',' + b;
+}
+function shadeHex(hex, amt) {
+  const h = hex.replace('#', '');
+  const clamp255 = function(v) { return Math.min(255, Math.max(0, v)); };
+  const r = clamp255(parseInt(h.slice(0,2),16) + amt);
+  const g = clamp255(parseInt(h.slice(2,4),16) + amt);
+  const b = clamp255(parseInt(h.slice(4,6),16) + amt);
+  return '#' + [r,g,b].map(function(v) { return v.toString(16).padStart(2,'0'); }).join('');
+}
+
+function applyAIBreathingPattern(bp) {
+  if (!bp) return;
+  AppState.update({ breathingPattern: bp });
+
+  // Restart breath cycle if currently playing
+  if (playing && breathTmr) {
+    stopBreath();
+    // Build breathCycle array in existing format [inhale,hold,exhale,rest]
+    const cycle = [
+      Math.round(bp.inhale),
+      Math.round(bp.hold),
+      Math.round(bp.exhale),
+      Math.round(bp.rest)
+    ];
+    startBreath(cycle);
+  }
+
+  // Update CSS transition duration for orb rings
+  const totalSec = (bp.inhale + bp.hold + bp.exhale + bp.rest);
+  document.documentElement.style.setProperty('--breath-dur', bp.inhale + 's');
+  document.documentElement.style.setProperty('--breath-speed', totalSec + 's');
+}
+
+function applyAIFrequency(result) {
+  const carrierFreq     = result.carrierFreq || result.frequency;
+  const beatFreq        = result.beatFreq    || result.detune;
+  const description     = result.description;
+  const isFallback      = result.isFallback || false;
+  const visuals         = result.visuals;
+  const breathingPattern= result.breathingPattern;
+
+  // 1. Apply CSS re-theme from AI visuals
+  if (visuals) applyAIVisuals(visuals, visuals.animationSpeed);
+
+  // 2. Apply breathing pattern
+  if (breathingPattern) applyAIBreathingPattern(breathingPattern);
+
+  // 3. Apply frequencies — crossfade eğer çalıyorsa, yoksa yeni mood başlat
+  if (playing && oscL.length && oscR.length) {
+    crossfadeToFrequency(carrierFreq, beatFreq);
+  } else {
+    const aiMood = buildAIMood(carrierFreq, beatFreq);
+    activeMood = aiMood;
+    AppState.update({ activeMood: aiMood });
+    togglePlay();
+  }
+
+  // 4. Update UI labels
+  document.getElementById('freq-label').textContent =
+    carrierFreq + ' Hz · ' + beatFreq + ' Hz Beat · AI';
+  document.getElementById('freq-badge').classList.add('on');
+
+  // 5. Log ambient layers
+  if (result.ambientLayers && result.ambientLayers.length) {
+    console.log('[Sanctuary AI] Ambient layers:', result.ambientLayers.join(', '));
+  }
+
+  // 6. Render AI result panel
+  renderAIResult(carrierFreq, beatFreq, description, isFallback, visuals, breathingPattern, result.ambientLayers);
+}
+
+function buildAIMood(carrierFreq, beatFreq) {
+  const base = activeMood || MOODS.Sakin;
+  return Object.assign({}, base, {
+    carrier   : carrierFreq,
+    beat      : beatFreq,
+    solfeggio : nearestSolfeggio(carrierFreq),
+    freqLabel : carrierFreq + ' Hz · ' + beatFreq + ' Hz Beat · AI Oracle'
+  });
+}
+
+function nearestSolfeggio(freq) {
+  const SOLF = [174, 285, 396, 417, 432, 528, 639, 741, 852, 963];
+  return SOLF.reduce(function(prev, cur) {
+    return Math.abs(cur - freq) < Math.abs(prev - freq) ? cur : prev;
+  });
+}
+
+function clamp(val, min, max) {
+  return Math.min(Math.max(val, min), max);
+}
+
+function renderAIResult(carrierFreq, beatFreq, description, isFallback, visuals, breathingPattern, ambientLayers) {
+  const resultEl = document.getElementById('ai-result');
+  const textEl   = document.getElementById('ai-result-text');
+  const freqEl   = document.getElementById('ai-result-freq');
+
+  const finalText = description || 'Frekansın bilinçaltınla rezonansa girdi. Şimdi başlıyor.';
+
+  // Build chips — frequency + breathing + visuals + ambient
+  const chips = [
+    '<span class="ai-freq-chip">' + carrierFreq + ' Hz Carrier</span>',
+    '<span class="ai-freq-chip">' + beatFreq + ' Hz Beat</span>',
+    isFallback
+      ? '<span class="ai-freq-chip" style="color:var(--gold);border-color:rgba(201,169,110,.35)">432 Hz Fallback</span>'
+      : '<span class="ai-freq-chip">✦ AI Composer</span>'
+  ];
+
+  if (breathingPattern) {
+    chips.push(
+      '<span class="ai-freq-chip" style="color:var(--teal);border-color:rgba(110,205,196,.3)">' +
+      '🫁 ' + breathingPattern.inhale + '·' + breathingPattern.hold + '·' + breathingPattern.exhale + '·' + breathingPattern.rest +
+      '</span>'
+    );
+  }
+
+  if (visuals) {
+    chips.push(
+      '<span class="ai-freq-chip" style="background:linear-gradient(90deg,#' + visuals.primaryColor + '22,#' + visuals.secondaryColor + '22);border-color:#' + visuals.primaryColor + '55;color:#' + visuals.primaryColor + '">' +
+      '🎨 Theme</span>'
+    );
+  }
+
+  if (ambientLayers && ambientLayers.length) {
+    ambientLayers.forEach(function(layer) {
+      const icons = { rain:'🌧', brown_noise:'🌊', forest:'🌲', ocean:'🌊', fire:'🔥', wind:'💨', singing_bowls:'🔔' };
+      chips.push(
+        '<span class="ai-freq-chip" style="color:rgba(155,142,196,.9);border-color:rgba(155,142,196,.3)">' +
+        (icons[layer] || '🎵') + ' ' + layer.replace('_',' ') + '</span>'
+      );
+    });
+  }
+
+  freqEl.innerHTML = chips.join('');
+  resultEl.classList.add('show');
+
+  textEl.textContent = '';
+  let charIdx = 0;
+  const CHAR_DELAY = 34;
+
+  function typeNextChar() {
+    if (charIdx < finalText.length) {
+      textEl.textContent += finalText[charIdx++];
+      setTimeout(typeNextChar, CHAR_DELAY);
+    } else {
+      onTypingComplete(finalText);
+    }
+  }
+  typeNextChar();
+}
+
+function onTypingComplete(text) {
+  const lower = text.toLowerCase();
+
+  const KEYWORD_THEME_MAP = [
+    { keywords: ['sakin', 'huzur', 'dingin', 'sessiz', 'sükunet', 'barış'],  state: 'Sakin'     },
+    { keywords: ['enerji', 'güç', 'canlı', 'dinamik', 'aktif', 'huzursuz'], state: 'Huzursuz'  },
+    { keywords: ['odak', 'konsantr', 'berrak', 'netlik', 'dikkat'],          state: 'Kaygılı'   },
+    { keywords: ['derin', 'uyku', 'dinlen', 'yorgun', 'gece', 'delta'],      state: 'Yorgun'    },
+    { keywords: ['minnet', 'şükran', 'mutlu', 'sevinç', 'neşe'],             state: 'Minnettar' },
+    { keywords: ['kaygı', 'endişe', 'stres', 'gerilim'],                     state: 'Kaygılı'   }
+  ];
+
+  let matchedMoodKey = null;
+  for (let i = 0; i < KEYWORD_THEME_MAP.length; i++) {
+    const entry = KEYWORD_THEME_MAP[i];
+    if (entry.keywords.some(function(kw) { return lower.indexOf(kw) !== -1; })) {
+      matchedMoodKey = entry.state;
+      break;
+    }
+  }
+
+  if (matchedMoodKey && MOODS[matchedMoodKey]) {
+    updateAppTheme(MOODS[matchedMoodKey]);
+  }
+
+  setTimeout(function() { showAffirmationCard(text); }, 2000);
+}
+
+function showAffirmationCard(text) {
+  const existing = document.getElementById('affirmation-card-overlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.id = 'affirmation-card-overlay';
+  overlay.style.cssText = 'position:fixed;inset:0;z-index:800;display:flex;align-items:center;justify-content:center;background:rgba(5,5,7,0.72);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);opacity:0;transition:opacity 0.6s cubic-bezier(0.4,0,0.2,1);padding:24px;';
+
+  const card = document.createElement('div');
+  card.style.cssText = 'max-width:400px;width:100%;background:rgba(17,17,24,0.72);border:1px solid rgba(255,255,255,0.11);border-radius:28px;padding:40px 32px 32px;text-align:center;position:relative;box-shadow:0 32px 80px rgba(0,0,0,0.6),0 2px 0 rgba(255,255,255,0.07) inset;transform:translateY(20px) scale(0.96);transition:transform 0.6s cubic-bezier(0.34,1.56,0.64,1),opacity 0.6s ease;opacity:0;';
+
+  const quote = document.createElement('div');
+  quote.style.cssText = 'font-family:"Cormorant Garamond",serif;font-size:72px;line-height:0.6;color:rgba(201,169,110,0.15);margin-bottom:12px;user-select:none;';
+  quote.textContent = '"';
+
+  const eyebrow = document.createElement('div');
+  eyebrow.style.cssText = 'font-family:"Figtree",sans-serif;font-size:9px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold,#c9a96e);margin-bottom:20px;opacity:0.8;';
+  eyebrow.textContent = 'AI Affirmation';
+
+  const affirmText = document.createElement('p');
+  affirmText.style.cssText = 'font-family:"Cormorant Garamond",serif;font-size:clamp(17px,4.5vw,22px);font-weight:300;font-style:italic;line-height:1.65;color:#f0eee8;margin-bottom:32px;text-shadow:0 1px 16px rgba(0,0,0,0.4);';
+  affirmText.textContent = text;
+
+  const divider = document.createElement('div');
+  divider.style.cssText = 'width:48px;height:1px;background:rgba(201,169,110,0.35);margin:0 auto 28px;';
+
+  const closeBtn = document.createElement('button');
+  closeBtn.textContent = 'Kapat';
+  closeBtn.style.cssText = 'padding:12px 36px;background:rgba(201,169,110,0.10);border:1px solid rgba(201,169,110,0.35);border-radius:100px;color:var(--gold,#c9a96e);font-family:"Figtree",sans-serif;font-size:10.5px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:background 0.28s,box-shadow 0.28s,transform 0.2s;box-shadow:0 1px 0 rgba(255,255,255,0.07) inset;';
+
+  function dismiss() {
+    overlay.style.opacity = '0';
+    card.style.transform  = 'translateY(16px) scale(0.95)';
+    card.style.opacity    = '0';
+    setTimeout(function() { if (overlay.parentNode) overlay.remove(); }, 600);
+  }
+
+  closeBtn.addEventListener('click', dismiss);
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) dismiss(); });
+
+  card.appendChild(quote);
+  card.appendChild(eyebrow);
+  card.appendChild(affirmText);
+  card.appendChild(divider);
+  card.appendChild(closeBtn);
+  overlay.appendChild(card);
+  document.body.appendChild(overlay);
+
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      overlay.style.opacity = '1';
+      card.style.opacity    = '1';
+      card.style.transform  = 'translateY(0) scale(1)';
+    });
+  });
+}
+
+document.getElementById('ai-processing').addEventListener('click', function(e) {
+  if (e.target === this) hideAIProcessing();
+});
+
+let selectedPlan = 'yearly';
+
+const PLAN_META = {
+  monthly:  {
+    label:    'Aylık',
+    price:    '$9.99',
+    cta_trial:'Ücretsiz Dene — 7 Gün',
+    cta_no:   '$9.99 ile Başla',
+    note_trial:'Deneme bittikten sonra $9.99/ay olarak faturalandırılır.',
+    note_no:  'Anında iptal edebilirsiniz. Faturalandırma hemen başlar.'
+  },
+  yearly: {
+    label:    'Yıllık',
+    price:    '$59.99',
+    cta_trial:'Ücretsiz Dene — 7 Gün',
+    cta_no:   '$59.99 ile Başla',
+    note_trial:'Deneme bittikten sonra $59.99/yıl olarak faturalandırılır. İptal edilebilir.',
+    note_no:  '%50 tasarruf. $59.99/yıl. İstediğin zaman iptal et.'
+  },
+  lifetime: {
+    label:    'Ömürlük',
+    price:    '$199',
+    cta_trial:null,
+    cta_no:   'Ömürlük Erişim — $199',
+    note_trial:null,
+    note_no:  'Tek seferlik ödeme. Tüm gelecek güncellemeler dahil.'
+  }
+};
+
+function showPaywall()  { openPaywall(); }
+
+function openPaywall() {
+  document.getElementById('paywall-overlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+  _syncPaywallUI();
+}
+
+function closePaywall() {
+  document.getElementById('paywall-overlay').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+function selectPlan(el) {
+  document.querySelectorAll('.pw-plan').forEach(function(p) { p.classList.remove('sel'); });
+  el.classList.add('sel');
+  selectedPlan = el.dataset.plan;
+
+  const trialRow    = document.getElementById('pw-trial-row');
+  const trialToggle = document.getElementById('pw-trial-toggle');
+  if (selectedPlan === 'lifetime') {
+    trialEnabled = false;
+    if (trialToggle) trialToggle.checked = false;
+    if (trialRow)    trialRow.style.opacity = '0.38';
+    if (trialRow)    trialRow.style.pointerEvents = 'none';
+  } else {
+    if (trialRow)    trialRow.style.opacity = '';
+    if (trialRow)    trialRow.style.pointerEvents = '';
+    trialEnabled = trialToggle ? trialToggle.checked : true;
+  }
+
+  _syncPaywallUI();
+}
+
+function updateTrialState() {
+  const toggle = document.getElementById('pw-trial-toggle');
+  trialEnabled = toggle ? toggle.checked : false;
+  _syncPaywallUI();
+}
+
+function _syncPaywallUI() {
+  const meta = PLAN_META[selectedPlan] || PLAN_META.yearly;
+  const btn  = document.getElementById('pw-cta-btn');
+  const note = document.getElementById('pw-cta-note');
+
+  const useTrail = trialEnabled && meta.cta_trial !== null;
+
+  if (btn)  btn.textContent  = useTrail ? meta.cta_trial : meta.cta_no;
+  if (note) note.textContent = useTrail ? (meta.note_trial || '') : (meta.note_no || '');
+}
+
+function handlePurchase() {
+  const meta     = PLAN_META[selectedPlan] || PLAN_META.yearly;
+  const useTrial = trialEnabled && meta.cta_trial !== null;
+  const payload  = { plan: selectedPlan, trial: useTrial };
+
+  if (window.SanctuaryNative && window.SanctuaryNative.purchase) {
+    window.SanctuaryNative.purchase(payload);
+    // Native bridge sonucu applyPremiumUI'yi çağıracak (IAP callback üzerinden)
+    // Web fallback ise stub içinde applyPremiumUI'yi çağırır
+  } else {
+    // Direct web fallback
+    const priceStr = meta.price;
+    const msg = useTrial
+      ? '7 günlük ücretsiz deneme başlıyor!\nPlan: ' + meta.label + ' — ' + priceStr + '\n\n[Gerçek ortamda StoreKit / Google Play Billing kullanılacak]'
+      : 'Satın alma: ' + meta.label + ' — ' + priceStr + '\n\n[Gerçek ortamda StoreKit / Google Play Billing kullanılacak]';
+    alert(msg);
+    applyPremiumUI();
+  }
+}
+
+function restorePurchase() {
+  if (window.SanctuaryNative && window.SanctuaryNative.restorePurchases) {
+    window.SanctuaryNative.restorePurchases();
+  } else {
+    alert('Satın alım bulunamadı.\n\nGerçek bir satın alım yapmadan premium aktif edilemez.');
+  }
+}
+
+document.getElementById('paywall-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closePaywall();
+});
+
+(function checkPremiumOnLoad() {
+  try {
+    // localStorage'daki premium durumunu her açılışta temizle (demo/geliştirme modu)
+    // Gerçek uygulamada bu satır kaldırılmalı, IAP doğrulaması yapılmalı
+    localStorage.removeItem('sanctuary_premium');
+  } catch(e) {}
+})();
+
+// Init paywall UI
+_syncPaywallUI();
+
+/* ── 3.1: AUDIO CROSSFADING ──────────────────────────────────
+   2-second linear ramp on gain + frequency when AI returns new params.
+   Overrides the existing lerpFrequencies to also ramp master gain.
+   ──────────────────────────────────────────────────────────── */
+const CROSSFADE_DURATION = 2.0; // seconds
+
+function crossfadeToFrequency(carrierFreq, beatFreq) {
+  if (!audioCtx || !oscL.length || !oscR.length) return;
+  const ctx = audioCtx;
+  const t   = ctx.currentTime;
+  const end = t + CROSSFADE_DURATION;
+
+  // Frequency linear ramps (scheduleValues are more glitch-free than setTargetAtTime for short durations)
+  const detuneCents = [-3, -1, 1, 3];
+
+  oscL.forEach(function(o, i) {
+    const target = carrierFreq * centsToRatio(detuneCents[i]);
+    o.frequency.cancelScheduledValues(t);
+    o.frequency.setValueAtTime(o.frequency.value, t);
+    o.frequency.linearRampToValueAtTime(target, end);
+  });
+
+  oscR.forEach(function(o, i) {
+    const target = (carrierFreq + beatFreq) * centsToRatio(detuneCents[i]);
+    o.frequency.cancelScheduledValues(t);
+    o.frequency.setValueAtTime(o.frequency.value, t);
+    o.frequency.linearRampToValueAtTime(target, end);
+  });
+
+  if (oscSol) {
+    const targetSol = nearestSolfeggio(carrierFreq);
+    oscSol.frequency.cancelScheduledValues(t);
+    oscSol.frequency.setValueAtTime(oscSol.frequency.value, t);
+    oscSol.frequency.linearRampToValueAtTime(targetSol, end);
+  }
+
+  cvBeat = beatFreq;
+
+  // Show crossfade indicator
+  _showCrossfadeIndicator();
+}
+
+function _showCrossfadeIndicator() {
+  const el = document.getElementById('crossfade-indicator');
+  if (!el) return;
+  el.classList.add('show');
+  clearTimeout(_crossfadeIndicatorTimer);
+  _crossfadeIndicatorTimer = setTimeout(function() {
+    el.classList.remove('show');
+  }, CROSSFADE_DURATION * 1000 + 400);
+}
+let _crossfadeIndicatorTimer = null;
+
+/* ── 3.2: DYNAMIC BRAINWAVE UI ──────────────────────────────
+   While waiting for Gemini API, pulse the breathing circle
+   with a "brainwave" glow effect and show a thinking label.
+   ──────────────────────────────────────────────────────────── */
+function startBrainwaveUI() {
+  const bcore    = document.getElementById('b-core');
+  const wrap     = document.querySelector('.breath-wrap');
+  const label    = document.getElementById('ai-thinking-label');
+
+  if (bcore) bcore.classList.add('b-core-ai-thinking');
+  if (wrap)  wrap.classList.add('ai-thinking');
+  if (label) label.classList.add('show');
+}
+
+function stopBrainwaveUI() {
+  const bcore = document.getElementById('b-core');
+  const wrap  = document.querySelector('.breath-wrap');
+  const label = document.getElementById('ai-thinking-label');
+
+  if (bcore) bcore.classList.remove('b-core-ai-thinking');
+  if (wrap)  wrap.classList.remove('ai-thinking');
+  if (label) label.classList.remove('show');
+}
+
+/* ── 3.3: FALLBACK NOTIFICATION ─────────────────────────────
+   If API key missing or request fails, switch to Default Zen
+   state and subtly notify the user.
+   ──────────────────────────────────────────────────────────── */
+const DEFAULT_ZEN = {
+  frequency        : 432,
+  detune           : 4,        // 4-4-4-4 breathing maps to calm
+  breathingPattern : { inhale:4, hold:4, exhale:4, rest:4 },
+  visuals          : { primaryColor:'c9a96e', secondaryColor:'6ecdc4', animationSpeed:0.9 },
+  ambientLayers    : ['brown_noise'],
+  description      : 'Default Zen: 432 Hz evrenin temel rezonansı. 4-4-4-4 kutu nefesiyle zihin sakinleşiyor.',
+  isFallback       : true
+};
+
+function showFallbackNotice(message) {
+  const notice = document.getElementById('fallback-notice');
+  const text   = document.getElementById('fallback-notice-text');
+  if (!notice) return;
+  if (text) text.textContent = message || 'Default Zen aktif — 432 Hz · 4-4-4-4 nefes';
+  notice.classList.add('show');
+  clearTimeout(_fallbackNoticeTimer);
+  _fallbackNoticeTimer = setTimeout(function() {
+    notice.classList.remove('show');
+  }, 5500);
+}
+let _fallbackNoticeTimer = null;
+
+// Override the existing handleAIGenerate
+function handleAIGenerate() {
+  if (!isPremium) {
+    showPaywall();
+    return;
+  }
+
+  const input = (document.getElementById('ai-input').value || '').trim();
+  if (!input) {
+    const ta = document.getElementById('ai-input');
+    ta.style.borderColor = 'rgba(155,142,196,.7)';
+    ta.focus();
+    setTimeout(function() { ta.style.borderColor = ''; }, 1800);
+    return;
+  }
+  if (!GEMINI_API_KEY || GEMINI_API_KEY === 'YOUR_API_KEY_HERE') {
+    _applyFallbackWithNotice('API anahtarı bulunamadı. Default Zen modu başlatıldı.');
+    return;
+  }
+
+  const btn = document.getElementById('ai-generate-btn');
+  btn.disabled = true;
+  showAIProcessing();
+  _startThinkingSteps();
+  startBrainwaveUI();
+
+  fetchMoodAnalysis(input)
+    .then(function(result) {
+      AppState.updateAI(result);
+      applyAIFrequency({
+        carrierFreq      : result.frequency,
+        beatFreq         : result.detune,
+        description      : result.description,
+        visuals          : result.visuals,
+        breathingPattern : result.breathingPattern,
+        ambientLayers    : result.ambientLayers
+      });
+    })
+    .catch(function(err) {
+      console.error('[Sanctuary AI] API hatası:', err.message, err);
+      const isKeyErr = err.message && (err.message.includes('400') || err.message.includes('API_KEY') || err.message.includes('403'));
+      const msg = isKeyErr
+        ? 'API bağlantısı kurulamadı. Default Zen modu aktif.'
+        : 'Bağlantı hatası. Default Zen modu aktif.';
+      _applyFallbackWithNotice(msg);
+    })
+    .finally(function() {
+      _stopThinkingSteps();
+      hideAIProcessing();
+      stopBrainwaveUI();
+      btn.disabled = false;
+    });
+}
+
+function _applyFallbackWithNotice(message) {
+  AppState.updateAI(DEFAULT_ZEN);
+  applyAIFrequency({
+    carrierFreq      : DEFAULT_ZEN.frequency,
+    beatFreq         : DEFAULT_ZEN.detune,
+    description      : DEFAULT_ZEN.description,
+    visuals          : DEFAULT_ZEN.visuals,
+    breathingPattern : DEFAULT_ZEN.breathingPattern,
+    ambientLayers    : DEFAULT_ZEN.ambientLayers,
+    isFallback       : true
+  });
+  _stopThinkingSteps();
+  hideAIProcessing();
+  stopBrainwaveUI();
+  const btn = document.getElementById('ai-generate-btn');
+  if (btn) btn.disabled = false;
+  showFallbackNotice(message);
+}
+
+/* ── 3.4: VOLUME NORMALIZATION ───────────────────────────────
+   Ensure master gain + ambient never exceeds 0.8 to prevent
+   digital clipping on phone speakers.
+   ──────────────────────────────────────────────────────────── */
+const MAX_MASTER_GAIN   = 0.78;  // just under 0.8 for headroom
+const TARGET_OZONE_GAIN = 0.65;  // safe target for oscillator layers
+
+// Patch startAudio: after the existing exponentialRampToValueAtTime calls,
+// clamp mGain to MAX_MASTER_GAIN. We do this by monkey-patching AudioParam.
+(function patchVolumeNormalization() {
+  // Run after DOM is fully set up — AudioContext hasn't started yet.
+  // We'll hook into startAudio by wrapping it.
+  const _origStartAudio = startAudio;
+  window.startAudio = function(m) {
+    _origStartAudio(m);
+    // Schedule a deferred clamp — after ramp completes (2s + buffer)
+    setTimeout(function() {
+      if (!audioCtx || !mGain) return;
+      const cur = mGain.gain.value;
+      if (cur > MAX_MASTER_GAIN) {
+        const t = audioCtx.currentTime;
+        mGain.gain.cancelScheduledValues(t);
+        mGain.gain.setValueAtTime(cur, t);
+        mGain.gain.linearRampToValueAtTime(MAX_MASTER_GAIN, t + 0.5);
+      }
+    }, 2500);
+  };
+})();
+
+// Also clamp gain on every crossfade/lerp operation
+const _origCrossfade = crossfadeToFrequency;
+function _clampedCrossfadeToFrequency(carrierFreq, beatFreq) {
+  _origCrossfade(carrierFreq, beatFreq);
+  // Clamp master gain if needed after transition
+  setTimeout(function() {
+    if (!audioCtx || !mGain) return;
+    const cur = mGain.gain.value;
+    if (cur > MAX_MASTER_GAIN) {
+      const t = audioCtx.currentTime;
+      mGain.gain.setValueAtTime(cur, t);
+      mGain.gain.linearRampToValueAtTime(MAX_MASTER_GAIN, t + 0.5);
+    }
+  }, CROSSFADE_DURATION * 1000 + 200);
+}
+
+/* ── 3.5: SESSION MEMORY — localStorage mood persistence ─────
+   Remember the last mood text the user typed.
+   Restore it when they reopen/revisit the AI oracle section.
+   ──────────────────────────────────────────────────────────── */
+const MOOD_MEMORY_KEY = 'sanctuary_last_mood_input';
+
+function saveMoodMemory(text) {
+  try { localStorage.setItem(MOOD_MEMORY_KEY, text); } catch(e) {}
+}
+
+function loadMoodMemory() {
+  try { return localStorage.getItem(MOOD_MEMORY_KEY) || ''; } catch(e) { return ''; }
+}
+
+// Restore saved mood on page load
+(function restoreMoodMemory() {
+  const saved = loadMoodMemory();
+  if (!saved) return;
+  // Wait for DOM to be ready
+  const tryRestore = function() {
+    const ta = document.getElementById('ai-input');
+    if (ta && !ta.value) {
+      ta.value = saved;
+      // Subtle visual hint it was restored
+      ta.style.borderColor = 'rgba(201,169,110,0.28)';
+      setTimeout(function() { ta.style.borderColor = ''; }, 1800);
+    }
+  };
+  // Try immediately and after a short delay for lazy DOM
+  tryRestore();
+  setTimeout(tryRestore, 500);
+})();
+
+// Auto-save mood text as user types
+(function initMoodMemoryAutoSave() {
+  let _saveDebounce = null;
+  const attachSave = function() {
+    const ta = document.getElementById('ai-input');
+    if (!ta) { setTimeout(attachSave, 300); return; }
+    ta.addEventListener('input', function() {
+      clearTimeout(_saveDebounce);
+      _saveDebounce = setTimeout(function() {
+        if (ta.value.trim()) saveMoodMemory(ta.value.trim());
+      }, 800);
+    });
+  };
+  attachSave();
+})();
+
+/* ═══════════════════════════════════════════════
+   PWA — Inline Manifest (single-file, no SW)
+═══════════════════════════════════════════════ */
+(function() {
+  try {
+    var link = document.createElement('link');
+    link.rel = 'manifest';
+    link.href = 'data:application/json;base64,eyJuYW1lIjogIlNhbmN0dWFyeSBcdTIwMTQgWW91ciBJbm5lciBTcGFjZSIsICJzaG9ydF9uYW1lIjogIlNhbmN0dWFyeSIsICJkZXNjcmlwdGlvbiI6ICJTZXMgZnJla2Fuc2xhclx1MDEzMSB2ZSBuZWZlcyByZWhiZXJpeWxlIHppaGluc2VsIGh1enVyLiIsICJzdGFydF91cmwiOiAiLi9zYW5jdHVhcnktc3RhbmRhbG9uZS5odG1sIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwNTA1MDciLCAidGhlbWVfY29sb3IiOiAiIzA1MDUwNyIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBMU1USWdOVEV5SWlCM2FXUjBhRDBpTlRFeUlpQm9aV2xuYUhROUlqVXhNaUkrUEhKbFkzUWdkMmxrZEdnOUlqVXhNaUlnYUdWcFoyaDBQU0kxTVRJaUlISjRQU0l4TVRJaUlHWnBiR3c5SWlNd05UQTFNRGNpTHo0OFkybHlZMnhsSUdONFBTSXlOVFlpSUdONVBTSXlOVFlpSUhJOUlqRTBNQ0lnWm1sc2JEMGlibTl1WlNJZ2MzUnliMnRsUFNKeVoySmhLREl3TVN3eE5qa3NNVEV3TERBdU1qVXBJaUJ6ZEhKdmEyVXRkMmxrZEdnOUlqRXVOU0l2UGp4amFYSmpiR1VnWTNnOUlqSTFOaUlnWTNrOUlqSTFOaUlnY2owaU1UQXdJaUJtYVd4c1BTSnViMjVsSWlCemRISnZhMlU5SW5KblltRW9NakF4TERFMk9Td3hNVEFzTUM0eE9Da2lJSE4wY205clpTMTNhV1IwYUQwaU1TSXZQanhqYVhKamJHVWdZM2c5SWpJMU5pSWdZM2s5SWpJMU5pSWdjajBpTmpRaUlHWnBiR3c5SW5KblltRW9NakF4TERFMk9Td3hNVEFzTUM0d05pa2lMejQ4WkdWbWN6NDhjbUZrYVdGc1IzSmhaR2xsYm5RZ2FXUTlJbVJ2ZEVkeVlXUWlJR040UFNJME1DVWlJR041UFNJek5TVWlJSEk5SWpZd0pTSStQSE4wYjNBZ2IyWm1jMlYwUFNJd0pTSWdjM1J2Y0MxamIyeHZjajBpSTJZd1pEQTVNQ0l2UGp4emRHOXdJRzltWm5ObGREMGlNVEF3SlNJZ2MzUnZjQzFqYjJ4dmNqMGlJMk01WVRrMlpTSXZQand2Y21Ga2FXRnNSM0poWkdsbGJuUStQSEpoWkdsaGJFZHlZV1JwWlc1MElHbGtQU0puYkc5M1IzSmhaQ0lnWTNnOUlqVXdKU0lnWTNrOUlqVXdKU0lnY2owaU5UQWxJajQ4YzNSdmNDQnZabVp6WlhROUlqQWxJaUJ6ZEc5d0xXTnZiRzl5UFNKeVoySmhLREl3TVN3eE5qa3NNVEV3TERBdU5Ta2lMejQ4YzNSdmNDQnZabVp6WlhROUlqRXdNQ1VpSUhOMGIzQXRZMjlzYjNJOUluSm5ZbUVvTWpBeExERTJPU3d4TVRBc01Da2lMejQ4TDNKaFpHbGhiRWR5WVdScFpXNTBQand2WkdWbWN6NDhZMmx5WTJ4bElHTjRQU0l5TlRZaUlHTjVQU0l5TlRZaUlISTlJalEwSWlCbWFXeHNQU0oxY213b0kyZHNiM2RIY21Ga0tTSXZQanhqYVhKamJHVWdZM2c5SWpJMU5pSWdZM2s5SWpJMU5pSWdjajBpTVRnaUlHWnBiR3c5SW5WeWJDZ2paRzkwUjNKaFpDa2lMejQ4Wld4c2FYQnpaU0JqZUQwaU1qUTVJaUJqZVQwaU1qUTVJaUJ5ZUQwaU55SWdjbms5SWpVaUlHWnBiR3c5SW5KblltRW9NalUxTERJMU5Td3lOVFVzTUM0ek5Ta2lJSFJ5WVc1elptOXliVDBpY205MFlYUmxLQzB5TUNBeU5Ea2dNalE1S1NJdlBqeDBaWGgwSUhnOUlqSTFOaUlnZVQwaU5EQTJJaUJtYjI1MExXWmhiV2xzZVQwaWMyVnlhV1lpSUdadmJuUXRjMmw2WlQwaU16QWlJR1p2Ym5RdGQyVnBaMmgwUFNJek1EQWlJR3hsZEhSbGNpMXpjR0ZqYVc1blBTSXhNQ0lnWm1sc2JEMGljbWRpWVNneU1ERXNNVFk1TERFeE1Dd3dMamMxS1NJZ2RHVjRkQzFoYm1Ob2IzSTlJbTFwWkdSc1pTSStVMEZPUTFSVlFWSlpYend2ZEdWNGRENDhMM04yWno0PSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9XSwgImNhdGVnb3JpZXMiOiBbImhlYWx0aCIsICJsaWZlc3R5bGUiLCAid2VsbG5lc3MiXX0=';
+    document.head.appendChild(link);
+  } catch(e) { console.warn('Manifest inject failed:', e); }
+})();
+</script>
+</body>
+</html>

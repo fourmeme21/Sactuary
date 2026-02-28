@@ -3762,6 +3762,18 @@ const FALLBACK_FREQUENCY = {
   description      : 'Evrenin temel rezonansı. 432 Hz doğanın matematiğine ayarlı, 7.83 Hz Schumann dalgası zihinle yeri birleştirir.',
   isFallback       : true
 };
+/* ── AI ORACLE — Dış JSON Verisi ── */
+const aiData = {
+  message      : "Zihnindeki o elektriksel fırtınayı hissediyorum...",
+  message_part2: "Şu an sana 396 Hz'i yönlendiriyorum...",
+  message_part3: "Yıldırımları söndürmüyorum — onları topraklıyorum...",
+  carrier      : 396,
+  beat         : 7,
+  solfeggio    : 741,
+  waveform     : "sawtooth",
+  noise        : 0.75,
+  visual       : "flash"
+};
 
 // ── Bio-Acoustic Therapist System Instruction ──
 // Simpler, direct instruction for bioacoustic therapy JSON output.
@@ -4038,7 +4050,7 @@ function applyAIBreathingPattern(bp) {
 function applyAIFrequency(result) {
   const carrierFreq     = result.carrierFreq || result.frequency;
   const beatFreq        = result.beatFreq    || result.detune;
-  const description     = result.description;
+const description = aiData.message || result.description;
   const isFallback      = result.isFallback || false;
   const visuals         = result.visuals;
   const breathingPattern= result.breathingPattern;
@@ -4177,8 +4189,15 @@ function onTypingComplete(text) {
   if (matchedMoodKey && MOODS[matchedMoodKey]) {
     updateAppTheme(MOODS[matchedMoodKey]);
   }
-
-  setTimeout(function() { showAffirmationCard(text); }, 2000);
+setTimeout(function() {
+  var p2 = document.getElementById('ai-result-text');
+  if (p2) p2.textContent = aiData.message_part2;
+}, 3000);
+setTimeout(function() {
+  var p3 = document.getElementById('ai-result-text');
+  if (p3) p3.textContent = aiData.message_part3;
+}, 6000);
+  setTimeout(function() { showAffirmationCard(aiData.message); }, 9000);
 }
 
 function showAffirmationCard(text) {
